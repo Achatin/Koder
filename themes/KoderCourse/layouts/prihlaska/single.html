@@ -1,0 +1,14 @@
+{{ define "main" }}
+<article class="max-w-4xl mx-auto px-4 prose lg:prose-lg prose-invert">
+
+  <div class="w-48 h-48 mx-auto rounded-full my-12 bg-indigo-100">
+    <img src="{{ .Params.image }}" class="w-full p-2 ml-2 h-full object-contain" />
+  </div>
+
+  <h1 class="font-bold text-3xl text-center text-white">{{ .Title }}</h1>
+  {{ .Content }}
+  <div class="flex justify-center mt-12">
+    <iframe src="{{ .Params.forms }}" width="640" height="720" frameborder="0" marginheight="0" marginwidth="0">Načítava sa…</iframe>
+  </div>
+</article>
+{{ end }}

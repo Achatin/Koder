@@ -1,0 +1,25 @@
+<p class="my-8 max-w-5xl mx-auto text-3xl font-bold">Ponuka Kurzov</p>
+
+<section class="grid grid-cols-2 md:grid-cols-3 gap-4 my-8 max-w-5xl mx-auto" style="min-height: 300px">
+  {{ range $index, $data := .Site.Params.homepage.courses }}
+  <div class="relative {{ if eq (sub (mod $index  3) 1) 0 }}row-span-2{{end}} shadow-sm md:shadow-2xl">
+    <div class="absolute text-xl p-5 font-bold text-{{ $data.color }}">{{ $data.title }}</div>
+    <img
+      class="rounded object-cover w-full h-full"
+      loading="lazy"
+      src="{{ $data.img }}"
+    />
+    <div
+      class="absolute top-0 left-0 rounded w-full h-full bg-black bg-opacity-30 grid place-items-center opacity-0 hover:opacity-100 transition-opacity duration-200"
+    >
+      <a
+        class="px-6 py-2 rounded-full bg-black text-white"
+        href="{{ $data.link }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        >O kurze</a
+      >
+    </div>
+  </div>
+  {{ end }}
+</section>

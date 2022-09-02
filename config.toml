@@ -1,0 +1,78 @@
+theme = "KoderCourse"
+languageCode = "en-us"
+baseurl = "https://example.com"
+title = "Koder"
+
+
+[params]
+  name = "Koder"
+  description = "Kurzy programovania pre deti."
+  author = "Koder"
+  authorEmail = "koder@gmail.com"
+  authorImage = "/photo.png"
+  autoDarkMode = false
+
+  copyright = "Copyright © 2022 - Coder · All rights reserved"
+  favicon = "favicon.ico"
+
+[params.homepage]
+  title = "Vitajte na Koder.sk 👋"
+  tagline = "Kurzy programovania"
+  description = "Ponúkame zaujímavé kurzy programovania a informatiky pre deti a mladých."
+  contact = "./prihlaska"
+
+[[params.homepage.courses]]
+  title = "🥽 Virtuálna Realita"
+  color = "black"
+  img = "https://raw.githubusercontent.com/googlecreativelab/webvr-musicalforest/master/static/img/aboutbg.gif"
+  link = "./kurzy/emoji-support"
+
+[[params.homepage.courses]]
+  title = "📱 Mobilné Aplikácie"
+  color = "black"
+  img = "https://cdn.dribbble.com/users/462884/screenshots/2082445/tapandpay-gif.gif"
+  link = "https://github.com/Achatin/Coding/tree/master/GO/Unfamiliar%20%5BBlocks%5D"
+
+[[params.homepage.courses]]
+  title = "🤖 Machine Learning"
+  color = "black"
+  img = "https://i.pinimg.com/originals/00/ad/14/00ad14740cc8f37d8c23eef53ef7681d.gif"
+  link = "https://github.com/Achatin/Coding/tree/master/GO/Unfamiliar%20%5BBlocks%5D"
+
+[[params.homepage.courses]]
+  title = "🐍 Python"
+  color = "white"
+  img = "https://airnfts.s3.amazonaws.com/nft-images/20210525/Snake_game_1621964487458.gif"
+  link = "https://github.com/Achatin/Coding/tree/master/GO/Unfamiliar%20%5BBlocks%5D"
+
+[[params.homepage.courses]]
+  title = "🎮 Vývoj Hier"
+  color = "white"
+  img = "https://i.pinimg.com/originals/bc/f9/7f/bcf97fc9066b06c6deb18dc6c155b155.gif"
+  link = "https://github.com/Achatin/Coding/tree/master/GO/Unfamiliar%20%5BBlocks%5D"
+
+[params.homepage.resume]
+  skills = ["📅 Široká ponuka termínov", "📘 Žiak dostane učebnicu", "📜 Certifikát o absolvovaní", "🔰 Online vyučovanie", "🤏 Malé skupinky", "👩‍🏫 Ochotní lektori"]
+
+[[params.homepage.resume.work]]
+  name = "❓ Ako kurzy prebiehajú?"
+  role = "💬 Žiaci sa stretnú s lektorom na online hodine na vopred dohodnutej platforme (zvyčajne Discord), kde sa potom spoločne učia podľa pripravených materiálov."
+  duration = ""
+
+[[params.homepage.resume.work]]
+  name = "❓ Sú kurzy programovania náročné?"
+  role = "💬 Všetky kurzy sú robené tak, aby sa žiak vedel chytiť aj bez žiadnych predošlých skúseností s programovaním. Avšak ponúkame kurzy pre začínajúcich, ale aj skúsenejších programátorov. Pre začiatočníkov preto odporúčame kurzy 🐍 Python alebo 🎮 Vývoj hier."
+  duration = ""
+
+[params.homepage.social]
+  facebook = "https://facebook.com/"
+  instagram = "https://twitter.com/"
+  twitter = "https://instagram.com/"
+
+[build]
+  writeStats = true
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
