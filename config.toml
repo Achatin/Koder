@@ -2,6 +2,7 @@ theme = "KoderCourse"
 languageCode = "en-us"
 baseurl = "https://achatin.github.io/Koder"
 title = "Koder"
+canonifyURLs = true
 
 
 [params]
