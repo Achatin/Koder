@@ -3,45 +3,29 @@ author: "Koder"
 title: "🐍 Python"
 description: "Nauč sa programovať v jednom z najpopulárnejších programovacích jazykov."
 tags: ["python", "kurz-python", "python-pre-deti"]
+featured_image: /python-banner.jpg
 ---
 
-Nauč sa programovať v jednom z najpopulárnejších programovacích jazykov.
+Nauč sa programovať v jednom z najpopulárnejších a najuniverzálnejších programovacích jazykov.
 
 <!--more-->
 
-The [`emojify`](https://gohugo.io/functions/emojify/) function can be called directly in templates or [Inline Shortcodes](https://gohugo.io/templates/shortcode-templates/#inline-shortcodes).
+Python je skvelý úvod do sveta programovania pre nováčikov. Jeho syntax je jednoduchá a intuitívna. My ťa v Pythone naučíme všetky základy, dokonca si ukážeme aj viaceré zaujímavé použitia. Na konci kurzu budeš poznať nielen princípy programovania, ale budeš aj bezpomoci *spawn-ovať kód*.
 
-To enable emoji globally, set `enableEmoji` to `true` in your site's [configuration](https://gohugo.io/getting-started/configuration/) and then you can type emoji shorthand codes directly in content files; e.g.
+![banner](/python-banner.jpg)
 
-<p><span class="nowrap"><span class="emojify">🙈</span> <code>:see_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙉</span> <code>:hear_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙊</span> <code>:speak_no_evil:</code></span></p>
-<br>
+{{< figure src="https://airnfts.s3.amazonaws.com/nft-images/20210525/Snake_game_1621964487458.gif" class="float-left mr-16 max-w-xs">}}
 
-The [Emoji cheat sheet](http://www.emoji-cheat-sheet.com/) is a useful reference for emoji shorthand codes.
+## Čo sa naučíš?
+- 👨‍💻 Programovacie princípy
+- 💠 Prácu s terminálom
+- 🧠 Myslieť algoritmicky
+- 🧙‍♂️ Vytvoriť profil hráča
+- 🧊 Simulovať generáciu Minecraft sveta
 
----
+{{< figure class="clear-both">}}
 
-**N.B.** The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.
-
-{{< highlight html >}}
-.emoji {
-font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
-}
-{{< /highlight >}}
-
-{{< css.inline >}}
-
-<style>
-.emojify {
-	font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
-	font-size: 2rem;
-	vertical-align: middle;
-}
-@media screen and (max-width:650px) {
-  .nowrap {
-    display: block;
-    margin: 25px 0;
-  }
-}
-</style>
-
-{{< /css.inline >}}
+# Cena
+Využite úvodnú zľavu na oba naše formáty.
+## Kurz Grind:   ~~100€~~  *79 €*
+## Kurz Intense: ~~60€~~  *39 €*

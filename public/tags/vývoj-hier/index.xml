@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vývoj-hier on Koder</title>
+    <link>https://achatin.github.io/Koder/tags/v%C3%BDvoj-hier/</link>
+    <description>Recent content in vývoj-hier on Koder</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://achatin.github.io/Koder/tags/v%C3%BDvoj-hier/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🎮 Vývoj Hier</title>
+      <link>https://achatin.github.io/Koder/kurzy/vyvoj-hier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://achatin.github.io/Koder/kurzy/vyvoj-hier/</guid>
+      <description>&lt;p&gt;Nadizajnuj si a naprogramuj vlastnú hru v šikovnom Game-Engine Pico-8!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🤖 Machine Learning</title>
+      <link>https://achatin.github.io/Koder/kurzy/ml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://achatin.github.io/Koder/kurzy/ml/</guid>
+      <description>&lt;p&gt;Nadizajnuj si a naprogramuj vlastnú hru.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

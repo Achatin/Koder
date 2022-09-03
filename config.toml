@@ -1,14 +1,13 @@
 theme = "KoderCourse"
 languageCode = "en-us"
-baseurl = "https://achatin.github.io/Koder"
-title = "Koder"
+baseurl = "https://Spawn.codes"
+title = "Spawn.codes"
 canonifyURLs = true
 
-
 [params]
-  name = "Koder"
+  name = "Spawn.codes"
   description = "Kurzy programovania pre deti."
-  author = "Koder"
+  author = "Spawn.codes"
   authorEmail = "koder@gmail.com"
   authorImage = "/photo.png"
   autoDarkMode = false
@@ -17,7 +16,7 @@ canonifyURLs = true
   favicon = "favicon.ico"
 
 [params.homepage]
-  title = "Vitajte na Koder.sk 👋"
+  title = "Vitajte na Spawn.codes 👋"
   tagline = "Kurzy programovania"
   description = "Ponúkame zaujímavé kurzy programovania a informatiky pre deti a mladých."
   contact = "./prihlaska"
@@ -26,31 +25,31 @@ canonifyURLs = true
   title = "🥽 Virtuálna Realita"
   color = "black"
   img = "https://raw.githubusercontent.com/googlecreativelab/webvr-musicalforest/master/static/img/aboutbg.gif"
-  link = "./kurzy/emoji-support"
+  link = "/kurzy/vr"
 
 [[params.homepage.courses]]
   title = "📱 Mobilné Aplikácie"
   color = "black"
   img = "https://cdn.dribbble.com/users/462884/screenshots/2082445/tapandpay-gif.gif"
-  link = "https://github.com/Achatin/Coding/tree/master/GO/Unfamiliar%20%5BBlocks%5D"
+  link = "/kurzy/mobilné-aplikácie/"
 
 [[params.homepage.courses]]
-  title = "🤖 Machine Learning"
+  title = "🤖 Umelá Inteligencia"
   color = "black"
   img = "https://i.pinimg.com/originals/00/ad/14/00ad14740cc8f37d8c23eef53ef7681d.gif"
-  link = "https://github.com/Achatin/Coding/tree/master/GO/Unfamiliar%20%5BBlocks%5D"
+  link = "/kurzy/ml/"
 
 [[params.homepage.courses]]
   title = "🐍 Python"
   color = "white"
   img = "https://airnfts.s3.amazonaws.com/nft-images/20210525/Snake_game_1621964487458.gif"
-  link = "https://github.com/Achatin/Coding/tree/master/GO/Unfamiliar%20%5BBlocks%5D"
+  link = "/kurzy/python/"
 
 [[params.homepage.courses]]
   title = "🎮 Vývoj Hier"
   color = "white"
   img = "https://i.pinimg.com/originals/bc/f9/7f/bcf97fc9066b06c6deb18dc6c155b155.gif"
-  link = "https://github.com/Achatin/Coding/tree/master/GO/Unfamiliar%20%5BBlocks%5D"
+  link = "/kurzy/vyvoj-hier/"
 
 [params.homepage.resume]
   skills = ["📅 Široká ponuka termínov", "📘 Žiak dostane učebnicu", "📜 Certifikát o absolvovaní", "🔰 Online vyučovanie", "🤏 Malé skupinky", "👩‍🏫 Ochotní lektori"]

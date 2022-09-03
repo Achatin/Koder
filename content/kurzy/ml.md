@@ -1,6 +1,6 @@
 ---
-author: "Koder"
-title: "🤖 Machine Learning"
+author: "Spawn.codes"
+title: "🤖 Umelá Inteligencia"
 description: "Nadizajnuj si a naprogramuj vlastnú hru."
 tags: ["vývoj-hier", "hry", "game-development", "kurz", "programovanie-hier", "programovanie-pre-deti"]
 ---

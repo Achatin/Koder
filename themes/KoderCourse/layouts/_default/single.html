@@ -1,6 +1,11 @@
 {{ define "main" }}
-<article class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-dark">
+<article class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-invert">
   <h1>{{ .Title }}</h1>
   {{ .Content }}
+
+  <a
+    href="../../prihlaska"
+    class="px-6 py-4 rounded-full font-semibold text-lg transition-colors bg-white text-black hover:bg-gray-200"
+    >Prihlásiť sa</a>
 </article>
 {{ end }}

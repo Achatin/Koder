@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Koder</title>
+    <link>https://achatin.github.io/Koder/</link>
+    <description>Recent content on Koder</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://achatin.github.io/Koder/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>O nás</title>
+      <link>https://achatin.github.io/Koder/o-nas/</link>
+      <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://achatin.github.io/Koder/o-nas/</guid>
+      <description>Koder.sk je start-up projekt dvoch študentov vysokej školy. Projekt vznikol v roku 2022 a je momentálne veľmi mladý, ale je plný šikovných a ambicióznych lektorov. Našim cieľom je naučiť mladých ľudí orientovať sa vo svete kódu. Chceme vzbudiť povedomie, že programovanie nie je zložité a predstaviť množstvo zaujímavých odborov a odvetví informatiky.
+Spoznajte našich lektorov Šimon Šimon má 20 rokov a je zakladateľom Koder-u. Vo svojom voľnom čase si neustále vymýšľa a pracuje na projektoch.</description>
+    </item>
+    
+    <item>
+      <title>Prihláška na kurz</title>
+      <link>https://achatin.github.io/Koder/prihlaska/</link>
+      <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://achatin.github.io/Koder/prihlaska/</guid>
+      <description>Pre prihlásenie na kurz stačí vyplniť formulár nižšie. O bližších informáciách o platbe a danom kurze Vás budem informovať e-mailom, prípadne telefonicky.
+Za neúčasť na kurze alebo v prípade nespokojnosti Vám budú, samozrejme, peniaze vrátené. Neváhajte nás kontaktovať e-mailom.
+V prípade akciového kurzu zadarmo alebo výhry v súťaži je taktiež potrebné sa prihlásiť. Kurz účtovaný nebude.</description>
+    </item>
+    
+    <item>
+      <title>Úvodný Kurz</title>
+      <link>https://achatin.github.io/Koder/free/</link>
+      <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://achatin.github.io/Koder/free/</guid>
+      <description>Vitajte na prihlásení na Úvodný Kurz. Tešíme sa, že Vás kurz zdarma zaujal. Budeme rádi, keď sa v sobotu 24.9. o 15:00 uvidíme na Discorde.
+Pre prihlásenie na kurz stačí vyplniť formulár nižšie. O bližších informáciách o danom kurze Vás budeme informovať e-mailom, prípadne telefonicky.
+V prípade nejakých otázok nás pokojne kontaktujte e-mailom.</description>
+    </item>
+    
+    <item>
+      <title>Rich Content</title>
+      <link>https://achatin.github.io/Koder/kurzy/go/</link>
+      <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://achatin.github.io/Koder/kurzy/go/</guid>
+      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
+&lt;h2 id=&#34;heading&#34;&gt;&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>🎮 Vývoj Hier</title>
+      <link>https://achatin.github.io/Koder/kurzy/vyvoj-hier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://achatin.github.io/Koder/kurzy/vyvoj-hier/</guid>
+      <description>&lt;p&gt;Nadizajnuj si a naprogramuj vlastnú hru v šikovnom Game-Engine Pico-8!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🐍 Python</title>
+      <link>https://achatin.github.io/Koder/kurzy/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://achatin.github.io/Koder/kurzy/python/</guid>
+      <description>&lt;p&gt;Nauč sa programovať v jednom z najpopulárnejších programovacích jazykov.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🤖 Machine Learning</title>
+      <link>https://achatin.github.io/Koder/kurzy/ml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://achatin.github.io/Koder/kurzy/ml/</guid>
+      <description>&lt;p&gt;Nadizajnuj si a naprogramuj vlastnú hru.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🥽 Virtuálna Realita</title>
+      <link>https://achatin.github.io/Koder/kurzy/vr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://achatin.github.io/Koder/kurzy/vr/</guid>
+      <description>&lt;p&gt;Naskoč na trend meta-programovania.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
