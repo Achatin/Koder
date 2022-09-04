@@ -5,19 +5,16 @@
 
   <div class="card-list">
     {{ range .Data.Pages -}}
-    <a class="block my-8" href="{{ .RelPermalink }}">
+    <a class="block my-8 relative" href="{{ .RelPermalink }}">
       {{ $img := .Params.featured_image }}
       {{ $title := .Params.title }}
-      <h2 class="text-xl font-semibold mb-1">{{ $title }}</h2>
-      <p class="font-light mb-2 text-gray-500 text-sm">
-        {{ .Params.date.Format "January 2, 2006" }}
-      </p>
-      <div class="font-light text-gray-200 mb-2">
+      {{ with $img }}
+      <img class="rounded-lg shadow-md shadow-slate-700 max-w-full mb-4" src="{{ . }}" alt="{{ $title }}" />
+      {{ end }}
+      <h2 class="absolute text-md md:text-xl font-semibold top-1/3 md:top-1/3 left-10 text-{{ .Params.text_color }}">{{ $title }}</h2>
+      <div class="absolute invisible md:visible font-light text-{{ .Params.text_color }} top-2/4 left-10 max-w-md">
         {{ .Summary }}
       </div>
-      {{ with $img }}
-      <img class="rounded max-w-full mb-4" src="{{ . }}" alt="{{ $title }}" />
-      {{ end }}
     </a>
     {{ end -}}
   </div>

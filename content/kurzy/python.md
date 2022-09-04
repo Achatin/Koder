@@ -1,7 +1,7 @@
 ---
-author: "Koder"
+author: "Spawn.codes"
 title: "🐍 Python"
-description: "Nauč sa programovať v jednom z najpopulárnejších programovacích jazykov."
+description: "Programovanie v Pythone pre deti - Spawn.codes"
 tags: ["python", "kurz-python", "python-pre-deti"]
 featured_image: /python-banner.jpg
 ---
@@ -11,6 +11,8 @@ Nauč sa programovať v jednom z najpopulárnejších a najuniverzálnejších p
 <!--more-->
 
 Python je skvelý úvod do sveta programovania pre nováčikov. Jeho syntax je jednoduchá a intuitívna. My ťa v Pythone naučíme všetky základy, dokonca si ukážeme aj viaceré zaujímavé použitia. Na konci kurzu budeš poznať nielen princípy programovania, ale budeš aj bezpomoci *spawn-ovať kód*.
+
+**🚧 Náročnosť: 🔥**
 
 ![banner](/python-banner.jpg)
 

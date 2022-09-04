@@ -1,135 +1,134 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Koder</title>
-    <link>https://achatin.github.io/Koder/tags/</link>
-    <description>Recent content in Tags on Koder</description>
+    <title>Tags on Spawn.codes</title>
+    <link>https://Spawn.codes/tags/</link>
+    <description>Recent content in Tags on Spawn.codes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 24 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://achatin.github.io/Koder/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>privacy</title>
-      <link>https://achatin.github.io/Koder/tags/privacy/</link>
-      <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://achatin.github.io/Koder/tags/privacy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shortcodes</title>
-      <link>https://achatin.github.io/Koder/tags/shortcodes/</link>
-      <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://achatin.github.io/Koder/tags/shortcodes/</guid>
-      <description></description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://Spawn.codes/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>game-development</title>
-      <link>https://achatin.github.io/Koder/tags/game-development/</link>
+      <link>https://Spawn.codes/tags/game-development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/tags/game-development/</guid>
+      <guid>https://Spawn.codes/tags/game-development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>games</title>
-      <link>https://achatin.github.io/Koder/tags/games/</link>
+      <link>https://Spawn.codes/tags/games/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/tags/games/</guid>
+      <guid>https://Spawn.codes/tags/games/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hry</title>
-      <link>https://achatin.github.io/Koder/tags/hry/</link>
+      <link>https://Spawn.codes/tags/hry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/tags/hry/</guid>
+      <guid>https://Spawn.codes/tags/hry/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kurz</title>
-      <link>https://achatin.github.io/Koder/tags/kurz/</link>
+      <link>https://Spawn.codes/tags/kurz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/tags/kurz/</guid>
+      <guid>https://Spawn.codes/tags/kurz/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kurz-python</title>
-      <link>https://achatin.github.io/Koder/tags/kurz-python/</link>
+      <link>https://Spawn.codes/tags/kurz-python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/tags/kurz-python/</guid>
+      <guid>https://Spawn.codes/tags/kurz-python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>privacy</title>
+      <link>https://Spawn.codes/tags/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/tags/privacy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>programovanie-hier</title>
-      <link>https://achatin.github.io/Koder/tags/programovanie-hier/</link>
+      <link>https://Spawn.codes/tags/programovanie-hier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/tags/programovanie-hier/</guid>
+      <guid>https://Spawn.codes/tags/programovanie-hier/</guid>
       <description></description>
     </item>
     
     <item>
       <title>programovanie-pre-deti</title>
-      <link>https://achatin.github.io/Koder/tags/programovanie-pre-deti/</link>
+      <link>https://Spawn.codes/tags/programovanie-pre-deti/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/tags/programovanie-pre-deti/</guid>
+      <guid>https://Spawn.codes/tags/programovanie-pre-deti/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>https://achatin.github.io/Koder/tags/python/</link>
+      <link>https://Spawn.codes/tags/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/tags/python/</guid>
+      <guid>https://Spawn.codes/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python-pre-deti</title>
-      <link>https://achatin.github.io/Koder/tags/python-pre-deti/</link>
+      <link>https://Spawn.codes/tags/python-pre-deti/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/tags/python-pre-deti/</guid>
+      <guid>https://Spawn.codes/tags/python-pre-deti/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shortcodes</title>
+      <link>https://Spawn.codes/tags/shortcodes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/tags/shortcodes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>virtuálna-realita</title>
-      <link>https://achatin.github.io/Koder/tags/virtu%C3%A1lna-realita/</link>
+      <link>https://Spawn.codes/tags/virtu%C3%A1lna-realita/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/tags/virtu%C3%A1lna-realita/</guid>
+      <guid>https://Spawn.codes/tags/virtu%C3%A1lna-realita/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vr</title>
-      <link>https://achatin.github.io/Koder/tags/vr/</link>
+      <link>https://Spawn.codes/tags/vr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/tags/vr/</guid>
+      <guid>https://Spawn.codes/tags/vr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vývoj-hier</title>
-      <link>https://achatin.github.io/Koder/tags/v%C3%BDvoj-hier/</link>
+      <link>https://Spawn.codes/tags/v%C3%BDvoj-hier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/tags/v%C3%BDvoj-hier/</guid>
+      <guid>https://Spawn.codes/tags/v%C3%BDvoj-hier/</guid>
       <description></description>
     </item>
     

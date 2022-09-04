@@ -1,52 +1,34 @@
 ---
-author: "Koder"
+author: "Spawn.codes"
 title: "🥽 Virtuálna Realita"
-description: "Naskoč na trend meta-programovania."
+description: "Programovanie Virtuálnej Reality pre deti - Spawn.codes"
 tags: ["virtuálna-realita", "vr", "hry", "game-development", "kurz", "programovanie-hier", "programovanie-pre-deti"]
 ---
 
-Naskoč na trend meta-programovania.
+Naskoč na trend meta-programovania!
 
 <!--more-->
 
-In this example we will be using [KaTeX](https://katex.org/)
+Programovanie Virtuálnej Reality je jedným z najväčších trendov posledného roka. My ťa naučíme ako si vytvoriť vlastný meta-svet s nástrojom [A-Frame](https://aframe.io/). Budeš pracovať s 3D objektami a ich fyzikou. Vďaka šikovnosti A-Frame si celé VR môžeš užiť priamo na webe.
 
-- Create a partial under `/layouts/partials/math.html`
-- Within this partial reference the [Auto-render Extension](https://katex.org/docs/autorender.html) or host these scripts locally.
-- Include the partial in your templates like so:
+**VR Headset nie je potrebný**
 
-```bash
-{{ if or .Params.math .Site.Params.math }}
-{{ partial "math.html" . }}
-{{ end }}
-```
+**🚧 Náročnosť: 🔥🔥**
 
-- To enable KaTex globally set the parameter `math` to `true` in a project's configuration
-- To enable KaTex on a per page basis include the parameter `math: true` in content files
+![banner](https://outlierventures.io/wp-content/uploads/2022/01/state-of-the-metaverse-report-banner-scaled.jpg)
 
-**Note:** Use the online reference of [Supported TeX Functions](https://katex.org/docs/supported.html)
+{{< figure src="https://raw.githubusercontent.com/googlecreativelab/webvr-musicalforest/master/static/img/aboutbg.gif" class="float-left mr-16 max-w-sm">}}
 
-{{< math.inline >}}
-{{ if or .Page.Params.math .Site.Params.math }}
+## Čo sa naučíš?
+- 👨‍💻 Programovanie webových technológií
+- 💠 Práca s A-Frame
+- 🧊 Práca s 3D objektami
+- 🎮 Ovládanie VR
+- 🌍 Vytvoriť vlastný VR svet
 
-<!-- KaTeX -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-{{ end }}
-{{</ math.inline >}}
+{{< figure class="clear-both">}}
 
-### Examples
-
-{{< math.inline >}}
-
-<p>
-Inline math: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)
-</p>
-{{</ math.inline >}}
-
-Block math:
-
-$$
- \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$
+# Cena
+Využite úvodnú zľavu na oba naše formáty.
+## Kurz Grind:   ~~100€~~  *79 €*
+## Kurz Intense: ~~60€~~  *39 €*

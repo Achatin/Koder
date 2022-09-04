@@ -1,4 +1,4 @@
 ---
-author: Koder
+author: Spawn.codes
 title: Kurzy
 ---

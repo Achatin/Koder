@@ -1,56 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kurzy on Koder</title>
-    <link>https://achatin.github.io/Koder/kurzy/</link>
-    <description>Recent content in Kurzy on Koder</description>
+    <title>Kurzy on Spawn.codes</title>
+    <link>https://Spawn.codes/kurzy/</link>
+    <description>Recent content in Kurzy on Spawn.codes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 24 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://achatin.github.io/Koder/kurzy/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Rich Content</title>
-      <link>https://achatin.github.io/Koder/kurzy/go/</link>
-      <pubDate>Sat, 24 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://achatin.github.io/Koder/kurzy/go/</guid>
-      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
-&lt;h2 id=&#34;heading&#34;&gt;&lt;/h2&gt;</description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://Spawn.codes/kurzy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>🎮 Vývoj Hier</title>
-      <link>https://achatin.github.io/Koder/kurzy/vyvoj-hier/</link>
+      <link>https://Spawn.codes/kurzy/vyvoj-hier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/kurzy/vyvoj-hier/</guid>
+      <guid>https://Spawn.codes/kurzy/vyvoj-hier/</guid>
       <description>&lt;p&gt;Nadizajnuj si a naprogramuj vlastnú hru v šikovnom Game-Engine Pico-8!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>🐍 Python</title>
-      <link>https://achatin.github.io/Koder/kurzy/python/</link>
+      <link>https://Spawn.codes/kurzy/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/kurzy/python/</guid>
-      <description>&lt;p&gt;Nauč sa programovať v jednom z najpopulárnejších programovacích jazykov.&lt;/p&gt;</description>
+      <guid>https://Spawn.codes/kurzy/python/</guid>
+      <description>&lt;p&gt;Nauč sa programovať v jednom z najpopulárnejších a najuniverzálnejších programovacích jazykov.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>🤖 Machine Learning</title>
-      <link>https://achatin.github.io/Koder/kurzy/ml/</link>
+      <title>📱 Mobilné Aplikácie</title>
+      <link>https://Spawn.codes/kurzy/mobilne-aplikacie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/kurzy/ml/</guid>
-      <description>&lt;p&gt;Nadizajnuj si a naprogramuj vlastnú hru.&lt;/p&gt;</description>
+      <guid>https://Spawn.codes/kurzy/mobilne-aplikacie/</guid>
+      <description>&lt;p&gt;Nauč sa tvoriť mobilné aplikácie pre Android alebo iOS.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🤖 Umelá Inteligencia</title>
+      <link>https://Spawn.codes/kurzy/ml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/kurzy/ml/</guid>
+      <description>&lt;p&gt;Vytrénuj si vlastnú umelú inteligenciu!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>🥽 Virtuálna Realita</title>
-      <link>https://achatin.github.io/Koder/kurzy/vr/</link>
+      <link>https://Spawn.codes/kurzy/vr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/kurzy/vr/</guid>
-      <description>&lt;p&gt;Naskoč na trend meta-programovania.&lt;/p&gt;</description>
+      <guid>https://Spawn.codes/kurzy/vr/</guid>
+      <description>&lt;p&gt;Naskoč na trend meta-programovania!&lt;/p&gt;</description>
     </item>
     
   </channel>

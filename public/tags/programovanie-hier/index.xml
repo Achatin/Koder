@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>programovanie-hier on Koder</title>
-    <link>https://achatin.github.io/Koder/tags/programovanie-hier/</link>
-    <description>Recent content in programovanie-hier on Koder</description>
+    <title>programovanie-hier on Spawn.codes</title>
+    <link>https://Spawn.codes/tags/programovanie-hier/</link>
+    <description>Recent content in programovanie-hier on Spawn.codes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://achatin.github.io/Koder/tags/programovanie-hier/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://Spawn.codes/tags/programovanie-hier/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>🤖 Machine Learning</title>
-      <link>https://achatin.github.io/Koder/kurzy/ml/</link>
+      <title>🤖 Umelá Inteligencia</title>
+      <link>https://Spawn.codes/kurzy/ml/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/kurzy/ml/</guid>
-      <description>&lt;p&gt;Nadizajnuj si a naprogramuj vlastnú hru.&lt;/p&gt;</description>
+      <guid>https://Spawn.codes/kurzy/ml/</guid>
+      <description>&lt;p&gt;Vytrénuj si vlastnú umelú inteligenciu!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>🥽 Virtuálna Realita</title>
-      <link>https://achatin.github.io/Koder/kurzy/vr/</link>
+      <link>https://Spawn.codes/kurzy/vr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/kurzy/vr/</guid>
-      <description>&lt;p&gt;Naskoč na trend meta-programovania.&lt;/p&gt;</description>
+      <guid>https://Spawn.codes/kurzy/vr/</guid>
+      <description>&lt;p&gt;Naskoč na trend meta-programovania!&lt;/p&gt;</description>
     </item>
     
   </channel>

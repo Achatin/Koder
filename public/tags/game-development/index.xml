@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>game-development on Koder</title>
-    <link>https://achatin.github.io/Koder/tags/game-development/</link>
-    <description>Recent content in game-development on Koder</description>
+    <title>game-development on Spawn.codes</title>
+    <link>https://Spawn.codes/tags/game-development/</link>
+    <description>Recent content in game-development on Spawn.codes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://achatin.github.io/Koder/tags/game-development/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://Spawn.codes/tags/game-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>🎮 Vývoj Hier</title>
-      <link>https://achatin.github.io/Koder/kurzy/vyvoj-hier/</link>
+      <link>https://Spawn.codes/kurzy/vyvoj-hier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/kurzy/vyvoj-hier/</guid>
+      <guid>https://Spawn.codes/kurzy/vyvoj-hier/</guid>
       <description>&lt;p&gt;Nadizajnuj si a naprogramuj vlastnú hru v šikovnom Game-Engine Pico-8!&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>🤖 Machine Learning</title>
-      <link>https://achatin.github.io/Koder/kurzy/ml/</link>
+      <title>🤖 Umelá Inteligencia</title>
+      <link>https://Spawn.codes/kurzy/ml/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/kurzy/ml/</guid>
-      <description>&lt;p&gt;Nadizajnuj si a naprogramuj vlastnú hru.&lt;/p&gt;</description>
+      <guid>https://Spawn.codes/kurzy/ml/</guid>
+      <description>&lt;p&gt;Vytrénuj si vlastnú umelú inteligenciu!&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>🥽 Virtuálna Realita</title>
-      <link>https://achatin.github.io/Koder/kurzy/vr/</link>
+      <link>https://Spawn.codes/kurzy/vr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://achatin.github.io/Koder/kurzy/vr/</guid>
-      <description>&lt;p&gt;Naskoč na trend meta-programovania.&lt;/p&gt;</description>
+      <guid>https://Spawn.codes/kurzy/vr/</guid>
+      <description>&lt;p&gt;Naskoč na trend meta-programovania!&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,0 +1,41 @@
+{{ define "main" }}
+<article class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-invert">
+
+  <div class="w-48 h-48 rounded-full mb-6 bg-purple-100 mx-auto">
+    <img src="{{ .Params.image }}" class="max-h-44 ml-2">
+  </div>
+
+  <h1 class="font-bold text-3xl text-center text-white">{{ .Title }}</h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl place-items-center">
+    <div class="block p-6 w-64 rounded-lg border shadow-md bg-gray-800 border-gray-700 hover:bg-gray-700">
+      <div class="flex justify-center pt-12 pb-6">  
+        <i class="fa-solid fa-phone fa-2xl text-gray-400"></i>
+      </div>
+      <div class="flex justify-center">  
+        <p class="font-normal text-gray-400">0950 593 620</p>
+      </div>
+    </div>
+
+    <div class="block p-6 w-64 rounded-lg border shadow-md bg-gray-800 border-gray-700 hover:bg-gray-700">
+      <div class="flex justify-center pt-12 pb-6">  
+        <i class="fa-solid fa-envelope fa-2xl text-gray-400"></i>
+      </div>
+      <div class="flex justify-center">
+        <p class="font-normal text-gray-400">spawn.codes@proton.me</p>
+      </div>
+    </div>
+
+    <div class="block p-6 w-64 rounded-lg border shadow-md bg-gray-800 border-gray-700 hover:bg-gray-700">
+      <div class="flex justify-center pt-12 pb-6">  
+        <i class="fa-brands fa-discord fa-2xl text-gray-400"></i>
+      </div>
+      <div class="flex justify-center">  
+        <p class="font-normal text-gray-400">discord.gg/nhUxuXjwvM</p>
+      </div>
+    </div>
+
+</div>
+
+</article>
+{{ end }}

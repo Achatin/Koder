@@ -8,7 +8,7 @@ canonifyURLs = true
   name = "Spawn.codes"
   description = "Kurzy programovania pre deti."
   author = "Spawn.codes"
-  authorEmail = "koder@gmail.com"
+  authorEmail = "spawn.code@proton.me"
   authorImage = "/photo.png"
   autoDarkMode = false
 
@@ -31,7 +31,7 @@ canonifyURLs = true
   title = "📱 Mobilné Aplikácie"
   color = "black"
   img = "https://cdn.dribbble.com/users/462884/screenshots/2082445/tapandpay-gif.gif"
-  link = "/kurzy/mobilné-aplikácie/"
+  link = "/kurzy/mobilne-aplikacie/"
 
 [[params.homepage.courses]]
   title = "🤖 Umelá Inteligencia"
@@ -65,9 +65,9 @@ canonifyURLs = true
   duration = ""
 
 [params.homepage.social]
-  facebook = "https://facebook.com/"
-  instagram = "https://twitter.com/"
-  twitter = "https://instagram.com/"
+  facebook = "https://www.facebook.com/profile.php?id=100085237996425"
+  instagram = "https://www.instagram.com/spawn.codes/"
+  discord = "https://discord.gg/nhUxuXjwvM"
 
 [build]
   writeStats = true
