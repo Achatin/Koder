@@ -18,7 +18,7 @@ canonifyURLs = true
 [params.homepage]
   title = "Vitajte na Spawn.codes 👋"
   tagline = "Kurzy programovania"
-  description = "Ponúkame zaujímavé kurzy programovania a informatiky pre deti a mladých."
+  description = "Staň sa ~Code Wizard 🧙‍♂️~!"
   contact = "./prihlaska"
 
 [[params.homepage.courses]]
