@@ -233,9 +233,6 @@
       "text-md",
       "text-red-300",
       "text-slate-100",
-      "text-slate-200",
-      "text-slate-50",
-      "text-slate-500",
       "text-slate-600",
       "text-slate-800",
       "text-transparent",
@@ -264,11 +261,8 @@
       "cena",
       "kurz-grind---100--79-",
       "kurz-intense-60--39-",
-      "monika",
       "nav-menu",
-      "spoznajte-našich-lektorov",
-      "čo-sa-naučíš",
-      "šimon"
+      "čo-sa-naučíš"
     ]
   }
 }
