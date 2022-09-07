@@ -27,6 +27,6 @@ Začneme jednoduchými predpovedajúcimi modelmi, uvedieme perceptrón a prejdem
 {{< figure class="clear-both">}}
 
 # Cena
-Využite úvodnú zľavu na oba naše formáty.
+Využite uvádzaciu zľavu na oba naše formáty.
 ## Kurz Grind:   ~~100€~~  *79 €*
 ## Kurz Intense: ~~60€~~  *39 €*

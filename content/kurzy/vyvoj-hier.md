@@ -26,7 +26,16 @@ Pico-8 má v sebe nástroje na programovanie, dizajnovanie hernej grafiky a máp
 - 🎨 Editovať herné *sprite-y*
 - 🎵 Vytvoriť atmosféru hry
 - ✨ Zverejniť svoju hru
+
+{{< figure class="clear-both">}}
+
+{{< figure src="https://www.lexaloffle.com/gfx/g_boom.gif" class="float-right mr-16">}}
+## 3D Hry
+Pri zvýšenom záujme o **3D hry** spravíme kurz v 3D nasledovateľovi Pico-8 - **Voxatron**. Naučíš sa všetko, čo v Pico-8 a **ešte viac ✨**
+
+{{< figure class="clear-both">}}
+
 # Cena
-Využite úvodnú zľavu na oba naše formáty.
+Využite uvádzaciu zľavu na oba naše formáty.
 ## Kurz Grind:   ~~100€~~  *79 €*
 ## Kurz Intense: ~~60€~~  *39 €*
