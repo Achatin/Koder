@@ -31,6 +31,11 @@
         <a href="{{ .Permalink }}" class="hover:text-blue-300">{{ .Title }}</a>
       </li>
       {{ end }}
+      {{ with .Site.GetPage "/ucebnica" }}
+      <li>
+        <a href="{{ .Permalink }}" class="hover:text-blue-300">{{ .Title }}</a>
+      </li>
+      {{ end }}
       {{ with .Site.GetPage "/kontakt" }}
       <li>
         <a href="{{ .Permalink }}" class="hover:text-blue-300">{{ .Title }}</a>
