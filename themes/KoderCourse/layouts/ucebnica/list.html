@@ -1,0 +1,153 @@
+{{ define "main" }}
+<article class="max-w-5xl mx-auto px-4">
+
+  <div class="w-48 h-48 rounded-full mb-6 bg-gray-800 border border-gray-700 mx-auto">
+    <img src="{{ .Params.image }}" class="w-full px-auto py-auto h-full object-contain transition ease-in-out delay-150 hover:scale-110" />
+  </div>
+
+  <h2 class="text-2xl font-semibold text-center my-3">Učebnica 📘</h2>
+  <h1 class="text-5xl font-bold mb-6 text-center">Vývoj Hier</h1>
+
+  <div class="flex justify-between">
+    <div>
+      <h2 class="text-xl font-semibold mt-6 mb-3">Progres 🔥</h2>
+      <div class="flex">
+        <i class="fa-solid fa-fire fa-beat fa-xl mr-2 py-3 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+        <i class="fa-solid fa-fire fa-xl mr-2 py-3 text-gray-500"></i>
+        <i class="fa-solid fa-fire fa-xl mr-2 py-3 text-gray-500"></i>
+        <i class="fa-solid fa-fire fa-xl mr-2 py-3 text-gray-500"></i>
+        <i class="fa-solid fa-fire fa-xl mr-2 py-3 text-gray-500"></i>
+        <i class="fa-solid fa-fire fa-xl mr-2 py-3 text-gray-500"></i>
+        <i class="fa-solid fa-fire fa-xl mr-2 py-3 text-gray-500"></i>
+        <i class="fa-solid fa-fire fa-xl mr-2 py-3 text-gray-500"></i>
+        <i class="fa-solid fa-fire fa-xl mr-2 py-3 text-gray-500"></i>
+        <i class="fa-solid fa-fire fa-xl mr-2 py-3 text-gray-500"></i>
+      </div>
+    </div>
+    <div>
+      <h2 class="text-xl font-semibold mt-6 mb-2">Najbližšia lekcia</h2>
+      <p class="text-center font-semibold text-gray-500 text-lg">22. 9. 2022</p>
+    </div>
+  </div>
+
+  <h2 class="text-3xl font-bold mt-10 mb-6">Lekcie 👨‍🎓</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-16 mt-8 place-items-center">
+    <a class="flex justify-center rounded-md bg-gray-800 border border-gray-700 shadow-md w-full py-2 hover:bg-gray-700"
+       href="lekcia1">
+      <i class="fa-solid fa-gamepad my-auto mr-3 text-gray-200"></i>
+      <p class="font-semibold text-gray-200">Lekcia 1</p>
+    </a>
+
+    <div class="flex justify-center rounded-md bg-gray-900 border border-gray-800 shadow-md w-full py-2 hover:bg-gray-800"
+       href="#">
+      <i class="fa-solid fa-lock my-auto mr-3 text-gray-500"></i>
+      <p class="font-semibold text-gray-500">Lekcia 2</p>
+    </div>
+
+    <div class="flex justify-center rounded-md bg-gray-900 border border-gray-800 shadow-md w-full py-2 hover:bg-gray-800"
+       href="#">
+      <i class="fa-solid fa-lock my-auto mr-3 text-gray-500"></i>
+      <p class="font-semibold text-gray-500">Lekcia 3</p>
+    </div>
+
+    <div class="flex justify-center rounded-md bg-gray-900 border border-gray-800 shadow-md w-full py-2 hover:bg-gray-800"
+       href="#">
+      <i class="fa-solid fa-lock my-auto mr-3 text-gray-500"></i>
+      <p class="font-semibold text-gray-500">Lekcia 4</p>
+    </div>
+
+    <div class="flex justify-center rounded-md bg-gray-900 border border-gray-800 shadow-md w-full py-2 hover:bg-gray-800"
+       href="#">
+      <i class="fa-solid fa-lock my-auto mr-3 text-gray-500"></i>
+      <p class="font-semibold text-gray-500">Lekcia 5</p>
+    </div>
+
+    <div class="flex justify-center rounded-md bg-gray-900 border border-gray-800 shadow-md w-full py-2 hover:bg-gray-800"
+       href="#">
+      <i class="fa-solid fa-lock my-auto mr-3 text-gray-500"></i>
+      <p class="font-semibold text-gray-500">Lekcia 6</p>
+    </div>
+
+    <div class="flex justify-center rounded-md bg-gray-900 border border-gray-800 shadow-md w-full py-2 hover:bg-gray-800"
+       href="#">
+      <i class="fa-solid fa-lock my-auto mr-3 text-gray-500"></i>
+      <p class="font-semibold text-gray-500">Lekcia 7</p>
+    </div>
+
+    <div class="flex justify-center rounded-md bg-gray-900 border border-gray-800 shadow-md w-full py-2 hover:bg-gray-800"
+       href="#">
+      <i class="fa-solid fa-lock my-auto mr-3 text-gray-500"></i>
+      <p class="font-semibold text-gray-500">Lekcia 8</p>
+    </div>
+
+    <div class="flex justify-center rounded-md bg-gray-900 border border-gray-800 shadow-md w-full py-2 hover:bg-gray-800"
+       href="#">
+      <i class="fa-solid fa-lock my-auto mr-3 text-gray-500"></i>
+      <p class="font-semibold text-gray-500">Lekcia 9</p>
+    </div>
+
+    <div class="flex justify-center rounded-md bg-gray-900 border border-gray-800 shadow-md w-full py-2 hover:bg-gray-800"
+       href="#">
+      <i class="fa-solid fa-lock my-auto mr-3 text-gray-500"></i>
+      <p class="font-semibold text-gray-500">Lekcia 10</p>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl font-bold mt-10 mb-6">Achievements ✨</h2>
+
+  <div class="grid grid-cols-fluid gap-4">
+
+    <div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-circle-question fa-2xl flex justify-center mb-6 mt-4 text-gray-500"></i>
+      <p class="font-semibold text-md text-center">???</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Vytvor prvú hru</p>
+    </div>
+
+    <!--div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-award fa-2xl flex justify-center pb-6 pt-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+      <p class="font-semibold text-md text-center">First Spark</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Vytvor prvú hru</p>
+    </div-->
+
+    <div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-circle-question fa-2xl flex justify-center mb-6 mt-4 text-gray-500"></i>
+      <p class="font-semibold text-md text-center">???</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Zverejni hru na Itch.io</p>
+    </div>
+
+    <div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-circle-question fa-2xl flex justify-center mb-6 mt-4 text-gray-500"></i>
+      <p class="font-semibold text-md text-center">???</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Dosiahni level 10</p>
+    </div>
+
+    <div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-circle-question fa-2xl flex justify-center mb-6 mt-4 text-gray-500"></i>
+      <p class="font-semibold text-md text-center">???</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Nauč sa robiť animácie</p>
+    </div>
+
+    <div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-circle-question fa-2xl flex justify-center mb-6 mt-4 text-gray-500"></i>
+      <p class="font-semibold text-md text-center">???</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Nadizajnuj logo</p>
+    </div>
+
+    <div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-circle-question fa-2xl flex justify-center mb-6 mt-4 text-gray-500"></i>
+      <p class="font-semibold text-md text-center">???</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Vytvor dialóg systém</p>
+    </div>
+
+    <div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-circle-question fa-2xl flex justify-center mb-6 mt-4 text-gray-500"></i>
+      <p class="font-semibold text-md text-center">???</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Vylepši hru s SFX</p>
+    </div>
+
+  </div>
+
+</article>
+{{ end }}
