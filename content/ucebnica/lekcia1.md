@@ -1,7 +1,7 @@
 ---
 author: "Spawn.codes"
 title: "🎮 Lekcia I."
-description: "Programovanie Umelej Inteligencie pre deti - Spawn.codes"
+description: "Programovanie hier pre deti - Spawn.codes"
 tags: ["vývoj-hier", "hry", "game-development", "kurz", "programovanie-hier", "programovanie-pre-deti"]
 ---
 
@@ -15,7 +15,7 @@ Ak si mal niekedy vlastné nápady na hry, týmto kurzom ich môžeš konečne u
 
 ## Úvod
 
-{{< figure src="/vyvoj-hier/pet-dino.gif" class="float-right ml-16 max-w-sm">}}
+{{< figure src="/vyvoj-hier/lekcia1/pet-dino.gif" class="float-right ml-16 max-w-sm">}}
 
 V tejto lekcii si vytvoríš prvú hru. Nabehneš priamo do toho, aby si si všetko vyskúšal! Ale neboj, všetky časti vývoja sa postupne a do detailov preberú v budúcich lekciách.
 
@@ -27,7 +27,7 @@ Počas lekcie si vytvoríš celý herný svet a naprogramuješ vlastnosti a mech
 
 ## Príprava hry
 
-{{< figure src="/vyvoj-hier/editor.png" class="float-right ml-16 max-w-xs">}}
+{{< figure src="/vyvoj-hier/lekcia1/editor.png" class="float-right ml-16 max-w-xs">}}
 
 Keď sa ti zapne tvoj Pico-8, napíš
 
@@ -45,17 +45,17 @@ Ako prvé je vhodné si vytvoriť zopár herných obrázkov, tzv. *sprites*. Sta
 
 Nakreslíme si postavu hráča a postavu dinosaura.
 
-{{< figure src="/vyvoj-hier/player.png" class="float-left mr-16 max-w-xs">}}
-{{< figure src="/vyvoj-hier/dino.png" class="float-right mr-16 max-w-xs">}}
+{{< figure src="/vyvoj-hier/lekcia1/player.png" class="float-left mr-16 max-w-xs">}}
+{{< figure src="/vyvoj-hier/lekcia1/dino.png" class="float-right mr-16 max-w-xs">}}
 {{< figure class="clear-both">}}
 
 Ešte budeme potrebovať zelený štvorček a štvorček s trávou ako dočasné pozadie.
 
-{{< figure src="/vyvoj-hier/green-tile.png" class="float-left mr-16 max-w-xs">}}
-{{< figure src="/vyvoj-hier/grass-tile.png" class="float-right mr-16 max-w-xs">}}
+{{< figure src="/vyvoj-hier/lekcia1/green-tile.png" class="float-left mr-16 max-w-xs">}}
+{{< figure src="/vyvoj-hier/lekcia1/grass-tile.png" class="float-right mr-16 max-w-xs">}}
 {{< figure class="clear-both">}}
 
-{{< figure src="/vyvoj-hier/map-editor.png" class="float-right ml-16 max-w-xs">}}
+{{< figure src="/vyvoj-hier/lekcia1/map-editor.png" class="float-right ml-16 max-w-xs">}}
 
 ## Mapa
 Presunieš sa na tvorenie mapy. Tu vieš využiť našu grafiku a jednoducho naskladáš štvorčeky ku ľavému hornému rohu mapy.
@@ -138,7 +138,7 @@ end
 Pohyb pridáš napríklad podmienkou - *ak stlačíš klávesu "hore", zmeň vertikálnu (hore/dole) pozíciu hráča o -1*.
 Stlačenie klávesy má príkaz **btn()**. Do zátvorky ide klávesa. Klávesu hore napíšeme ako **shift + U** (U = UP).
 
-{{< figure src="/vyvoj-hier/movement-code.png" class="float-right ml-16 max-w-md">}}
+{{< figure src="/vyvoj-hier/lekcia1/movement-code.png" class="float-right ml-16 max-w-md">}}
 
 - **hore -** *shift + U*, player.y = player.y - 1
 - **dole -** *shift + D*, player.y = player.y + 1
@@ -154,17 +154,17 @@ Vďaka tejto funkcii tvoja hra bude stále kontrolovať, či si stlačil nejakú
 Pridaj ešte zopár detailov, aby si si skrášlil hru. Môžeš využiť napríklad tieto *sprites* alebo si sprav vlastné.
 Vlož ich do mapy a uvidíš, že je hra hneď živšia.
 
-{{< figure src="/vyvoj-hier/skull.png" class="float-right ml-16 max-w-sm">}}
-{{< figure src="/vyvoj-hier/bone.png" class="float-left mr-16 max-w-sm">}}
+{{< figure src="/vyvoj-hier/lekcia1/skull.png" class="float-right ml-16 max-w-sm">}}
+{{< figure src="/vyvoj-hier/lekcia1/bone.png" class="float-left mr-16 max-w-sm">}}
 {{< figure class="clear-both">}}
 
-{{< figure src="/vyvoj-hier/sign.png" class="float-right ml-16 max-w-sm">}}
-{{< figure src="/vyvoj-hier/flower.png" class="float-left mr-16 max-w-sm">}}
+{{< figure src="/vyvoj-hier/lekcia1/sign.png" class="float-right ml-16 max-w-sm">}}
+{{< figure src="/vyvoj-hier/lekcia1/flower.png" class="float-left mr-16 max-w-sm">}}
 {{< figure class="clear-both">}}
 
 ## Hudba
 
-{{< figure src="/vyvoj-hier/notes.png" class="float-right ml-16 max-w-xs">}}
+{{< figure src="/vyvoj-hier/lekcia1/notes.png" class="float-right ml-16 max-w-xs">}}
 
 Ešte si nevyskúšal jeden nástroj - hudobný editor. V tomto nástroji ti odporúčam pohrať sa. Skrátka vytvor hudbu, ktorá sa ti bude páčiť. Vyskúšaj si:
 - pridávať a meniť noty
@@ -174,7 +174,7 @@ Ešte si nevyskúšal jeden nástroj - hudobný editor. V tomto nástroji ti odp
 
 {{< figure class="clear-both">}}
 
-{{< figure src="/vyvoj-hier/composer.png" class="float-right ml-16 max-w-xs">}}
+{{< figure src="/vyvoj-hier/lekcia1/composer.png" class="float-right ml-16 max-w-xs">}}
 
 Keď máš skladbu, s ktorou si spokojný, pridaj ju ako **track**. To spravíš zaškrtnutím štvorčeka pri prvom rámčeku a vybratím čísla skladby - 00.
 
