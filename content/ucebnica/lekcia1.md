@@ -9,7 +9,7 @@ tags: ["vývoj-hier", "hry", "game-development", "kurz", "programovanie-hier", "
 
 <!--more-->
 
-Vďaka tomuto kurzu sa môžeš stať **Game-Developer**. Naučíš sa pracovať s game-engine **Pico-8**, ktorý je špecializovaný na tvorbu malých hier - vytvoríš si v ňom hernú grafiku a mapu, naprogramuješ hru a dokonca si v ňom zložíš vlastnú hernú hudbu.
+Vďaka tomuto kurzu sa môžeš stať <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Game-Developer 👨‍💻</span>. Naučíš sa pracovať s game-engine <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Pico-8 🎲</span>, ktorý je špecializovaný na tvorbu malých hier - vytvoríš si v ňom hernú grafiku a mapu, naprogramuješ hru a dokonca si v ňom zložíš vlastnú hernú hudbu.
 
 Ak si mal niekedy vlastné nápady na hry, týmto kurzom ich môžeš konečne uskutočniť! 💪
 
@@ -19,7 +19,7 @@ Ak si mal niekedy vlastné nápady na hry, týmto kurzom ich môžeš konečne u
 
 V tejto lekcii si vytvoríš prvú hru. Nabehneš priamo do toho, aby si si všetko vyskúšal! Ale neboj, všetky časti vývoja sa postupne a do detailov preberú v budúcich lekciách.
 
-Tvoja prvá hra sa bude volať **Pet Dino** 🐲. Myšlienkou tejto hry je, že tvoj hráč má svojho dinosaura na vôdzke. Pomocou vôdzky ho vie kontrolovať.
+Tvoja prvá hra sa bude volať <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Pet Dino 🐲</span>. Myšlienkou tejto hry je, že tvoj hráč má svojho dinosaura na vôdzke. Pomocou vôdzky ho vie kontrolovať.
 
 Počas lekcie si vytvoríš celý herný svet a naprogramuješ vlastnosti a mechaniky hráča a jeho dinosaura.
 
@@ -36,12 +36,12 @@ save dino.p8
 ```
 Týmto príkazom si vytvoríš a uložíš svoj herný súbor.
 
-Aby si sa dostal do editora, stlač klávesu **ESC**. V editore máš nástroje na písanie kódu, kreslenie hernej grafiky, vytváranie máp a dokonca skladanie hudby.
+Aby si sa dostal do editora, stlač klávesu <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">ESC</span>. V editore máš nástroje na písanie kódu, kreslenie hernej grafiky, vytváranie máp a dokonca skladanie hudby.
 
 {{< figure class="clear-both">}}
 
 ## Herná grafika
-Ako prvé je vhodné si vytvoriť zopár herných obrázkov, tzv. *sprites*. Stačí si vybrať nejakú farbu a začať dopĺňať pixely do čierneho štvorčeka. Obrázky v Pico-8 typicky majú veľkosť 8x8 px - presne to, čo potrebujeme!
+Ako prvé je vhodné si vytvoriť zopár herných obrázkov, tzv. <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">sprites 🎨</span>. Stačí si vybrať nejakú farbu a začať dopĺňať pixely do čierneho štvorčeka. Obrázky v Pico-8 typicky majú veľkosť 8x8 px - presne to, čo potrebujeme!
 
 Nakreslíme si postavu hráča a postavu dinosaura.
 
@@ -62,7 +62,7 @@ Presunieš sa na tvorenie mapy. Tu vieš využiť našu grafiku a jednoducho nas
 
 Ku zeleným štvorčekom pridaj aj zopár štvorčekov s trávou.
 
-Mapa v Pico-8 má rozmery 128x128 px. To znamená, že sa ti na každú stranu vojde 16 tvojich štvorčekov. Zvyšok mapy slúži pre nové levely alebo lokácie.
+Mapa v Pico-8 má rozmery <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">128x128 px 👾</span>. To znamená, že sa ti na každú stranu vojde 16 tvojich štvorčekov. Zvyšok mapy slúži pre nové levely alebo lokácie.
 
 {{< figure class="clear-both">}}
 
@@ -81,7 +81,7 @@ function _draw()
 end
 ```
 
-Teraz hru najprv ulož klávesami **ctrl + s** a potom spusti - **ctrl + r**.
+Teraz hru najprv ulož klávesami <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">ctrl + s</span> a potom spusti - <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">ctrl + r</span>.
 
 ## Player & Dino
 Teraz nám už len chýba pridať nášho hráča a jeho dinosaura. Najprv im potrebujeme zadefinovať nejaké vlastnosti:
@@ -103,7 +103,7 @@ end
 
 > **🔰 Úloha:** Vytvor rovnaké vlastnosti pre Dinosaura. Daj však pozor na jeho obrázok!
 
-Opäť ich vykreslíme vo funkcii **_draw()**. Na to použijeme príkaz:
+Opäť ich vykreslíme vo funkcii <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">_draw()</span>. Na to použijeme príkaz:
 
 ```lua
 spr(player.sprite, player.x, player.y, player.w, player.h, player.flp)
@@ -111,7 +111,7 @@ spr(player.sprite, player.x, player.y, player.w, player.h, player.flp)
 
 > **🔰 Úloha:** Vykresli podobne aj dinosaura.
 
-Pridajme hráčovi vôdzku na dinosaura. Vôdzka bude len jednoduchá čiara od hráčovej pozície po dinosaurovu. Použijeme príkaz **line()**.
+Pridajme hráčovi vôdzku na dinosaura. Vôdzka bude len jednoduchá čiara od hráčovej pozície po dinosaurovu. Použijeme príkaz <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">line()</span>.
 
 ```lua
 --pridáme najprv oba súradnice pozície hráča, potom pozíciu dinosaura a nakoniec farbu (8=červená)
@@ -130,28 +130,28 @@ if pet == "🦄" then
 end
 ```
 
-**Kľúčové slová 🗝**
+<span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Kľúčové slová 🔑</span>
 1. **if** (*ak*) **-** za ním nasleduje podmienka, kontrola stavu
 2. **then** (*potom*) **-** všetko, čo sa má stať po splnenení podmienky
 3. **end -** *koniec* podmienky
 
 Pohyb pridáš napríklad podmienkou - *ak stlačíš klávesu "hore", zmeň vertikálnu (hore/dole) pozíciu hráča o -1*.
-Stlačenie klávesy má príkaz **btn()**. Do zátvorky ide klávesa. Klávesu hore napíšeme ako **shift + U** (U = UP).
+Stlačenie klávesy má príkaz <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">btn()</span>. Do zátvorky ide klávesa. Klávesu hore napíšeme ako <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">shift + U</span> (U = UP).
 
 {{< figure src="/vyvoj-hier/lekcia1/movement-code.png" class="float-right ml-16 max-w-md">}}
 
-- **hore -** *shift + U*, player.y = player.y - 1
-- **dole -** *shift + D*, player.y = player.y + 1
-- **vľavo -** *shift + L*, player.x = player.x - 1
-- **vpravo -** *shift + R*, player.x = player.x + 1
+- **hore -** <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">shift + U</span>, player.y = player.y - 1
+- **dole -** <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">shift + D</span>, player.y = player.y + 1
+- **vľavo -** <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">shift + L</span>, player.x = player.x - 1
+- **vpravo -** <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">shift + R</span>, player.x = player.x + 1
 
-Všetok kód pôjde tentokrát do špeciálnej funkcie **_update()**, ktorá sa pravidelne opakuje a vytvára tzv. **Game Loop**.
+Všetok kód pôjde tentokrát do špeciálnej funkcie <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">_update()</span>, ktorá sa pravidelne opakuje a vytvára tzv. <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Game Loop 👾</span>.
 Vďaka tejto funkcii tvoja hra bude stále kontrolovať, či si stlačil nejakú klávesu.
 
 {{< figure class="clear-both">}}
 
 ## Detaily
-Pridaj ešte zopár detailov, aby si si skrášlil hru. Môžeš využiť napríklad tieto *sprites* alebo si sprav vlastné.
+Pridaj ešte zopár detailov, aby si si skrášlil hru. Môžeš využiť napríklad tieto <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">sprites 🎨</span> alebo si sprav vlastné.
 Vlož ich do mapy a uvidíš, že je hra hneď živšia.
 
 {{< figure src="/vyvoj-hier/lekcia1/skull.png" class="float-right ml-16 max-w-sm">}}
@@ -176,11 +176,11 @@ Ešte si nevyskúšal jeden nástroj - hudobný editor. V tomto nástroji ti odp
 
 {{< figure src="/vyvoj-hier/lekcia1/composer.png" class="float-right ml-16 max-w-xs">}}
 
-Keď máš skladbu, s ktorou si spokojný, pridaj ju ako **track**. To spravíš zaškrtnutím štvorčeka pri prvom rámčeku a vybratím čísla skladby - 00.
+Keď máš skladbu, s ktorou si spokojný, pridaj ju ako <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">track 🎼</span>. To spravíš zaškrtnutím štvorčeka pri prvom rámčeku a vybratím čísla skladby - 00.
 
-Taktiež nezabudni dať track sa opakovať - **loop**. Zaklikni ikonku šípky naspäť.
+Taktiež nezabudni dať track sa opakovať - <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">loop 🔂</span>. Zaklikni ikonku šípky naspäť.
 
-Ako posledné budeš potrebovať hudbu pridať do hry. To spravíš tak, že do funkcie **_init()** na začiatok pridáš príkaz:
+Ako posledné budeš potrebovať hudbu pridať do hry. To spravíš tak, že do funkcie <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">_init()</span> na začiatok pridáš príkaz:
 
 ```lua
 --v zátvorke - číslo track-u

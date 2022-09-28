@@ -4,7 +4,7 @@ title: "🎮 Lekcia II."
 description: "Programovanie hier pre deti - Spawn.codes"
 tags: ["vývoj-hier", "hry", "game-development", "kurz", "programovanie-hier", "programovanie-pre-deti"]
 ---
-<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+
 **Vitaj naspäť! 🤙**
 
 Na dnešnej lekcii budeme pokračovať v našej rozpracovanej hre - <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Pet Dino 🐲</span>. V tejto hre máme implementované už všetky podstatné veci, vďaka tomu môže byť celá hodina venovaná konceptu **kolízií**.
@@ -66,7 +66,7 @@ end
 ```
 
 ## Kolízia s pokladom
-{{< figure src="/vyvoj-hier/lekcia2/solid.gif" class="float-right ml-16 max-w-xs">}}
+{{< figure src="/vyvoj-hier/lekcia2/open-chest.gif" class="float-right ml-16 max-w-xs">}}
 
 Funkciu <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">collision()</span> môžeš rovno použiť pri kolízii s pokladom. Do špeciálnej funkcie <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">_update()</span>, ktorá pravidelne kontroluje stav hry, pridaj podmienku - ak dôjde ku kolízii s interaktívnym predmetom, potom napr. zahraj zvučku.
 
@@ -97,7 +97,7 @@ Rozdiel medzi príkazmi <span class="font-mono text-slate-400 text-center max-w-
 ## Mini-animácia
 Pri kolízií s truhlou vieme pridať aj malú animáciu, kedy sa truhla otvorí. Stačí len zmeniť obrázok na pozícii truhly.
 
-Na tento prípad slúži príkaz <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">mset(x,y,sprite)</span>. Jeho parametre sú x-ová a y-ová pozícia **na mape** a číslo obrázku, na ktorý sa má zmeniť. X-ová a y-ová pozícia sa dá zistiť v mapovom editore ako koorinácie na spodnej červenej lište.
+Na tento prípad slúži príkaz <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">mset(x,y,sprite)</span>. Jeho parametre sú x-ová a y-ová pozícia <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">na mape 🌍</span> a číslo obrázku, na ktorý sa má zmeniť. X-ová a y-ová pozícia sa dá zistiť v mapovom editore ako koorinácie na spodnej červenej lište.
 
 > **🔰 Úloha:** Vytvor podobnú animáciu aj pre otváranie dverí.
 
