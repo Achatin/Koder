@@ -16,6 +16,9 @@
           fontFamily: {
             'poppins': ['Poppins', 'sans-serif'] 
           },
+          gridTemplateColumns: {
+            'fluid': 'repeat(auto-fit, minmax(8rem, 1fr))',
+          }
         }
       }
     }
@@ -23,6 +26,8 @@
 
   
   <script src="https://kit.fontawesome.com/29b25fbda6.js" crossorigin="anonymous"></script>
+
+  <script defer language="javascript" type="text/javascript"  src="https://Spawn.codes/js/lock.js"></script>
 
   
   <meta name="description" content="Kto je Spawn.codes. Spoznajte lektorov." />
@@ -61,10 +66,15 @@
       </a>
     </div>
 
-    <ul id="nav-menu" class="flex w-auto mt-0 space-x-2">
+    <ul id="nav-menu" class="flex w-auto mt-0 space-x-5">
       
       <li>
         <a href="https://Spawn.codes/o-nas/" class="hover:text-blue-300">O nás</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/ucebnica/" class="hover:text-blue-300">Učebnica</a>
       </li>
       
       
@@ -83,19 +93,43 @@
   </div>
 
   <h1 class="font-bold text-3xl text-center text-white">O nás</h1>
-  <p>Spawn.codes je start-up projekt dvoch študentov vysokej školy. Projekt vznikol v roku 2022 a je momentálne veľmi mladý, ale je plný šikovných a ambicióznych lektorov. Našim cieľom je naučiť mladých ľudí orientovať sa vo svete kódu. Chceme vzbudiť povedomie, že programovanie nie je zložité a predstaviť množstvo zaujímavých odborov a odvetví informatiky.</p>
-<h2 id="spoznajte-našich-lektorov">Spoznajte našich lektorov</h2>
-<figure class="w-48 h-48 rounded-full bg-green-100 float-left mr-20 mb-2 p-6"><img src="https://Spawn.codes/simon.png"/>
-</figure>
 
-<h3 id="šimon">Šimon</h3>
-<p>Šimon má 20 rokov a je zakladateľom Spawn.codes. Vo svojom voľnom čase si neustále vymýšľa a pracuje na projektoch. Od vytvárania hier, cez strojové učenie až po webstránky&hellip; má široké skúsenosti s novinkami digitálneho sveta. Momentálne sa venuje fungovaniu a lektorovaniu na Spawn.codes.</p>
-<figure class="w-48 h-48 rounded-full bg-blue-100 float-right ml-20 mb-2 p-6"><img src="https://Spawn.codes/monika.png"/>
-</figure>
+  <p class="font-light text-justify text-gray-300">
+    <span class="font-bold">Spawn.codes</span>
+    je
+    <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">start-up projekt 🌠</span>
+    dvoch študentov vysokej školy. Cieľom je mladým ľuďom ukázať
+    <span class="font-bold">moderné využitie</span>
+    programovacích zručností. Našimi kurzami chceme ponúknuť
+    <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">vedomosti 🧠</span>
+    , ktoré sa na bežných školách neučia. A to aj vďaka tomu, že naši mladí lektori majú k záujmom detí najbližšie. Chceme vzbudiť povedomie, že
+    <span class="font-bold">programovanie nie je zložité</span>
+    a predstaviť množstvo zaujímavých odborov a odvetví informatiky.
+  </p>
 
-<h3 id="monika">Monika</h3>
-<p>Monika má 20 rokov a je pionierka meta-programovania. Momentálne pracuje v medzinárodnej spoločnosti na vývoji virtuálnej reality. Má skúsenosti s programovaním vo viacerých jazykoch, ale jej odbor sú webové technológie a spomínaná virtuálna realita.</p>
+  <h2>Spoznajte našich lektorov</h2>
 
+  <img src="https://Spawn.codes/simon.png" class="w-48 h-48 rounded-full bg-green-100 float-left mr-20 mb-2 p-6" />
+
+  <h3>Šimon</h3>
+  <p class="font-light text-justify text-gray-300">
+    Šimon má 20 rokov a je
+    <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">zakladateľom 🧱</span>
+    Spawn.codes. Najradšej pracuje na tvorivých projektoch ako vývoj hier, webstránky, ale aj umelá inteligencia. Má široké 
+    <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">skúsenosti 🧠</span>
+    s novinkami digitálneho sveta. Momentálne sa venuje fungovaniu a lektorovaniu na Spawn.codes.
+  </p>
+
+  <img src="https://Spawn.codes/monika.png" class="w-48 h-48 rounded-full bg-blue-100 float-right ml-20 mb-2 p-6" />
+
+  <h3>Monika</h3>
+  <p class="font-light text-justify text-gray-300">
+    Monika má 20 rokov a je pionierka 
+    <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">meta-programovania 🧊</span>
+    . Momentálne pracuje v medzinárodnej spoločnosti na vývoji virtuálnej reality. Má skúsenosti s programovaním vo viacerých jazykoch, ale jej odbor sú webové technológie a spomínaná virtuálna realita.
+  </p>
+
+  
 </article>
 
     </main><footer class="w-full text-center p-4 text-xs text-gray-400">

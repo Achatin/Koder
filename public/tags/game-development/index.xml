@@ -7,6 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://Spawn.codes/tags/game-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>🎮 Lekcia I.</title>
+      <link>https://Spawn.codes/ucebnica/lekcia1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/ucebnica/lekcia1/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Vitaj na kurze vývoja hier!&lt;/strong&gt; 👋&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🎮 Lekcia II.</title>
+      <link>https://Spawn.codes/ucebnica/lekcia2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/ucebnica/lekcia2/</guid>
+      <description>Vitaj naspäť! 🤙
+Na dnešnej lekcii budeme pokračovať v našej rozpracovanej hre - Pet Dino 🐲. V tejto hre máme implementované už všetky podstatné veci, vďaka tomu môže byť celá hodina venovaná konceptu kolízií.
+Kolízie Kolízie (v preklade zrážky) sú blízke interakcie 👈 medzi dvoma objektami hry. V hrách sa bude zrážať najčastejšie hráč s predmetom. Príkladom takýchto kolízií je napríklad zbieranie Coins alebo vytvorenie stien, cez ktoré sa nedá prechádzať.</description>
+    </item>
+    
+    <item>
+      <title>🎮 Lekcia III.</title>
+      <link>https://Spawn.codes/ucebnica/lekcia3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/ucebnica/lekcia3/</guid>
+      <description>Vitaj naspäť! 🤙
+Na dnešnej lekcii budeme pokračovať v našej rozpracovanej hre - Pet Dino 🐲. V tejto hre máme implementované už všetky podstatné veci, vďaka tomu môže byť celá hodina venovaná konceptu kolízií.</description>
+    </item>
+    
+    <item>
       <title>🎮 Vývoj Hier</title>
       <link>https://Spawn.codes/kurzy/vyvoj-hier/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

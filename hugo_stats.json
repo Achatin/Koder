@@ -294,6 +294,7 @@
       "detaily",
       "flags",
       "funkcia-collision",
+      "funkcie",
       "herná-grafika",
       "hudba",
       "kolízia-s-pokladom",
@@ -305,14 +306,19 @@
       "mini-animácia",
       "nav-menu",
       "player--dino",
+      "podmienky",
       "pohyb",
+      "premenné",
       "princíp-kolízií",
       "príprava-hry",
       "sfx",
       "sprites",
+      "spritesheet",
       "spustenie-hry",
+      "tabuľky",
       "úvod",
-      "čo-sa-naučíš"
+      "čo-sa-naučíš",
+      "špeciálne-funkcie"
     ]
   }
 }

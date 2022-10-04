@@ -22,8 +22,7 @@
       <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://Spawn.codes/o-nas/</guid>
-      <description>Spawn.codes je start-up projekt dvoch študentov vysokej školy. Projekt vznikol v roku 2022 a je momentálne veľmi mladý, ale je plný šikovných a ambicióznych lektorov. Našim cieľom je naučiť mladých ľudí orientovať sa vo svete kódu. Chceme vzbudiť povedomie, že programovanie nie je zložité a predstaviť množstvo zaujímavých odborov a odvetví informatiky.
-Spoznajte našich lektorov Šimon Šimon má 20 rokov a je zakladateľom Spawn.codes. Vo svojom voľnom čase si neustále vymýšľa a pracuje na projektoch.</description>
+      <description></description>
     </item>
     
     <item>
@@ -43,9 +42,39 @@ V prípade akciového kurzu zadarmo alebo výhry v súťaži je taktiež potrebn
       <pubDate>Wed, 31 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://Spawn.codes/free/</guid>
-      <description>Vitajte na prihlásení na Úvodný Kurz. Tešíme sa, že Vás kurz zdarma zaujal. Budeme rádi, keď sa v sobotu 24.9. o 15:00 uvidíme na Discorde.
+      <description>Vitajte na prihlásení na Úvodný Kurz. Tešíme sa, že Vás kurz zdarma zaujal. Budeme radi, keď sa v sobotu 24.9. o 15:00 uvidíme na Discorde.
 Pre prihlásenie na kurz stačí vyplniť formulár nižšie. O bližších informáciách o danom kurze Vás budeme informovať e-mailom, prípadne telefonicky.
 V prípade nejakých otázok nás pokojne kontaktujte e-mailom.</description>
+    </item>
+    
+    <item>
+      <title>🎮 Lekcia I.</title>
+      <link>https://Spawn.codes/ucebnica/lekcia1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/ucebnica/lekcia1/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Vitaj na kurze vývoja hier!&lt;/strong&gt; 👋&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🎮 Lekcia II.</title>
+      <link>https://Spawn.codes/ucebnica/lekcia2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/ucebnica/lekcia2/</guid>
+      <description>Vitaj naspäť! 🤙
+Na dnešnej lekcii budeme pokračovať v našej rozpracovanej hre - Pet Dino 🐲. V tejto hre máme implementované už všetky podstatné veci, vďaka tomu môže byť celá hodina venovaná konceptu kolízií.
+Kolízie Kolízie (v preklade zrážky) sú blízke interakcie 👈 medzi dvoma objektami hry. V hrách sa bude zrážať najčastejšie hráč s predmetom. Príkladom takýchto kolízií je napríklad zbieranie Coins alebo vytvorenie stien, cez ktoré sa nedá prechádzať.</description>
+    </item>
+    
+    <item>
+      <title>🎮 Lekcia III.</title>
+      <link>https://Spawn.codes/ucebnica/lekcia3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/ucebnica/lekcia3/</guid>
+      <description>Vitaj naspäť! 🤙
+Na dnešnej lekcii budeme pokračovať v našej rozpracovanej hre - Pet Dino 🐲. V tejto hre máme implementované už všetky podstatné veci, vďaka tomu môže byť celá hodina venovaná konceptu kolízií.</description>
     </item>
     
     <item>

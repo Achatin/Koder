@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    🎮 Lekcia II. - Spawn.codes
+  </title>
+
+  
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'] 
+          },
+          gridTemplateColumns: {
+            'fluid': 'repeat(auto-fit, minmax(8rem, 1fr))',
+          }
+        }
+      }
+    }
+  </script>
+
+  
+  <script src="https://kit.fontawesome.com/29b25fbda6.js" crossorigin="anonymous"></script>
+
+  <script defer language="javascript" type="text/javascript"  src="https://Spawn.codes/js/lock.js"></script>
+
+  
+  <meta name="description" content="Programovanie hier pre deti - Spawn.codes" />
+  
+  <meta name="author" content="Spawn.codes" />
+  <meta name="generator" content="Hugo 0.101.0" />
+
+</head>
+
+  <body class="flex flex-col min-h-screen bg-slate-900 text-slate-100 transition-colors duration-500 body-font font-poppins"><header class="w-full px-4 pt-4 max-w-5xl mx-auto">
+  <nav class="flex items-center justify-between flex-wrap">
+    <div class="flex gap-2 items-center">
+      
+      <a href="mailto:spawn.code@proton.me" aria-label="EMail">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="4" />
+          <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
+        </svg>
+      </a>
+      
+      <a href="https://Spawn.codes/" class="flex items-center font-bold">
+        Spawn.codes
+      </a>
+    </div>
+
+    <ul id="nav-menu" class="flex w-auto mt-0 space-x-5">
+      
+      <li>
+        <a href="https://Spawn.codes/o-nas/" class="hover:text-blue-300">O nás</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/ucebnica/" class="hover:text-blue-300">Učebnica</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/kontakt/" class="hover:text-blue-300">Kontakt</a>
+      </li>
+      
+    </ul>
+  </nav>
+</header>
+<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-8 sm:mt-16">
+<article class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-invert">
+  <h1>🎮 Lekcia II.</h1>
+  <p><strong>Vitaj naspäť! 🤙</strong></p>
+<p>Na dnešnej lekcii budeme pokračovať v našej rozpracovanej hre - <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Pet Dino 🐲</span>. V tejto hre máme implementované už všetky podstatné veci, vďaka tomu môže byť celá hodina venovaná konceptu <strong>kolízií</strong>.</p>
+<figure class="float-right ml-16 max-w-sm"><img src="https://Spawn.codes/vyvoj-hier/lekcia2/solid.gif"/>
+</figure>
+
+<h2 id="kolízie">Kolízie</h2>
+<p>Kolízie (v preklade <em>zrážky</em>) sú blízke <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">interakcie 👈</span> medzi dvoma objektami hry. V hrách sa bude zrážať najčastejšie hráč s predmetom. Príkladom takýchto kolízií je napríklad zbieranie <em>Coins</em> alebo vytvorenie stien, cez ktoré sa nedá prechádzať. Ty si dnes vyskúšaš oba tieto typy kolízií.</p>
+<h2 id="sprites">Sprites</h2>
+<p>Na začiatok si vytvor jednoduchú <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">hernú grafiku 🎨</span>. Jeden obrázok bude pre interaktívny predmet, v mojom prípade truhla s pokladom, a druhý obrázok bude pre solídny objekt, napr. tehlová stena.
+<figure class="float-right ml-16 max-w-sm"><img src="https://Spawn.codes/vyvoj-hier/lekcia2/brick.png"/>
+</figure>
+
+<figure class="float-left mr-16 max-w-sm"><img src="https://Spawn.codes/vyvoj-hier/lekcia2/chest.png"/>
+</figure>
+</p>
+<figure class="clear-both"><img src=""/>
+</figure>
+
+<figure class="float-right ml-16 max-w-xs"><img src="https://Spawn.codes/vyvoj-hier/lekcia2/flags.png"/>
+</figure>
+
+<h2 id="flags">Flags</h2>
+<p>V Pico-8 existuje koncept, kedy si sprites vieme označiť 8 rôznymi <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">vlajkami 🚩</span>. Tieto vlajky slúžia hlavne na účely kolízií. My si označíme náš solídny objekt (stenu) vlajkou 0 - prvou zľava. Interaktívny predmet označíme vlajkou 1 (oranžová).</p>
+<h2 id="princíp-kolízií">Princíp kolízií</h2>
+<p>Princíp kolízií v hrách je nasledovný: <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">ak sa hráč dotkne svojim pixelom pixelu iného objektu s kolíziami, nastane interakcia 👈</span>. Takáto interakcia môže byť napr. zahratie zvučky, otvorenie truhly, zmiznutie mince alebo nemožnosť ísť ďalej (pri stenách).</p>
+<p>Vlajky určujú, ktoré sprites vyvolajú kolíziu. My iba skontrolujeme, či sa obrázok nášho hráča neprekrýva s obrázkom s vlajkou. To spravíme tak, že budeme kontrolovať pozície 4 pixelov na rohoch obrázku a budeme ich porovnávať s pozíciami obrázku s vlajkou. Znie to zložitejšie, ako to v skutočnosti je, pretože Pico-8 má presne na tento prípad špeciálne príkazy.</p>
+<h2 id="funkcia-collision">Funkcia collision()</h2>
+<p>Funkcie slúžia na vytváranie <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">vlastných príkazov 🔧</span>. Ty si vytvoríš funkciu <strong>collision()</strong>, ktorá bude kontrolovať, či sa hráč zrazil s predmetom s vlajkou.</p>
+<p>Funkcia má parameter flag, ktorý bude číslo vlajky - 0 pre solídny objekt, 1 pre interaktívny predmet.</p>
+<p>Budeš potrebovať 2 nové príkazy:</p>
+<ul>
+<li><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">fget()</span> - skontroluje, či sa na obrázku nachádza vlajka</li>
+<li><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">mget()</span> - vráti obrázok z určitej pozície na mape</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#ff79c6">function</span> <span style="color:#50fa7b">collision</span>(flag)
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">if</span> fget(mget(player.x<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>, player.y<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>), flag)
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">or</span> fget(mget((player.x<span style="color:#ff79c6">+</span><span style="color:#bd93f9">8</span>)<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>, player.y<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>), flag)
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">or</span> fget(mget(player.x<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>, (player.y<span style="color:#ff79c6">+</span><span style="color:#bd93f9">8</span>)<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>), flag)
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">or</span> fget(mget((player.x<span style="color:#ff79c6">+</span><span style="color:#bd93f9">8</span>)<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>, (player.y<span style="color:#ff79c6">+</span><span style="color:#bd93f9">8</span>)<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>), flag)
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">return</span> <span style="color:#ff79c6">true</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">end</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">return</span> <span style="color:#ff79c6">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">end</span>
+</span></span></code></pre></div><p>Všimni si, že kontrolujeme všetky 4 rohy obrázku - pravý aj ľavý, horný aj dolný. Tieto body nám na správnu kolíziu postačia.</p>
+<p>Ak dôjde ku zrážke, funkcia vráti (return) TRUE. V opačnom prípade vždy vráti FALSE. To potom môžeme využiť v podmienke, napr.:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#6272a4">--podmienka</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> collision(<span style="color:#bd93f9">0</span>) <span style="color:#ff79c6">==</span> <span style="color:#ff79c6">true</span> <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">--interakcia</span>
+</span></span><span style="display:flex;"><span>    player.sprite<span style="color:#ff79c6">=</span><span style="color:#bd93f9">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">end</span>
+</span></span></code></pre></div><h2 id="kolízia-s-pokladom">Kolízia s pokladom</h2>
+<figure class="float-right ml-16 max-w-xs"><img src="https://Spawn.codes/vyvoj-hier/lekcia2/open-chest.gif"/>
+</figure>
+
+<p>Funkciu <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">collision()</span> môžeš rovno použiť pri kolízii s pokladom. Do špeciálnej funkcie <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">_update()</span>, ktorá pravidelne kontroluje stav hry, pridaj podmienku - ak dôjde ku kolízii s interaktívnym predmetom, potom napr. zahraj zvučku.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#6272a4">--ak dôjde ku kolízii s interaktívným predmetom</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> collision(<span style="color:#bd93f9">1</span>) <span style="color:#ff79c6">==</span> <span style="color:#ff79c6">true</span> <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#6272a4">--môžeš zahrať zvučku</span>
+</span></span><span style="display:flex;"><span>	sfx(<span style="color:#bd93f9">1</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#6272a4">--alebo zmeniť sprite</span>
+</span></span><span style="display:flex;"><span>	mset(x,y,sprite)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">end</span>
+</span></span></code></pre></div><p>Všimni si, že ako parameter funkcie sme dali 1, pretože chceme skontrolovať kolízie pre predmety s vlajkou 1.</p>
+<figure class="float-right ml-16 max-w-xs"><img src="https://Spawn.codes/vyvoj-hier/lekcia2/sfx.png"/>
+</figure>
+
+<h2 id="sfx">SFX</h2>
+<p>Special Effects je v Pico-8 spôsob ako zahrať krátku <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">zvučku 🎺</span>. Slúži na to príkaz <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">sfx()</span>.</p>
+<p>Najprv si vytvor zvučku. Stačí iba jednoduché &ldquo;ča-čing&rdquo;. Je však dôležité si zapamätať číslo skladby. U mňa je to skladba <em>01</em>. Po vytvorení stačí použiť spomenutý príkaz a do zátvorky napísať číslo skladby.</p>
+<p>Rozdiel medzi príkazmi <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">sfx()</span> a <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">music()</span> je, že music hrá celý track, ktorý sa môže skladať s viacero zvučiek. Sfx je iba jediná zvučka.</p>
+<figure class="clear-both"><img src=""/>
+</figure>
+
+<figure class="float-right ml-16 max-w-xs"><img src="https://Spawn.codes/vyvoj-hier/lekcia2/open-chest.png"/>
+</figure>
+
+<h2 id="mini-animácia">Mini-animácia</h2>
+<p>Pri kolízií s truhlou vieme pridať aj malú animáciu, kedy sa truhla otvorí. Stačí len zmeniť obrázok na pozícii truhly.</p>
+<p>Na tento prípad slúži príkaz <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">mset(x,y,sprite)</span>. Jeho parametre sú x-ová a y-ová pozícia <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">na mape 🌍</span> a číslo obrázku, na ktorý sa má zmeniť. X-ová a y-ová pozícia sa dá zistiť v mapovom editore ako koorinácie na spodnej červenej lište.</p>
+<blockquote>
+<p><strong>🔰 Úloha:</strong> Vytvor podobnú animáciu aj pre otváranie dverí.</p>
+</blockquote>
+<figure class="clear-both"><img src=""/>
+</figure>
+
+<figure class="float-right ml-16 max-w-xs"><img src="https://Spawn.codes/vyvoj-hier/lekcia2/solid.gif"/>
+</figure>
+
+<h2 id="kolízia-so-stenou">Kolízia so stenou</h2>
+<p>Pri kolízii so stenou chceš, aby hráč nemohol prechádzať stenami. To znamená, že mu musíš dovoliť pohyb iba keď nie je v kolízii so stenou.</p>
+<p>V programe pri pohybe teda stačí pridať do každej podmienky <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">or collision(0)</span>.</p>
+<p>Operátor <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">or 💁‍♀️</span> (alebo) robí to, že podmienka bude pravdivá vtedy, keď iba jeden výrok bude pravdivý. To znamená, že keď sa drží tlačítko na pohyb alebo keď dochádza ku kolízii. Dôležité je, že keď sú oba výroky pravdivé, pohyb je nemožný.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#ff79c6">if</span> btn(⬆️) <span style="color:#ff79c6">or</span> collision(<span style="color:#bd93f9">0</span>) <span style="color:#ff79c6">then</span> player.y <span style="color:#ff79c6">-=</span> player.speed <span style="color:#ff79c6">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> btn(⬇️) <span style="color:#ff79c6">or</span> collision(<span style="color:#bd93f9">0</span>) <span style="color:#ff79c6">then</span> player.y <span style="color:#ff79c6">+=</span> player.speed <span style="color:#ff79c6">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> btn(⬅️) <span style="color:#ff79c6">or</span> collision(<span style="color:#bd93f9">0</span>) <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>	player.x <span style="color:#ff79c6">-=</span> player.speed
+</span></span><span style="display:flex;"><span>	player.flp <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> btn(➡️) <span style="color:#ff79c6">or</span> collision(<span style="color:#bd93f9">0</span>) <span style="color:#ff79c6">then</span> 
+</span></span><span style="display:flex;"><span>	player.x <span style="color:#ff79c6">+=</span> player.speed
+</span></span><span style="display:flex;"><span>	player.flp <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">end</span>
+</span></span></code></pre></div><blockquote>
+<p><strong>🔰 Úloha:</strong> Vytvor aj iné solídne objekty, cez ktoré sa nedá prechádzať. Všimni si, že stačí už len pridať vlajku.</p>
+</blockquote>
+
+
+  
+</article>
+
+    </main><footer class="w-full text-center p-4 text-xs text-gray-400">
+  <p>
+    Copyright © 2022 - Spawn.codes · All rights reserved
+  </p>
+</footer>
+
+</body>
+</html>
