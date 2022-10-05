@@ -9,7 +9,7 @@ tags: ["vývoj-hier", "hry", "game-development", "kurz", "programovanie-hier", "
 
 **Zdravím 👋**
 
-Na dnešnej lekcii začneme pracovať na novej hre - <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Galaxy Rush 🌌</span>. Bude to jednoduchá plaformová hra inšpirovaná hrou <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Celeste</span>. Dnešná lekcia bude venovaná precvičovaniu programovania.
+Na dnešnej lekcii začneme pracovať na novej hre - <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Galaxy Rush 🌌</span>. Bude to jednoduchá plaformová hra inšpirovaná hrou <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Celeste ✨</span>. Dnešná lekcia bude venovaná precvičovaniu programovania.
 
 ## Spritesheet
 Spritesheet je hárok hernej grafiky. Je to obrázok, ktorý pozostáva z množstva menších obrázkov, ktoré sú oddelené vždy rovnako podľa nejakej mriežky.
