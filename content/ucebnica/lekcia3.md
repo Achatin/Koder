@@ -18,7 +18,7 @@ V Pico-8 sa obrázky v spritesheet oddeľujú každých 8 pixelov. Sú výhodné
 
 {{< figure src="/vyvoj-hier/lekcia3/spritesheet.png" class="float-right ml-16 max-w-md">}}
 
-**Spritesheets sa do Pico-8 vkladajú následovne:**
+**Spritesheets sa do Pico-8 vkladajú nasledovne:**
 1. Klikni pravým tlačidlom myši na malý obrázok napravo
 2. Uložiť obrázok ako...
 3. Vyhľadaj priečinok %appdata%
@@ -82,11 +82,11 @@ Podmienky slúžia na skontrolovanie <span class="font-semibold text-lg text-sla
 - if
 - kontrola stavu
 - then
-- vnútro
+- telo
 - end
 
 ```Lua
---ak stlačíš šípku hore, hráčova pozícia sa zmení
+--ak stlačíš šípku vpravo, hráčova pozícia sa zmení
 if btn(➡️) then
     player.x += 1
     player.flp = false
