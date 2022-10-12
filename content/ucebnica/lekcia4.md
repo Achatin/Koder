@@ -18,9 +18,9 @@ Ako prvé si potrebujeme pridať do tabuľky "player" zopár nových premenných
 gravity = 0.2
 player = {
     --rychlost pohybu sprava dolava
-    spd=2,
+    ➡️spd=0,
     --rychlost pohybu zhora dole
-    boost=0,
+    ⬇️spd=0,
     --rychlost skoku
     jmpspd=3.4,
     --kontrola skoku
@@ -35,8 +35,8 @@ Gravitácia v hrách funguje na jednoduchom princípe. Tak ako aj na Zemi, potre
 
 ```Lua
 --gravity
-player.boost += gravity
-player.y += player.boost
+player.➡️spd += gravity
+player.y += player.➡️spd
 player.jmp = false
 ```
 
@@ -47,18 +47,18 @@ Vytvor kolíziu s <span class="font-semibold text-lg text-slate-800 text-center 
 1. Nastav na všetky steny 0-tú červenú vlajku
 2. Príkazmi <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">fget()</span> a <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">mget()</span> skontroluj, či došlo ku kolízii hráča so stenou
 3. Ak dôjde ku kolízii, polož hráča na platformu - <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">flr((player.y)/8)*8</span>
-4. Zruš jeho padanie - y-ová rýchlosť - <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">player.boost = 0</span>
+4. Zruš jeho padanie - y-ová rýchlosť - <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">player.➡️spd = 0</span>
 5. Opäť mu dovoľ skákanie mu skákanie - <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">player.jmp=true</span>
 
 ```Lua
 --ak padame
-if player.boost >= 0 then
+if player.➡️spd >= 0 then
     --najdi solidnu bunku
     if fget(mget((player.x+4)/8,(player.y+8)/8),0) then
         --poloz hraca na platfomu
         player.y = flr((player.y)/8)*8
         --zrus padanie
-        player.boost = 0
+        player.➡️spd = 0
         --dovol skakanie
         player.jmp=true
     end
@@ -90,7 +90,7 @@ V podmienke znížime hráčovu y-ovú rýchlosť o hodnotu <span class="font-mo
 ```Lua
 --jump
 if btn(⬆️) and player.jmp == true then
-    player.boost -= player.jmpspd
+    player.➡️spd -= player.jmpspd
 end
 ```
 
@@ -104,13 +104,13 @@ Takmer rovnako ako kolíziu s platformou naprogramujeme aj kolíziu so stropom.
 
 ```Lua
 --ak stupame
-if player.boost <= 0 then
+if player.➡️spd <= 0 then
     --najdi solidnu bunku
     if fget(mget((player.x+4)/8, player.y/8),0) then
         --poloz hraca pod platformu
         player.y = flr((player.y+8)/8)*8
         --zrus stupanie
-        player.boost = 0
+        player.➡️spd = 0
     end
 end
 ```
