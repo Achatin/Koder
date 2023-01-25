@@ -1,0 +1,24 @@
+{{ define "main" }}
+<article class="max-w-5xl mx-auto px-4">
+
+  <div class="w-48 h-48 rounded-full mb-6 bg-gray-800 border border-gray-700 mx-auto">
+    <img src="{{ .Params.image }}" class="w-full px-auto py-auto h-full object-contain transition ease-in-out delay-150 hover:scale-110" />
+  </div>
+
+  <h1 class="text-5xl font-bold mb-16 text-center">Učebnice</h1>
+
+  <div class="grid grid-cols-1 gap-y-10 gap-x-16 mt-8 place-items-center">
+    <a class="flex justify-center rounded-xl bg-gray-800 border border-gray-700 shadow-md w-full py-12 hover:bg-gray-700"
+       href="../python/">
+      <h2 class="font-bold text-3xl text-gray-200">Python</h2>
+    </a>
+
+     <a class="flex justify-center rounded-xl bg-gray-800 border border-gray-700 shadow-md w-full py-12 hover:bg-gray-700"
+       href="../vyvoj-hier/">
+      <h2 class="font-bold text-3xl text-gray-200">Vývoj hier</h2>
+    </a>
+
+  </div>
+
+</article>
+{{ end }}

@@ -1,0 +1,183 @@
+{{ define "main" }}
+<article class="max-w-5xl mx-auto px-4">
+
+  <div class="w-48 h-48 rounded-full mb-6 bg-gray-800 border border-gray-700 mx-auto">
+    <img src="{{ .Params.image }}" class="w-full px-auto py-auto h-full object-contain transition ease-in-out delay-150 hover:scale-110" />
+  </div>
+
+  <h2 class="text-2xl font-semibold text-center my-3">Učebnica 📘</h2>
+  <h1 class="text-5xl font-bold mb-6 text-center">Vývoj Hier</h1>
+
+  <div class="md:flex justify-between">
+    <div>
+      <h2 class="text-xl font-semibold mt-6 mb-3">Progres 🔥</h2>
+      <div class="flex">
+        <i class="fa-solid fa-fire fa-xl mr-2 py-3 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+        <i class="fa-solid fa-fire fa-xl mr-2 py-3 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+        <i class="fa-solid fa-fire fa-xl mr-2 py-3 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+        <i class="fa-solid fa-fire fa-xl mr-2 py-3 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+        <i class="fa-solid fa-fire fa-xl mr-2 py-3 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+        <i class="fa-solid fa-fire fa-xl mr-2 py-3 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+        <i class="fa-solid fa-fire fa-xl mr-2 py-3 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+        <i class="fa-solid fa-fire fa-xl mr-2 py-3 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+        <i class="fa-solid fa-fire fa-xl mr-2 py-3 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+        <i class="fa-solid fa-fire fa-beat fa-xl mr-2 py-3 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+      </div>
+    </div>
+    <div>
+      <h2 class="text-xl font-semibold mt-6 mb-2">Najbližšia lekcia</h2>
+      <div class="flex">
+        <p class="md:text-center font-semibold text-gray-500 text-lg mr-4">23. 11. 2022</p>
+        <p class="md:text-center font-semibold text-gray-500 text-lg">16:30</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-3xl font-bold mt-10 mb-6">Lekcie 👨‍🎓</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-16 mt-8 place-items-center">
+    <a class="flex justify-center rounded-md bg-gray-800 border border-gray-700 shadow-md w-full py-2 hover:bg-gray-700"
+       href="lekcia1">
+      <i class="fa-solid fa-gamepad my-auto mr-3 text-gray-200"></i>
+      <p class="font-semibold text-gray-200">Lekcia 1</p>
+    </a>
+
+    <button onclick="lock('./lekcia2')" class="flex justify-center rounded-md bg-gray-800 border border-gray-700 shadow-md w-full py-2 hover:bg-gray-700">
+      <i class="fa-solid fa-gamepad my-auto mr-3 text-gray-200"></i>
+      <p class="font-semibold text-gray-200">Lekcia 2</p>
+    </button>
+
+    <button onclick="lock('./lekcia3')" class="flex justify-center rounded-md bg-gray-800 border border-gray-700 shadow-md w-full py-2 hover:bg-gray-700">
+      <i class="fa-solid fa-gamepad my-auto mr-3 text-gray-200"></i>
+      <p class="font-semibold text-gray-200">Lekcia 3</p>
+    </button>
+
+    <button onclick="lock('./lekcia4')" class="flex justify-center rounded-md bg-gray-800 border border-gray-700 shadow-md w-full py-2 hover:bg-gray-700">
+      <i class="fa-solid fa-gamepad my-auto mr-3 text-gray-200"></i>
+      <p class="font-semibold text-gray-200">Lekcia 4</p>
+    </button>
+
+    <button onclick="lock('./lekcia5')" class="flex justify-center rounded-md bg-gray-800 border border-gray-700 shadow-md w-full py-2 hover:bg-gray-700">
+      <i class="fa-solid fa-gamepad my-auto mr-3 text-gray-200"></i>
+      <p class="font-semibold text-gray-200">Lekcia 5</p>
+    </button>
+
+    <button onclick="lock('./lekcia6')" class="flex justify-center rounded-md bg-gray-800 border border-gray-700 shadow-md w-full py-2 hover:bg-gray-700">
+      <i class="fa-solid fa-gamepad my-auto mr-3 text-gray-200"></i>
+      <p class="font-semibold text-gray-200">Lekcia 6</p>
+    </button>
+
+    <button onclick="lock('./lekcia7')" class="flex justify-center rounded-md bg-gray-800 border border-gray-700 shadow-md w-full py-2 hover:bg-gray-700">
+      <i class="fa-solid fa-gamepad my-auto mr-3 text-gray-200"></i>
+      <p class="font-semibold text-gray-200">Lekcia 7</p>
+    </button>
+
+    <button onclick="lock('./lekcia8')" class="flex justify-center rounded-md bg-gray-800 border border-gray-700 shadow-md w-full py-2 hover:bg-gray-700">
+      <i class="fa-solid fa-gamepad my-auto mr-3 text-gray-200"></i>
+      <p class="font-semibold text-gray-200">Lekcia 8</p>
+    </button>
+
+    <button onclick="lock('./lekcia9')" class="flex justify-center rounded-md bg-gray-800 border border-gray-700 shadow-md w-full py-2 hover:bg-gray-700">
+      <i class="fa-solid fa-gamepad my-auto mr-3 text-gray-200"></i>
+      <p class="font-semibold text-gray-200">Lekcia 9</p>
+    </button>
+
+    <button onclick="lock('./lekcia10')" class="flex justify-center rounded-md bg-gray-800 border border-gray-700 shadow-md w-full py-2 hover:bg-gray-700">
+      <i class="fa-solid fa-gamepad my-auto mr-3 text-gray-200"></i>
+      <p class="font-semibold text-gray-200">Lekcia 10</p>
+    </button>
+
+  </div>
+
+  <h2 class="text-3xl font-bold mt-10 mb-6">Achievements ✨</h2>
+
+  <div class="grid grid-cols-fluid gap-4">
+
+    <!--div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-circle-question fa-2xl flex justify-center mb-6 mt-4 text-gray-500"></i>
+      <p class="font-semibold text-md text-center">???</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Vytvor prvú hru</p>
+    </div-->
+
+    <div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-award fa-2xl flex justify-center pb-6 pt-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+      <p class="font-semibold text-md text-center">First Spark</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Vytvor prvú hru</p>
+    </div>
+
+    <!--div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-circle-question fa-2xl flex justify-center mb-6 mt-4 text-gray-500"></i>
+      <p class="font-semibold text-md text-center">???</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Vylepši hru s SFX</p>
+    </div-->
+
+    <div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-music fa-2xl flex justify-center pb-6 pt-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+      <p class="font-semibold text-md text-center">DJ</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Vylepši hru s SFX</p>
+    </div>
+
+    <!--div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-circle-question fa-2xl flex justify-center mb-6 mt-4 text-gray-500"></i>
+      <p class="font-semibold text-md text-center">???</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Vytvor nový level</p>
+    </div-->
+
+    <div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-expand fa-2xl flex justify-center pb-6 pt-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+      <p class="font-semibold text-md text-center">Expand</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Vytvor nový level</p>
+    </div>
+
+    <!--div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-circle-question fa-2xl flex justify-center mb-6 mt-4 text-gray-500"></i>
+      <p class="font-semibold text-md text-center">???</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Nauč sa robiť animácie</p>
+    </div-->
+
+    <div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-meteor fa-2xl flex justify-center pb-6 pt-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+      <p class="font-semibold text-md text-center">Motion</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Nauč sa robiť animácie</p>
+    </div>
+
+    <!--div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-circle-question fa-2xl flex justify-center mb-6 mt-4 text-gray-500"></i>
+      <p class="font-semibold text-md text-center">???</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Zverejni hru na Itch.io</p>
+    </div-->
+
+    <div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-brands fa-itch-io fa-2xl flex justify-center pb-6 pt-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+      <p class="font-semibold text-md text-center">Creator</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Zverejni hru na Itch.io</p>
+    </div>
+
+    <!--div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-circle-question fa-2xl flex justify-center mb-6 mt-4 text-gray-500"></i>
+      <p class="font-semibold text-md text-center">???</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Nadizajnuj vlastnú hru</p>
+    </div-->
+
+    <div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-compass-drafting fa-2xl flex justify-center pb-6 pt-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+      <p class="font-semibold text-md text-center">Architect</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Nadizajnuj vlastnú hru</p>
+    </div>
+
+    <!--div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-circle-question fa-2xl flex justify-center mb-6 mt-4 text-gray-500"></i>
+      <p class="font-semibold text-md text-center">???</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Otestuj svoje skúsenosti</p>
+    </div-->
+
+    <div class="rounded-lg bg-gray-900 border border-gray-800 shadow-md p-4 hover:scale-110">
+      <i class="fa-solid fa-trophy fa-2xl flex justify-center pb-6 pt-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-red-600"></i>
+      <p class="font-semibold text-md text-center">Pro</p>
+      <p class="font-thin text-sm text-center text-gray-500 pt-0.5">Otestuj svoje skúsenosti</p>
+    </div>
+
+  </div>
+
+</article>
+{{ end }}
