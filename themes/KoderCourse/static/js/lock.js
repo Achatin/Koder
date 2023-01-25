@@ -6,3 +6,12 @@ function lock(link) {
       alert("Nesprávne heslo 😨")
     }
 }
+
+function lock_py(link) {
+  let pass = prompt("Zadaj heslo", "");
+  if (pass === "snake") {
+    location.replace(link)
+  } else {
+    alert("Nesprávne heslo 😨")
+  }
+}
