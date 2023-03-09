@@ -144,7 +144,7 @@ else:
 <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">**🔰 Úloha:** Naprogramujte podmienku tak, aby nahradila číslicu za zodpovedajúce emoji. Využite pri tom else if. Príklad: 7 => 7️⃣</span>
 
 ## Logické operátory
-**&& - A zároveň**
+**and - A zároveň**
 Podmienka platí, keď všetky výrazy sú pravdivé.
 
 ```python
@@ -156,7 +156,7 @@ if online == true and playing == false:
     print("Ready to play 🎮")
 ```
 
-**|| - Alebo**
+**or - Alebo**
 Podmienka platí, keď aspoň jeden výraz je pravdivý.
 
 ```python
