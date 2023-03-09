@@ -152,7 +152,7 @@ online = True
 playing = False
 
 # ak je hráč online A ZÁROVEŇ nie je v hre
-if online == true && playing == false:
+if online == true and playing == false:
     print("Ready to play 🎮")
 ```
 
@@ -162,6 +162,6 @@ Podmienka platí, keď aspoň jeden výraz je pravdivý.
 ```python
 pet = "🦊"
 # ak máme peta 🐲 ALEBO 🦊
-if pet == "🐲" || pet == "🦊":
+if pet == "🐲" or pet == "🦊":
     print("Pet used 🔥")
 ```
