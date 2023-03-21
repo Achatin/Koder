@@ -46,7 +46,7 @@ def spawn_hero(name):
 
 <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">**🔰 Úloha:** Vytvor funkciu *open_shop()* s parametrom *coins*, ktorá vypíše obchod s jeho položkami a počet tvojich peňazí.</span>
 
-<span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">**🔰 Úloha:** Vytvor funkciu *spanw_hero()* s parametrami *name, lvl, weapon, atk, hp a spd*, ktorá vypíše hrdinu s jeho vlastnosťami.</span>
+<span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">**🔰 Úloha:** Vytvor funkciu *spawn_hero()* s parametrami *name, lvl, weapon, atk, hp a spd*, ktorá vypíše hrdinu s jeho vlastnosťami.</span>
 
 ## Volanie funkcie
 Volanie funkcie je použitie vytvorenej funkcie. Funkcia sa zavolá napísaním jej mena so zátvorkami, prípadne jej parametrami.
