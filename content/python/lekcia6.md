@@ -27,7 +27,7 @@ for i in range(10):
 Všimnite si, že je <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">jednoduchšie</span> vytvoriť cyklus ako 10x napísať do programu <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">print("SPAM 😈")</span>.
 
 
-<span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">**🔰 Úloha:** Naprogramuj cyklus tak, aby do riadku 5x vypísal "🎉🎈".</span>
+<span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">**🔰 Úloha:** Naprogramuj cyklus tak, aby 5x vypísal "🎉🎈".</span>
 
 ## Cyklus s podmienkou
 Tento špeciálny typ cyklov bude bežať dovtedy, kým platí podmienka. Využíva sa často v
