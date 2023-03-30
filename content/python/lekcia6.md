@@ -17,7 +17,7 @@ Cykly slúžia na opakovanie programových inštrukcií. Kľúčové slovíčko 
 
 - **Riadiaca premenná** - <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">i</span>. Slúži na zapisovanie počtu priebehov cyklu.
 - **Rozsah** - <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">in range(10)</span>. Znamená to, že cyklus prebehne 10x. Teda <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">i</span> nadobudne hodnoty od 0 po 9.
-- **Obsah cyklu** - musí byť **indentovan**, pretože patrí k cyklu. Obsahuje všetko, čo sa má stať počas jedného priebehu cyklu
+- **Obsah cyklu** - musí byť **indentovaný**, pretože patrí k cyklu. Obsahuje všetko, čo sa má stať počas jedného priebehu cyklu
 
 ```python
 for i in range(10):
@@ -46,10 +46,10 @@ fmt.Println("Congratulations! 🎉")
 <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">**🔰 Úloha:** Vytvorte Herný cyklus, v ktorom budete využívať vstupy Hero, Shop a Battle z predošlej hodiny. Cyklus sa bude opakovať pokým vstup nebude Quit.</span>
 
 ## 🔰 Úloha: Combat system
-Navrhnite Combat system pre súboje hrdinov. Postupujte po krokochvýsledky si vždy vyskúšajte.
+Navrhnite Combat system pre súboje hrdinov. Postupujte po krokoch, výsledky si vždy vyskúšajte.
 1. Využite funkciu *spawn_hero()* a vytvorte podobného protivníka
 2. Vytvorte cyklus s podmienkou, ktorý sa bude opakovať pokým funkcia *check_hp()* bude *True*.
-3. Naprogramujte podmienku, ktorá porovná SPD hrdinov je výšší - ten hrdina začína vždy prvý.
+3. Naprogramujte podmienku, ktorá porovná SPD hrdinov je vyšší - ten hrdina začína vždy prvý.
 4. Pri útoku sa odráta toľko HP, koľko má útočník ATK.
 5. Pridajte vypisovanie zostávajúcich životov.
 6. Nakoniec vypíšte "Congratulations, your hero wins! 🏆", pridajte mu 10 💸 coins a
