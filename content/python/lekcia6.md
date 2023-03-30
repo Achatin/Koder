@@ -37,10 +37,10 @@ Herných cykloch, kedy cyklus prebieha dokým hra nie je dohraná - výhra alebo
 guess = -1
 
 # minihra - uhádni číslo
-while guess != 3:
+while guess != "3":
     print("Guess the 🍀Lucky Number: ")
     guess = input()
-fmt.Println("Congratulations! 🎉")
+print("Congratulations! 🎉")
 ```
 
 <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">**🔰 Úloha:** Vytvorte Herný cyklus, v ktorom budete využívať vstupy Hero, Shop a Battle z predošlej hodiny. Cyklus sa bude opakovať pokým vstup nebude Quit.</span>
