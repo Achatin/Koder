@@ -56,7 +56,8 @@ hrdinovom profile. Funkciu potom zavolaj po otvorení darčeku z predošlej hodi
 🧙‍♂️ Wizard, lvl 10
 -----------------
 Weapon: 📘 Spellbook
-Pet: 🦄Stats:
+Pet: 🦄
+Stats:
 🎯 ATK: 30
 💖 HP: 50
 ⚡ SPD: 20
