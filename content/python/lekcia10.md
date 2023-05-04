@@ -12,93 +12,143 @@ tags: ["vývoj-hier", "hry", "game-development", "kurz", "programovanie-hier", "
 Toto je tvoja posledná lekcia. Preto som pripravil niečo iné ako zvyčajne, aby som ukázal aj iné stránky jazyka Python.
 
 
-## Pygame
-Pygame je populárna knižnica na tvorbu počítačových hier. Je to teda jednoduchý <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">game-engine 🎮</span>. Na jeho použitie ti stačia doterajšie znalosti a trochu vysvetliviek.
+## Pygame Zero
+Pygame je populárna knižnica na tvorbu počítačových hier. Pygame Zero je zjednodušená verzia originálu. Je to teda jednoduchý <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">game-engine 🎮</span>. Na jeho použitie ti stačia doterajšie znalosti a trochu vysvetliviek.
 
-## Inštalácia Pygame
+## Inštalácia Pygame Zero
 Pygame sa inštaluje cez nástroj <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">pip</span>. Pip je inštalátor cudzích knižníc na Python. Dokáže nainštalovať akúkoľvek potrebnú knižnicu jedným príkazom:
 
 ```
-pip install pygame
+pip install pgzero
 ```
 
-Ty si však pip musíš najprv nainštalovať. To urobíš týmito príkazmi v termináli:
+⚠️ Ty si však pip musíš najprv nainštalovať. To urobíš týmito príkazmi v termináli:
 
 ```
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
 python3 get-pip.py
 ```
 
-## Hra v Pygame
+## Hra v Pygame Zero
+Aby sme si overili, že inštalácia prebehla úspešne, vyskúšame si spustiť prázdny súbor.
 
-```python
-# importujeme si novu kniznicu
-import pygame
-
-# inicializujeme / nastartujeme pygame
-pygame.init()
-
-# nastavime si velkost obrazovky / rozlisenie
-screen = pygame.display.set_mode((720, 480))
-# herny cas
-clock = pygame.time.Clock()
-FPS = 60 # pocet snimkov za sekundu
-
-# pouzite farby
-BLACK = (0, 0, 0)
-WHITE = (255, 255, 255)
-
-# trieda hraca
-class Player(pygame.sprite.Sprite):
-    def __init__(self):                         # konstruktor (vytvori hraca)
-        super().__init__()
-        self.image = pygame.Surface((32, 32))   # velkost hraca 32x32 px
-        self.image.fill(WHITE)                  # farba hraca
-        self.rect = self.image.get_rect()       # obrazok hraca bude stvorec
-        self.velocity = [0, 0]                  # rychlost hraca (v smere x a y)
-
-    def update(self):                           # funkcia update()
-        self.rect.move_ip(*self.velocity)       # rozpohybuje hraca
-
-
-player = Player()
-running = True
-
-# herny cyklus
-while running:
-    dt = clock.tick(FPS) / 1000
-    screen.fill(BLACK)  # Farba pozadia
-
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
-        elif event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_w:         # ak stlacime klavesu W
-                player.velocity[1] = -200 * dt  # zmenime rychlost
-            elif event.key == pygame.K_s:
-                player.velocity[1] = 200 * dt
-            elif event.key == pygame.K_a:
-                player.velocity[0] = -200 * dt
-            elif event.key == pygame.K_d:
-                player.velocity[0] = 200 * dt
-        elif event.type == pygame.KEYUP:
-            if event.key == pygame.K_w or event.key == pygame.K_s:
-                player.velocity[1] = 0
-            elif event.key == pygame.K_a or event.key == pygame.K_d:
-                player.velocity[0] = 0
-
-    player.update()
-
-    screen.blit(player.image, player.rect)
-    pygame.display.update()
-
-print("Exited the game loop. Game will quit...")
-quit()
+Príkazom:
+```
+pgzrun game.py
 ```
 
-<span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">**🔰 Úloha:** Skús hráčovi zmeniť farbu a zväčšiť jeho sprite. Zrýchli hráčov pohyb.</span>
+### Vykreslenie
 
-<span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">**🔰 Úloha:** Skús do hry vložiť nový červený objekt.</span>
+Ako prvý krok si vykreslíme pozadie hry. Použijeme špeciálnu funkciu <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">draw()</span>, ktorá na to slúži.
 
-**Pygame SNAKE**<br>
-[https://www.edureka.co/blog/snake-game-with-pygame/](https://www.edureka.co/blog/snake-game-with-pygame/)
+```python
+WIDTH = 300
+HEIGHT = 300
+
+def draw():
+    screen.fill((128, 0, 0))
+```
+
+{{< figure src="/python/lekcia10/alien.png" class="float-left mr-16 max-w-xl">}}
+
+Ako ďalší krok si vytvoríme actora 'Alien'. Dáme mu tento obrázok.
+
+{{< figure src="/python/lekcia10/path.png" class="float-right ml-16 max-w-xl">}}
+
+<span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">**🎈 Pomôcka:** Obrázok si môžeš stiahnuť pravým kliknutím a uložením.</span>
+
+Obrázok si ulož do priečinku "images".
+
+```python
+alien = Actor('alien')
+alien.pos = 100, 56
+
+WIDTH = 500
+HEIGHT = alien.height + 20
+
+def draw():
+    screen.clear()
+    alien.draw()
+```
+
+### Pohyb
+
+Na rozpohybovanie aliena môžeš vyskúšať príkaz:
+```python
+alien.topright = 10, 10
+```
+
+Určite si si všimol, že sa niekde pohol. Ten pohyb bol ale instantný a pre nás neviditeľný.
+Preto pridáme špeciálnu funkciu <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">update()</span>, aby sa pohyboval pomaly smerom doprava.
+
+```python
+def update():
+    alien.left += 2
+    # ked vyjde z obrazovku, vrátime ho na zaciatok
+    if alien.left > WIDTH:
+        alien.right = 0
+```
+
+### Klikanie
+Opäť použijeme špeciálnu funkciu <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">on_mouse_down()</span>, ktorá kontroluje klikanie.
+
+```python
+def on_mouse_down(pos):
+    if alien.collidepoint(pos):
+        print("Eek!")
+    else:
+        print("You missed me!")
+```
+
+Teraz si stiahni ďalší obrázok aj zvukovú nahrávku, ktorú použijeme v hre:
+
+ <a href="/python/lekcia10/alien_hurt.png" download>alien_hurt.png</a><br>
+ <a href="/python/lekcia10/eep.wav" download>eep.wav</a>
+
+ Súbory si porozdeľuj do priečinkov nasledovne:
+
+ ```
+.
+├── images/
+│   └── alien.png
+│   └── alien_hurt.png
+├── sounds/
+│   └── eep.wav
+└── game.py
+ ```
+
+Uprav si hru a použi nové súbory.
+
+ ```python
+def on_mouse_down(pos):
+    if alien.collidepoint(pos):
+        sounds.eep.play()
+        alien.image = 'alien_hurt'
+ ```
+
+ Ako si si asi všimol, alien sa po kliknutí zmení na nový obrázok, ale nikdy sa nevráti do pôvodného stavu.
+ Hru si trochu poupravíme.
+
+ ```python
+def on_mouse_down(pos):
+    if alien.collidepoint(pos):
+        set_alien_hurt()
+
+def set_alien_hurt():
+    alien.image = 'alien_hurt'
+    sounds.eep.play()
+
+def set_alien_normal():
+    alien.image = 'alien'
+
+def set_alien_hurt():
+    alien.image = 'alien_hurt'
+    sounds.eep.play()
+    clock.schedule_unique(set_alien_normal, 1.0)
+ ```
+
+<span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">**🔰 Úloha:** Vyskúšaj urobiť hru ťažšiu a aliena zrýchliť.</span>
+
+**Pygame Zero SNAKE**<br>
+[https://simplegametutorials.github.io/pygamezero/snake/](https://simplegametutorials.github.io/pygamezero/snake/)
