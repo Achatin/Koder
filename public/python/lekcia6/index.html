@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    🐍 Lekcia VI. - Spawn.codes
+  </title>
+
+  
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'] 
+          },
+          gridTemplateColumns: {
+            'fluid': 'repeat(auto-fit, minmax(8rem, 1fr))',
+          }
+        }
+      }
+    }
+  </script>
+
+  
+  <script src="https://kit.fontawesome.com/29b25fbda6.js" crossorigin="anonymous"></script>
+
+  <script defer language="javascript" type="text/javascript"  src="https://Spawn.codes/js/lock.js"></script>
+
+  
+  <meta name="description" content="Programovanie hier pre deti - Spawn.codes" />
+  
+  <meta name="author" content="Spawn.codes" />
+  <meta name="generator" content="Hugo 0.102.3" />
+
+</head>
+
+  <body class="flex flex-col min-h-screen bg-slate-900 text-slate-100 transition-colors duration-500 body-font font-poppins"><header class="w-full px-4 pt-4 max-w-5xl mx-auto">
+  <nav class="flex items-center justify-between flex-wrap">
+    <div class="flex gap-2 items-center">
+      
+      <a href="mailto:spawn.code@proton.me" aria-label="EMail">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="4" />
+          <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
+        </svg>
+      </a>
+      
+      <a href="https://Spawn.codes/" class="flex items-center font-bold">
+        Spawn.codes
+      </a>
+    </div>
+
+    <ul id="nav-menu" class="flex w-auto mt-0 space-x-5">
+      
+      <li>
+        <a href="https://Spawn.codes/o-nas/" class="hover:text-blue-300">O nás</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/ucebnice/" class="hover:text-blue-300">Učebnice</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/kontakt/" class="hover:text-blue-300">Kontakt</a>
+      </li>
+      
+    </ul>
+  </nav>
+</header>
+<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-8 sm:mt-16">
+<article class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-invert">
+  <h1>🐍 Lekcia VI.</h1>
+  <p><strong>Vitaj 👋</strong></p>
+<p>Na dnešnej lekcii sa naučíš rôzne použitia cyklov. Naprogramuješ si minihry.</p>
+<h2 id="cykly">Cykly</h2>
+<p>Cykly slúžia na opakovanie programových inštrukcií. Kľúčové slovíčko je <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">for</span>. Ďalej sa skladá z troch častí:</p>
+<ul>
+<li><strong>Riadiaca premenná</strong> - <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">i</span>. Slúži na zapisovanie počtu priebehov cyklu.</li>
+<li><strong>Rozsah</strong> - <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">in range(10)</span>. Znamená to, že cyklus prebehne 10x. Teda <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">i</span> nadobudne hodnoty od 0 po 9.</li>
+<li><strong>Obsah cyklu</strong> - musí byť <strong>indentovaný</strong>, pretože patrí k cyklu. Obsahuje všetko, čo sa má stať počas jedného priebehu cyklu</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">for</span> i <span style="color:#ff79c6">in</span> <span style="color:#8be9fd;font-style:italic">range</span>(<span style="color:#bd93f9">10</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;SPAM 😈&#34;</span>)
+</span></span></code></pre></div><p>Všimnite si, že je <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">jednoduchšie</span> vytvoriť cyklus ako 10x napísať do programu <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">print(&ldquo;SPAM 😈&rdquo;)</span>.</p>
+<p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🔰 Úloha:</strong> Naprogramuj cyklus tak, aby 5x vypísal &ldquo;🎉🎈&rdquo;.</span></p>
+<h2 id="cyklus-s-podmienkou">Cyklus s podmienkou</h2>
+<p>Tento špeciálny typ cyklov bude bežať dovtedy, kým platí podmienka. Využíva sa často v
+Herných cykloch, kedy cyklus prebieha dokým hra nie je dohraná - výhra alebo prehra.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>guess <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">-</span><span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># minihra - uhádni číslo</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">while</span> guess <span style="color:#ff79c6">!=</span> <span style="color:#f1fa8c">&#34;3&#34;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;Guess the 🍀Lucky Number: &#34;</span>)
+</span></span><span style="display:flex;"><span>    guess <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">input</span>()
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;Congratulations! 🎉&#34;</span>)
+</span></span></code></pre></div><p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🔰 Úloha:</strong> Vytvorte Herný cyklus, v ktorom budete využívať vstupy Hero, Shop a Battle z predošlej hodiny. Cyklus sa bude opakovať pokým vstup nebude Quit.</span></p>
+<h2 id="-úloha-combat-system">🔰 Úloha: Combat system</h2>
+<p>Navrhnite Combat system pre súboje hrdinov. Postupujte po krokoch, výsledky si vždy vyskúšajte.</p>
+<ol>
+<li>Využite funkciu <em>spawn_hero()</em> a vytvorte podobného protivníka</li>
+<li>Vytvorte cyklus s podmienkou, ktorý sa bude opakovať pokým funkcia <em>check_hp()</em> bude <em>True</em>.</li>
+<li>Naprogramujte podmienku, ktorá porovná SPD hrdinov je vyšší - ten hrdina začína vždy prvý.</li>
+<li>Pri útoku sa odráta toľko HP, koľko má útočník ATK.</li>
+<li>Pridajte vypisovanie zostávajúcich životov.</li>
+<li>Nakoniec vypíšte &ldquo;Congratulations, your hero wins! 🏆&rdquo;, pridajte mu 10 💸 coins a
+zvýšte mu level s funkciou <em>level_up()</em>.</span></li>
+</ol>
+<h2 id="vnorené-cykly">Vnorené cykly</h2>
+<p>V tele nejakého cyklu sa môže nachádzať ďalší cyklus - <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">cyklus v cykle</span>. Týmto spôsobom pri každom opakovaní vrchného cyklu prebehne celý vnútorný cyklus. Použiť sa môžu pri generovaní alebo vypisovaní do viacerých riadkov.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">for</span> i <span style="color:#ff79c6">in</span> <span style="color:#8be9fd;font-style:italic">range</span>(<span style="color:#bd93f9">10</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4"># vnoreny cyklus</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">for</span> j <span style="color:#ff79c6">in</span> <span style="color:#8be9fd;font-style:italic">range</span>(<span style="color:#bd93f9">5</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4"># vypise sa dokopy 50x &lt;= 10x5</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;💜&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;</span><span style="color:#f1fa8c">\n</span><span style="color:#f1fa8c">&#34;</span>)
+</span></span></code></pre></div><p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🔰 Úloha:</strong> Naprogramuj cyklus tak, aby vypísal do 10 riadkov &ldquo;🧊&rdquo; 5x.</span></p>
+
+  
+</article>
+
+    </main><footer class="w-full text-center p-4 text-xs text-gray-400">
+  <p>
+    Copyright © 2022 - Spawn.codes · All rights reserved
+  </p>
+</footer>
+
+</body>
+</html>

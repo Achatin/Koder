@@ -8,19 +8,19 @@
     <language>en-us</language><atom:link href="https://Spawn.codes/tags/v%C3%BDvoj-hier/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>🎮 Lekcia I.</title>
-      <link>https://Spawn.codes/ucebnica/lekcia1/</link>
+      <link>https://Spawn.codes/vyvoj-hier/lekcia1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://Spawn.codes/ucebnica/lekcia1/</guid>
+      <guid>https://Spawn.codes/vyvoj-hier/lekcia1/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Vitaj na kurze vývoja hier!&lt;/strong&gt; 👋&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>🎮 Lekcia II.</title>
-      <link>https://Spawn.codes/ucebnica/lekcia2/</link>
+      <link>https://Spawn.codes/vyvoj-hier/lekcia2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://Spawn.codes/ucebnica/lekcia2/</guid>
+      <guid>https://Spawn.codes/vyvoj-hier/lekcia2/</guid>
       <description>Vitaj naspäť! 🤙
 Na dnešnej lekcii budeme pokračovať v našej rozpracovanej hre - Pet Dino 🐲. V tejto hre máme implementované už všetky podstatné veci, vďaka tomu môže byť celá hodina venovaná konceptu kolízií.
 Kolízie Kolízie (v preklade zrážky) sú blízke interakcie 👈 medzi dvoma objektami hry. V hrách sa bude zrážať najčastejšie hráč s predmetom. Príkladom takýchto kolízií je napríklad zbieranie Coins alebo vytvorenie stien, cez ktoré sa nedá prechádzať.</description>
@@ -28,12 +28,95 @@ Kolízie Kolízie (v preklade zrážky) sú blízke interakcie 👈 medzi dvoma 
     
     <item>
       <title>🎮 Lekcia III.</title>
-      <link>https://Spawn.codes/ucebnica/lekcia3/</link>
+      <link>https://Spawn.codes/vyvoj-hier/lekcia3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://Spawn.codes/ucebnica/lekcia3/</guid>
+      <guid>https://Spawn.codes/vyvoj-hier/lekcia3/</guid>
+      <description>Zdravím 👋
+Na dnešnej lekcii začneme pracovať na novej hre - Galaxy Rush 🌌. Bude to jednoduchá plaformová hra inšpirovaná hrou Celeste ✨. Dnešná lekcia bude venovaná precvičovaniu programovania.
+Spritesheet Spritesheet je hárok hernej grafiky. Je to obrázok, ktorý pozostáva z množstva menších obrázkov, ktoré sú oddelené vždy rovnako podľa nejakej mriežky.
+V Pico-8 sa obrázky v spritesheet oddeľujú každých 8 pixelov. Sú výhodné použiť, vďaka ich využitiu pri tvorbe máp.</description>
+    </item>
+    
+    <item>
+      <title>🎮 Lekcia IV.</title>
+      <link>https://Spawn.codes/vyvoj-hier/lekcia4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/vyvoj-hier/lekcia4/</guid>
+      <description>Hey ✌
+Na dnešnej lekcii budeme pokračovať v hre Galaxy Rush 🌌. Vďaka tvojmu tréningu programovania na predošlej lekcii si ukážeme komplexnejšie techniky zábavnej platformovej hry.
+Úprava tabuľky PLAYER Ako prvé si potrebujeme pridať do tabuľky &amp;ldquo;player&amp;rdquo; zopár nových premenných.
+gravity = 0.2 player = { --rychlost pohybu sprava dolava ➡️spd=0, --rychlost pohybu zhora dole ⬇️spd=0, --rychlost skoku jmpspd=3.4, --kontrola skoku jmp=false, } Gravitácia Gravitácia v hrách funguje na jednoduchom princípe.</description>
+    </item>
+    
+    <item>
+      <title>🎮 Lekcia IX.</title>
+      <link>https://Spawn.codes/vyvoj-hier/lekcia9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/vyvoj-hier/lekcia9/</guid>
+      <description>Zdravím 👋
+Na dnešnej lekcii budeš pokračovať na svojej hre podľa vlastného návrhu 🎨. Môžeš sa inšpirovať žánrami v tejto lekcii. Pokojne použi aj spritesheets! Lektor ti samozrejme poradí s hocičím, čo budeš potrebovať. Tak neváhaj sa opýtať!
+RPG Žáner RPG (Role-Playing Game) je hra na hrdinov 🔮. Hráči sa vžívajú do úloh imaginárnych osôb, alebo postáv, umiestnených do fiktívneho, alebo historického prostredia a snažia sa ako tieto postavy konať. Medzi známe RPG patria napríklad Zelda alebo Pokémon.</description>
+    </item>
+    
+    <item>
+      <title>🎮 Lekcia V.</title>
+      <link>https://Spawn.codes/vyvoj-hier/lekcia5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/vyvoj-hier/lekcia5/</guid>
+      <description>Ahoj 👋
+Blížime sa ku dokončeniu Galaxy Rush 🌌. Na dnešnej lekcii pridáme do našej hry nové levely, prekážky a zbieranie mincí. Precvičíš si map-design a naučíš sa aj pracovať s hernou kamerou.
+Nová mapa Správna platformová hra by mala mať veľkú mapu a/alebo množstvo levelov. Levely by mali byť unikátne 🎈 nielen po grafickej, ale aj po gameplay-ovej stránke. Mali by hráča zoznámiť s rôznymi úrovňami a hernými mechanikami.</description>
+    </item>
+    
+    <item>
+      <title>🎮 Lekcia VI.</title>
+      <link>https://Spawn.codes/vyvoj-hier/lekcia6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/vyvoj-hier/lekcia6/</guid>
       <description>Vitaj naspäť! 🤙
-Na dnešnej lekcii budeme pokračovať v našej rozpracovanej hre - Pet Dino 🐲. V tejto hre máme implementované už všetky podstatné veci, vďaka tomu môže byť celá hodina venovaná konceptu kolízií.</description>
+Dnes pridáme animácie a checkpoints do našej hry a tým dokončíme celý Galaxy Rush 🌌. Na záver tohto projektu si ukážeme ako hru zverejniť na internete a zahrať si ju hoci aj na mobile.
+Animácie Animácie v hrách fungujú na jednoduchom princípe - rapídneho menenia obrázkov. Ak chceš vytvoriť animáciu pre pohyb hráča, potrebuješ pravidelne meniť jeho sprite.
+function animation() --na striedacku menime vsetky sprites hraca if player.</description>
+    </item>
+    
+    <item>
+      <title>🎮 Lekcia VII.</title>
+      <link>https://Spawn.codes/vyvoj-hier/lekcia7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/vyvoj-hier/lekcia7/</guid>
+      <description>Hey ✌
+Na dnešnej lekcii sa budeme venovať vylepšovaniu hry Galaxy Rush 🌌. Pridáme checkpoints, cieľ a možnosť zopakovať si hru.
+Checkpoints Ako prvé môžeš do hry doplniť checkpointy 🚩. Aby hráč nemusel pri narazení do prekážky začínať úplne odzačiatku, pridaj do každého levelu záchytné body.
+Checkpointy môžu byť na začiatku každého levelu. Po ich aktivácii, sa hráč bude vracať na ich pozíciu.
+-- po kolizii s prekazkou sa hrac vrati na checkpoint if collision(2) then player.</description>
+    </item>
+    
+    <item>
+      <title>🎮 Lekcia VIII.</title>
+      <link>https://Spawn.codes/vyvoj-hier/lekcia8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/vyvoj-hier/lekcia8/</guid>
+      <description>Vitaj 👋
+Na dnešnej lekcii si začneš tvoriť svoju hru podľa vlastného návrhu 🎨. Môžeš sa inšpirovať žánrami v tejto lekcii. Pokojne použi aj spritesheets! Lektor ti samozrejme poradí s hocičím, čo budeš potrebovať. Tak neváhaj sa opýtať!
+RPG Žáner RPG (Role-Playing Game) je hra na hrdinov 🔮. Hráči sa vžívajú do úloh imaginárnych osôb, alebo postáv, umiestnených do fiktívneho, alebo historického prostredia a snažia sa ako tieto postavy konať. Medzi známe RPG patria napríklad Zelda alebo Pokémon.</description>
+    </item>
+    
+    <item>
+      <title>🎮 Lekcia X.</title>
+      <link>https://Spawn.codes/vyvoj-hier/lekcia10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/vyvoj-hier/lekcia10/</guid>
+      <description>Ahoj ✌
+Vitaj na poslednej lekcii. Ďakujem ti, že si sa kurzu zúčastnil. Patrí ti veľká vďaka 💖. Na tejto lekcii si môžeš dokázať, čo si sa na kurze naučil. Tvojou úlohou bude riešiť výzvy pri jednoduchej hre.
+Chrome Dino Určite poznáš hru Chrome Dino. Ak nie, vyskúšaj si niekedy vypnúť internet na PC, spustiť prehliadač Chrome a stlačiť medzerník. Otvorí sa ti minihra, ktorá spočíva vo vyhývaní sa prekážok s dinosaurom.</description>
     </item>
     
     <item>
@@ -43,6 +126,96 @@ Na dnešnej lekcii budeme pokračovať v našej rozpracovanej hre - Pet Dino �
       
       <guid>https://Spawn.codes/kurzy/vyvoj-hier/</guid>
       <description>&lt;p&gt;Nadizajnuj si a naprogramuj vlastnú hru v šikovnom Game-Engine Pico-8!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🐍 Lekcia I.</title>
+      <link>https://Spawn.codes/python/lekcia1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/python/lekcia1/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Vitaj na kurze Python&lt;/strong&gt; 👋&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🐍 Lekcia II.</title>
+      <link>https://Spawn.codes/python/lekcia2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/python/lekcia2/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Vitaj naspäť! 🤙&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🐍 Lekcia III.</title>
+      <link>https://Spawn.codes/python/lekcia3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/python/lekcia3/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Zdravím! 👋&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🐍 Lekcia IV.</title>
+      <link>https://Spawn.codes/python/lekcia4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/python/lekcia4/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Hey ✌&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🐍 Lekcia IX.</title>
+      <link>https://Spawn.codes/python/lekcia9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/python/lekcia9/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Zdravím! 👋&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🐍 Lekcia V.</title>
+      <link>https://Spawn.codes/python/lekcia5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/python/lekcia5/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Ahoj 👋&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🐍 Lekcia VI.</title>
+      <link>https://Spawn.codes/python/lekcia6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/python/lekcia6/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Vitaj 👋&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🐍 Lekcia VII.</title>
+      <link>https://Spawn.codes/python/lekcia7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/python/lekcia7/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Vitaj naspäť! 🤙&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🐍 Lekcia VIII.</title>
+      <link>https://Spawn.codes/python/lekcia8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/python/lekcia8/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Ahoj! 👋&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>🐍 Lekcia X.</title>
+      <link>https://Spawn.codes/python/lekcia10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://Spawn.codes/python/lekcia10/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Zdravím! 🤙&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

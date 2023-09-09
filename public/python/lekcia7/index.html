@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    🐍 Lekcia VII. - Spawn.codes
+  </title>
+
+  
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'] 
+          },
+          gridTemplateColumns: {
+            'fluid': 'repeat(auto-fit, minmax(8rem, 1fr))',
+          }
+        }
+      }
+    }
+  </script>
+
+  
+  <script src="https://kit.fontawesome.com/29b25fbda6.js" crossorigin="anonymous"></script>
+
+  <script defer language="javascript" type="text/javascript"  src="https://Spawn.codes/js/lock.js"></script>
+
+  
+  <meta name="description" content="Programovanie hier pre deti - Spawn.codes" />
+  
+  <meta name="author" content="Spawn.codes" />
+  <meta name="generator" content="Hugo 0.102.3" />
+
+</head>
+
+  <body class="flex flex-col min-h-screen bg-slate-900 text-slate-100 transition-colors duration-500 body-font font-poppins"><header class="w-full px-4 pt-4 max-w-5xl mx-auto">
+  <nav class="flex items-center justify-between flex-wrap">
+    <div class="flex gap-2 items-center">
+      
+      <a href="mailto:spawn.code@proton.me" aria-label="EMail">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="4" />
+          <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
+        </svg>
+      </a>
+      
+      <a href="https://Spawn.codes/" class="flex items-center font-bold">
+        Spawn.codes
+      </a>
+    </div>
+
+    <ul id="nav-menu" class="flex w-auto mt-0 space-x-5">
+      
+      <li>
+        <a href="https://Spawn.codes/o-nas/" class="hover:text-blue-300">O nás</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/ucebnice/" class="hover:text-blue-300">Učebnice</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/kontakt/" class="hover:text-blue-300">Kontakt</a>
+      </li>
+      
+    </ul>
+  </nav>
+</header>
+<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-8 sm:mt-16">
+<article class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-invert">
+  <h1>🐍 Lekcia VII.</h1>
+  <p><strong>Vitaj naspäť! 🤙</strong></p>
+<p>Na dnešnej lekcii sa naučíš pracovať s <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">náhodnymi číslami 🎲</span>. Potom si budeš vedieť implementovať do hry LootBox systém s náhodnými odmenami.</p>
+<h2 id="knižnice">Knižnice</h2>
+<p>Knižnice sú zbierka rozšírení pre programovací jazyk. Vďaka nim môžeme používať nové
+príkazy a programovať zaujímavejšie veci. To, aké knižnice chceme používať je nutné napísať
+na začiatku programu za kľúčovým slovom <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">import</span>. Existujú knižnice, ktoré sú zakomponované
+priamo v Pythone, ale existujú aj také, ktoré treba stiahnúť. Nám postačia iba zakomponované.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">import</span> random
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># ...</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;RNG on! 🎲&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># ...</span>
+</span></span></code></pre></div><p>Všimni si, že sme naimportovali knižnicu <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">random</span>, ktorá nám umožní generovať náhodné čísla.</p>
+<h2 id="nahodné-čísla">Nahodné čísla</h2>
+<p>Náhodné čísla slúžia na simulovanie šance alebo pravdepodobnosti v programovaní.
+Môžeme si predstaviť hod kockou, kedy nám padne 1 zo 6 možných číslic.</p>
+<p>Náhodné číslo vygenerujeme príkazom <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">random.randint()</span>, pričom do zátvorky pôjde z akého
+rozsahu má generovať. Napríklad <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">random.randint(0,5)</span> vygeneruju číslo od 0 po 5.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">import</span> random
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># do premennej cislo vygenerujeme nahodne cislo</span>
+</span></span><span style="display:flex;"><span>cislo <span style="color:#ff79c6">=</span> random<span style="color:#ff79c6">.</span>randint(<span style="color:#bd93f9">0</span>,<span style="color:#bd93f9">5</span>)
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># vypiseme nase nahodne cislo</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;Nahodne cislo: &#34;</span>, cislo)
+</span></span></code></pre></div><p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🔰 Úloha:</strong> Vyskúšajte si náhodné čísla pri jednoduchom hode kocky. Naprogramujte generovanie čísel od 1 po 6, tieto čísla vypíšte. Ak padne číslo 6, vypíšte &ldquo;Lucky 🍀&rdquo;.</span></p>
+<p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🔰 Úloha:</strong> Vytvor funkciu GeneratePet(), ktorá náhodne vygeneruje hrdinovi vždy 1 z
+týchto &ldquo;🦊🐵🦝&rdquo; petov. Všetky možnosti majú rovnakú šancu - 33%. Výsledok vypíš v
+hrdinovom profile. Funkciu potom zavolaj po otvorení darčeku z predošlej hodiny.</span></p>
+<p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🔰 Úloha:</strong> Pridaj do funkcie vzácneho peta &ldquo;🦄&rdquo;, ktorý bude mať šancu iba 10%.</span></p>
+<pre tabindex="0"><code>🧙‍♂️ Wizard, lvl 10
+-----------------
+Weapon: 📘 Spellbook
+Pet: 🦄
+Stats:
+🎯 ATK: 30
+💖 HP: 50
+⚡ SPD: 20
+</code></pre>
+
+  
+</article>
+
+    </main><footer class="w-full text-center p-4 text-xs text-gray-400">
+  <p>
+    Copyright © 2022 - Spawn.codes · All rights reserved
+  </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    🎮 Lekcia III. - Spawn.codes
+  </title>
+
+  
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'] 
+          },
+          gridTemplateColumns: {
+            'fluid': 'repeat(auto-fit, minmax(8rem, 1fr))',
+          }
+        }
+      }
+    }
+  </script>
+
+  
+  <script src="https://kit.fontawesome.com/29b25fbda6.js" crossorigin="anonymous"></script>
+
+  <script defer language="javascript" type="text/javascript"  src="https://Spawn.codes/js/lock.js"></script>
+
+  
+  <meta name="description" content="Programovanie hier pre deti - Spawn.codes" />
+  
+  <meta name="author" content="Spawn.codes" />
+  <meta name="generator" content="Hugo 0.102.3" />
+
+</head>
+
+  <body class="flex flex-col min-h-screen bg-slate-900 text-slate-100 transition-colors duration-500 body-font font-poppins"><header class="w-full px-4 pt-4 max-w-5xl mx-auto">
+  <nav class="flex items-center justify-between flex-wrap">
+    <div class="flex gap-2 items-center">
+      
+      <a href="mailto:spawn.code@proton.me" aria-label="EMail">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="4" />
+          <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
+        </svg>
+      </a>
+      
+      <a href="https://Spawn.codes/" class="flex items-center font-bold">
+        Spawn.codes
+      </a>
+    </div>
+
+    <ul id="nav-menu" class="flex w-auto mt-0 space-x-5">
+      
+      <li>
+        <a href="https://Spawn.codes/o-nas/" class="hover:text-blue-300">O nás</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/ucebnice/" class="hover:text-blue-300">Učebnice</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/kontakt/" class="hover:text-blue-300">Kontakt</a>
+      </li>
+      
+    </ul>
+  </nav>
+</header>
+<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-8 sm:mt-16">
+<article class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-invert">
+  <h1>🎮 Lekcia III.</h1>
+  <figure class="float-right ml-16 max-w-xs"><img src="https://Spawn.codes/vyvoj-hier/lekcia3/celeste.gif"/>
+</figure>
+
+<p><strong>Zdravím 👋</strong></p>
+<p>Na dnešnej lekcii začneme pracovať na novej hre - <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Galaxy Rush 🌌</span>. Bude to jednoduchá plaformová hra inšpirovaná hrou <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Celeste ✨</span>. Dnešná lekcia bude venovaná precvičovaniu programovania.</p>
+<h2 id="spritesheet">Spritesheet</h2>
+<p>Spritesheet je hárok hernej grafiky. Je to obrázok, ktorý pozostáva z množstva menších obrázkov, ktoré sú oddelené vždy rovnako podľa nejakej mriežky.</p>
+<p>V Pico-8 sa obrázky v spritesheet oddeľujú každých 8 pixelov. Sú výhodné použiť, vďaka ich využitiu pri tvorbe máp.</p>
+<figure class="float-right ml-16 max-w-md"><img src="https://Spawn.codes/vyvoj-hier/lekcia3/spritesheet.png"/>
+</figure>
+
+<p><strong>Spritesheets sa do Pico-8 vkladajú nasledovne:</strong></p>
+<ol>
+<li>Klikni pravým tlačidlom myši na malý obrázok napravo</li>
+<li>Uložiť obrázok ako&hellip;</li>
+<li>Vyhľadaj priečinok %appdata%</li>
+<li>Uložený obrázok si presuň do <em>pico-8/carts</em></li>
+<li>V Pico-8 napíš príkaz <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">import spritesheet.png</span></li>
+</ol>
+<figure class="clear-both"><img src=""/>
+</figure>
+
+<h2 id="špeciálne-funkcie">Špeciálne funkcie</h2>
+<p>Už z predošlých lekcií viete, že v Pico-8 existujú 3 špeciálne funkcie. Tieto funkcie sú presne nadizajnované na tvorbu hier.</p>
+<p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">_init()</span> - Táto funkcia prehraje celý obsah funkcie tesne pred spustením hry. Zvyčajne sa vnútri inicializujú premenné a tabuľky.</p>
+<p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">_update()</span> - Táto funkcia sa opakuje 60x za sekundu. Tvorí <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Game Loop 🎮</span>. Slúži hlavne na pravidelné kontrolovanie podmienok, napr. ovládanie pohybu.</p>
+<p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">_draw()</span> - Podobne ako <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">_update()</span> sa pravidelne opakuje, avšak slúži len na vykresľovanie mapy alebo iných herných objektov, či animácií.</p>
+<blockquote>
+<p><strong>🔰 Úloha:</strong> Vytvor všetky 3 špeciálne funkcie. Každú jednu umiestni zvlášť do odlišného hárku.</p>
+</blockquote>
+<h2 id="premenné">Premenné</h2>
+<p>Premenné slúžia na ukladanie a prácu s informáciami - <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">dátami 🔢</span>.</p>
+<figure class="float-right ml-16 max-w-md"><img src="https://Spawn.codes/vyvoj-hier/lekcia3/premenne.png"/>
+</figure>
+
+<p><strong>Premenná pozostáva z:</strong></p>
+<ul>
+<li>mena</li>
+<li>=</li>
+<li>hodnoty</li>
+</ul>
+<p><strong>Môžeme do nej uložiť:</strong></p>
+<ul>
+<li>slová: <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">premenna = &ldquo;Health&rdquo;</span></li>
+<li>čísla: <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">premenna = 100</span></li>
+<li>pravdivostné hodnoty: <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">premenna = false</span></li>
+</ul>
+<h2 id="tabuľky">Tabuľky</h2>
+<p>Tabuľky zhromažďujú premenné týkajúce sa jedného herného objektu, napr. objekt <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">player</span> môže mať svoje vlastnosti ako <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">speed, hp, attack</span>&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span>player <span style="color:#ff79c6">=</span> {
+</span></span><span style="display:flex;"><span>    sprite <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>,
+</span></span><span style="display:flex;"><span>    x <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">60</span>,
+</span></span><span style="display:flex;"><span>    y <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">60</span>,
+</span></span><span style="display:flex;"><span>    w <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>,
+</span></span><span style="display:flex;"><span>    h <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>,
+</span></span><span style="display:flex;"><span>    w <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>,
+</span></span><span style="display:flex;"><span>    flp <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">false</span>,
+</span></span><span style="display:flex;"><span>    speed <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>,
+</span></span><span style="display:flex;"><span>    hp <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">3</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><blockquote>
+<p><strong>🔰 Úloha:</strong> Do funkcie _init() vytvor tabuľku pre objekt &lsquo;player&rsquo;.</p>
+</blockquote>
+<h2 id="podmienky">Podmienky</h2>
+<figure class="float-right ml-16 max-w-md"><img src="https://Spawn.codes/vyvoj-hier/lekcia3/code.jpg"/>
+</figure>
+
+<p>Podmienky slúžia na skontrolovanie <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">stavu 💨</span> nejakej situácie.</p>
+<p><strong>Podmienka pozostáva z:</strong></p>
+<ul>
+<li>if</li>
+<li>kontrola stavu</li>
+<li>then</li>
+<li>telo</li>
+<li>end</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#6272a4">--ak stlačíš šípku vpravo, hráčova pozícia sa zmení</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> btn(➡️) <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>    player.x <span style="color:#ff79c6">+=</span> <span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span>    player.flp <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">end</span>
+</span></span></code></pre></div><blockquote>
+<p><strong>🎈 Tip:</strong> Kód vo vnútri podmienok oddeľujte medzerami zo začiatku riadku. Pomáha to čitateľnosti. Vyjadruje to, že kód patrí do podmienky.</p>
+</blockquote>
+<blockquote>
+<p><strong>🔰 Úloha:</strong> Naprogramuj hráčov pohyb pomocou podmienok.</p>
+</blockquote>
+<h2 id="funkcie">Funkcie</h2>
+<p>Funkcie slúžia na vytváranie <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">vlastných príkazov 🔧</span>.</p>
+<p><strong>Funkcia pozostáva z:</strong></p>
+<ul>
+<li>function</li>
+<li>názov</li>
+<li>(parametre)</li>
+<li>návratová hodnota</li>
+<li>end</li>
+</ul>
+<p><span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Parametre 📐</span> - premenné vložené do funkcie.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#ff79c6">function</span> <span style="color:#50fa7b">LevelUp</span>(level)
+</span></span><span style="display:flex;"><span>    level <span style="color:#ff79c6">+=</span> <span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">end</span>
+</span></span></code></pre></div><p><span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Návratová hodnota</span> - kľúčové slovo <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">return</span>. Vracia nejakú hodnotu naspäť z funkcie.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#ff79c6">function</span> <span style="color:#50fa7b">rename</span>()
+</span></span><span style="display:flex;"><span>    newName <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;🧙‍♂️ Wizard&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">return</span> newName
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">end</span>
+</span></span></code></pre></div><blockquote>
+<p><strong>🔰 Úloha:</strong> Vytvor funkciu movement() a vlož do nej podmienky s hráčovým pohybom.</p>
+</blockquote>
+<blockquote>
+<p><strong>🔰 Úloha:</strong> Zopakuj si znalosti z predošlej lekcie a vytvor funkciu collision(), ktorá bude detekovať kolízie na základe vlajok na hernej grafike.</p>
+</blockquote>
+
+
+  
+</article>
+
+    </main><footer class="w-full text-center p-4 text-xs text-gray-400">
+  <p>
+    Copyright © 2022 - Spawn.codes · All rights reserved
+  </p>
+</footer>
+
+</body>
+</html>

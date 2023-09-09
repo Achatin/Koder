@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    🎮 Lekcia VI. - Spawn.codes
+  </title>
+
+  
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'] 
+          },
+          gridTemplateColumns: {
+            'fluid': 'repeat(auto-fit, minmax(8rem, 1fr))',
+          }
+        }
+      }
+    }
+  </script>
+
+  
+  <script src="https://kit.fontawesome.com/29b25fbda6.js" crossorigin="anonymous"></script>
+
+  <script defer language="javascript" type="text/javascript"  src="https://Spawn.codes/js/lock.js"></script>
+
+  
+  <meta name="description" content="Programovanie hier pre deti - Spawn.codes" />
+  
+  <meta name="author" content="Spawn.codes" />
+  <meta name="generator" content="Hugo 0.102.3" />
+
+</head>
+
+  <body class="flex flex-col min-h-screen bg-slate-900 text-slate-100 transition-colors duration-500 body-font font-poppins"><header class="w-full px-4 pt-4 max-w-5xl mx-auto">
+  <nav class="flex items-center justify-between flex-wrap">
+    <div class="flex gap-2 items-center">
+      
+      <a href="mailto:spawn.code@proton.me" aria-label="EMail">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="4" />
+          <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
+        </svg>
+      </a>
+      
+      <a href="https://Spawn.codes/" class="flex items-center font-bold">
+        Spawn.codes
+      </a>
+    </div>
+
+    <ul id="nav-menu" class="flex w-auto mt-0 space-x-5">
+      
+      <li>
+        <a href="https://Spawn.codes/o-nas/" class="hover:text-blue-300">O nás</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/ucebnice/" class="hover:text-blue-300">Učebnice</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/kontakt/" class="hover:text-blue-300">Kontakt</a>
+      </li>
+      
+    </ul>
+  </nav>
+</header>
+<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-8 sm:mt-16">
+<article class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-invert">
+  <h1>🎮 Lekcia VI.</h1>
+  <iframe allowtransparency="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" src="https://v6p9d9t4.ssl.hwcdn.net/html/6699071/index.html" scrolling="no" allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated" id="game_drop" allowfullscreen="true" frameborder="0" width="350px" height="350px" class="float-right"></iframe>
+<p><strong>Vitaj naspäť! 🤙</strong></p>
+<p>Dnes pridáme animácie a checkpoints do našej hry a tým dokončíme celý <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Galaxy Rush 🌌</span>. Na záver tohto projektu si ukážeme ako hru zverejniť na internete a zahrať si ju hoci aj na mobile.</p>
+<h2 id="animácie">Animácie</h2>
+<p>Animácie v hrách fungujú na jednoduchom princípe - rapídneho menenia obrázkov. Ak chceš vytvoriť animáciu pre pohyb hráča, potrebuješ pravidelne meniť jeho sprite.</p>
+<figure class="float-right ml-16 max-w-xs"><img src="https://Spawn.codes/vyvoj-hier/lekcia6/anim.gif"/>
+</figure>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#ff79c6">function</span> <span style="color:#50fa7b">animation</span>()
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">--na striedacku menime vsetky sprites hraca</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">if</span> player.sprite <span style="color:#ff79c6">&lt;</span> <span style="color:#bd93f9">3</span> <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>        player.sprite <span style="color:#ff79c6">+=</span> <span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">else</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4">--vratenie sa na povodny sprite</span>
+</span></span><span style="display:flex;"><span>        player.sprite <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">end</span>
+</span></span></code></pre></div><p>Funkciu potom môžeš zavolať pri pohybe hráča - vo funkcii <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">movement()</span>.</p>
+<p>Všimni si, že animácia prebieha príliš rýchlo. Rýchlosť animovania vieš meniť pomocou <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">časovača ⌚</span>.</p>
+<h3 id="časovač">Časovač</h3>
+<p>V Pico-8 existuje funkcia <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">time()</span>, ktorá meria čas od jej použitia. Využitím tejto funkcie vieme vytvoriť časovač.</p>
+<p>Na animácie vytvoríme v tabuľke <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">player</span> premennú <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">anim = time()</span>.</p>
+<p>Teraz vieme našu funkciu <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">animation()</span> upraviť pridaním časovača.</p>
+<figure class="float-right ml-16 max-w-xs"><img src="https://Spawn.codes/vyvoj-hier/lekcia6/run.gif"/>
+</figure>
+
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#ff79c6">function</span> <span style="color:#50fa7b">animation</span>()
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">--ak casovac presiahne 0.1 sekundy (cas snimku animacie)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">if</span> (time() <span style="color:#ff79c6">-</span> player.anim) <span style="color:#ff79c6">&gt;</span> <span style="color:#bd93f9">0.1</span> <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4">--aktualizacia casovaca</span>
+</span></span><span style="display:flex;"><span>        player.anim <span style="color:#ff79c6">=</span> time()
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4">--na striedacku menime vsetky sprites hraca</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">if</span> player.sprite <span style="color:#ff79c6">&lt;</span> <span style="color:#bd93f9">3</span> <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>            player.sprite <span style="color:#ff79c6">+=</span> <span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">else</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#6272a4">--vratenie sa na povodny sprite</span>
+</span></span><span style="display:flex;"><span>            player.sprite <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">end</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">end</span>
+</span></span></code></pre></div><h2 id="zverejnenie-hry">Zverejnenie hry</h2>
+<p>Existuje webová aplikácia zameraná na <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Game Development 🎮</span> - <strong>Itch.io</strong>. Sem môžu vývojári hier zverejňovať svoje hry. Vďaka možnosti monetizácie, šikovní vývojari si týmto zarábajú. Staň sa aj ty plnohodnotným vývojárom a vyskúšaj si svoju hru zverejniť!</p>
+<ol>
+<li>Navštív stránku <strong>Itch.io</strong></li>
+<li>Zaregistruj sa a vytvor si účet</li>
+<li>Pri svojom profile otvor záložku <strong>Upload new project</strong></li>
+<li>Napíš názov hry</li>
+<li>V Pico-8 zostroj úvodný obrázok klávesou <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">F2</span></li>
+<li>Napíš príkaz <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">export galaxy-rush.html</span></li>
+<li>Príkazom <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">folder</span> si otvor úložný priečinok programu Pico-8</li>
+<li>Nájdi oba súbory vytvorené exportom</li>
+<li>Súbor s príponou <strong>.HTML</strong> premenuj na index</li>
+<li>Oba súbory zarchivuj do priečinku <strong>galaxy-rush.zip</strong></li>
+<li>V sekcii <strong>Uploads</strong> vyhľadaj svoj priečinok a vlož ho na Itch.io</li>
+<li>Zaškrtni možnosť <strong>This file will be played in the browser</strong></li>
+<li>Zaškrtni možnosť <strong>Mobile friendly</strong></li>
+<li>Save &amp; view page</li>
+<li>Prepni mód viditeľnosti z <em>Draft</em> na <strong>Public</strong></li>
+<li>Vyskúšaj svoju hru 🎉</li>
+</ol>
+
+
+  
+</article>
+
+    </main><footer class="w-full text-center p-4 text-xs text-gray-400">
+  <p>
+    Copyright © 2022 - Spawn.codes · All rights reserved
+  </p>
+</footer>
+
+</body>
+</html>

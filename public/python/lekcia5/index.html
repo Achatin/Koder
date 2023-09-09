@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    🐍 Lekcia V. - Spawn.codes
+  </title>
+
+  
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'] 
+          },
+          gridTemplateColumns: {
+            'fluid': 'repeat(auto-fit, minmax(8rem, 1fr))',
+          }
+        }
+      }
+    }
+  </script>
+
+  
+  <script src="https://kit.fontawesome.com/29b25fbda6.js" crossorigin="anonymous"></script>
+
+  <script defer language="javascript" type="text/javascript"  src="https://Spawn.codes/js/lock.js"></script>
+
+  
+  <meta name="description" content="Programovanie hier pre deti - Spawn.codes" />
+  
+  <meta name="author" content="Spawn.codes" />
+  <meta name="generator" content="Hugo 0.102.3" />
+
+</head>
+
+  <body class="flex flex-col min-h-screen bg-slate-900 text-slate-100 transition-colors duration-500 body-font font-poppins"><header class="w-full px-4 pt-4 max-w-5xl mx-auto">
+  <nav class="flex items-center justify-between flex-wrap">
+    <div class="flex gap-2 items-center">
+      
+      <a href="mailto:spawn.code@proton.me" aria-label="EMail">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="4" />
+          <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
+        </svg>
+      </a>
+      
+      <a href="https://Spawn.codes/" class="flex items-center font-bold">
+        Spawn.codes
+      </a>
+    </div>
+
+    <ul id="nav-menu" class="flex w-auto mt-0 space-x-5">
+      
+      <li>
+        <a href="https://Spawn.codes/o-nas/" class="hover:text-blue-300">O nás</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/ucebnice/" class="hover:text-blue-300">Učebnice</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/kontakt/" class="hover:text-blue-300">Kontakt</a>
+      </li>
+      
+    </ul>
+  </nav>
+</header>
+<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-8 sm:mt-16">
+<article class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-invert">
+  <h1>🐍 Lekcia V.</h1>
+  <p><strong>Ahoj 👋</strong></p>
+<p>Na dnešnej lekcii sa naučíš princípy efektívnejšieho programovania. Naviaže na to téma funkcií v Pythone.</p>
+<h2 id="princípy-programovania">Princípy programovania</h2>
+<p>Pri programovaní existuje zopár <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">princípov</span>, vďaka ktorým budú naše programy bezchybnejšie, efektívnejšie a jednoduchšie.</p>
+<p><strong>KISS</strong> - <em>Keep it simple, stupid</em>, z angličtiny <em>Nekomplikuj to</em>. Píšte kód jednoducho. V zásade väčšinou platí - čím kratší kód, tým lepší.</p>
+<p><strong>DRY</strong> - <em>Don&rsquo;t Repeat Yourself</em>, z angličtiny <em>Neopakuj sa</em>. Nepíšte rovnaký kód dvakrát. My sa naučíme kód neopakovať pomocou cyklov a funkcií.</p>
+<p><strong>Refactor</strong> - Skontroluj si svoj kód. Po napísaní kódu by ste sa mali vždy <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">vrátiť na začiatok</span> a pozrieť si ho znova. Natrafíte na chyby a veci, ktoré by sa dali zlepšiť.</p>
+<h2 id="snake-case">Snake Case</h2>
+<p>Už vieš, že premenné si môžeš nazvať hocijako. Teda, vždy by to mal byť názov, ktorý najlepšie vystihuje danú premennú, napr. pre uloženie mena môžeš použiť premennú <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">name</span>. Existujú však zaužívané spôsoby ako zapisovať niektoré názvy.</p>
+<p>Pre Python je typický spôsob <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Snake Case 🐍</span>, ktorý viacslovné premenné spája <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">podtržítkom _</span>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#6272a4"># priklady snake case</span>
+</span></span><span style="display:flex;"><span>hero_level <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">10</span>
+</span></span><span style="display:flex;"><span>is_player_online <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">False</span>
+</span></span></code></pre></div><h2 id="funkcie">Funkcie</h2>
+<p>Slúžia na organizáciu a znovuvyužiteľnosť kódu. Kľúčové slovíčko pri definovaní (vytváraní) funkcie je <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">def</span>, potom nasleduje názov funkcie a zátvorky s parametrami. Nakoniec prvého riadku už ide len dvojbodka <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">:</span>. Obsah funkcie musí byť odsadený/indentovaný.</p>
+<p><strong>Parameter</strong> - premenná vložená do funkcie</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#6272a4"># funkcia spawn_hero s parametrom - jeho menom</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">def</span> <span style="color:#50fa7b">spawn_hero</span>(name):
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4"># funkcia iba vypíše jeho meno s levelom</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(name, <span style="color:#f1fa8c">&#34;, lvl 1&#34;</span>)
+</span></span></code></pre></div><p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🔰 Úloha:</strong> Vytvor funkciu <em>open_shop()</em> s parametrom <em>coins</em>, ktorá vypíše obchod s jeho položkami a počet tvojich peňazí.</span></p>
+<p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🔰 Úloha:</strong> Vytvor funkciu <em>spawn_hero()</em> s parametrami <em>name, lvl, weapon, atk, hp a spd</em>, ktorá vypíše hrdinu s jeho vlastnosťami.</span></p>
+<h2 id="volanie-funkcie">Volanie funkcie</h2>
+<p>Volanie funkcie je použitie vytvorenej funkcie. Funkcia sa zavolá napísaním jej mena so zátvorkami, prípadne jej parametrami.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>level <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># funkcia zvysi level o 1</span>
+</span></span><span style="display:flex;"><span>levelUp(level)
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;lvl: &#34;</span> <span style="color:#ff79c6">+</span> level) <span style="color:#6272a4"># lvl: 2</span>
+</span></span></code></pre></div><h2 id="návratová-hodnota">Návratová hodnota</h2>
+<p>Funkcie dokážu taktiež vracať hodnoty. Slúži to na získanie dát z funkcie. kľúčové slovíčko je return , následuje vracaná hodnota. Taktiež sa nesmie zabudnúť na určenie typu vrátenia pri definovaní funkcie.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">def</span> <span style="color:#50fa7b">power_boost</span>(atk):
+</span></span><span style="display:flex;"><span>    atk <span style="color:#ff79c6">*=</span> <span style="color:#bd93f9">2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">return</span> atk
+</span></span></code></pre></div><p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🔰 Úloha:</strong> Vytvor funkciu <em>level_up()</em> s parametrom <em>lvl</em>, ktorá zvýši level hrdinu o 1. Funkcia vráti nový level.</span></p>
+<p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🔰 Úloha:</strong> Vytvor funkciu <em>check_hp()</em> s parametrom <em>hp</em>, ktorá skontroluje životy hrdinu a vráti <em>True</em> = má životy alebo <em>False</em> = nemá životy.</span></p>
+<p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🔰 Úloha:</strong> Vytvor funkciu <em>check_coins()</em> s parametrami <em>coins</em> a <em>value</em>, ktorá či máme poniaze na nákup z herného obchodu. Vráti <em>True</em> = máme alebo <em>False</em> = nemáme.</span></p>
+
+  
+</article>
+
+    </main><footer class="w-full text-center p-4 text-xs text-gray-400">
+  <p>
+    Copyright © 2022 - Spawn.codes · All rights reserved
+  </p>
+</footer>
+
+</body>
+</html>

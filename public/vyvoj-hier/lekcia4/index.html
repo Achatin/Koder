@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    🎮 Lekcia IV. - Spawn.codes
+  </title>
+
+  
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'] 
+          },
+          gridTemplateColumns: {
+            'fluid': 'repeat(auto-fit, minmax(8rem, 1fr))',
+          }
+        }
+      }
+    }
+  </script>
+
+  
+  <script src="https://kit.fontawesome.com/29b25fbda6.js" crossorigin="anonymous"></script>
+
+  <script defer language="javascript" type="text/javascript"  src="https://Spawn.codes/js/lock.js"></script>
+
+  
+  <meta name="description" content="Programovanie hier pre deti - Spawn.codes" />
+  
+  <meta name="author" content="Spawn.codes" />
+  <meta name="generator" content="Hugo 0.102.3" />
+
+</head>
+
+  <body class="flex flex-col min-h-screen bg-slate-900 text-slate-100 transition-colors duration-500 body-font font-poppins"><header class="w-full px-4 pt-4 max-w-5xl mx-auto">
+  <nav class="flex items-center justify-between flex-wrap">
+    <div class="flex gap-2 items-center">
+      
+      <a href="mailto:spawn.code@proton.me" aria-label="EMail">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="4" />
+          <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
+        </svg>
+      </a>
+      
+      <a href="https://Spawn.codes/" class="flex items-center font-bold">
+        Spawn.codes
+      </a>
+    </div>
+
+    <ul id="nav-menu" class="flex w-auto mt-0 space-x-5">
+      
+      <li>
+        <a href="https://Spawn.codes/o-nas/" class="hover:text-blue-300">O nás</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/ucebnice/" class="hover:text-blue-300">Učebnice</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/kontakt/" class="hover:text-blue-300">Kontakt</a>
+      </li>
+      
+    </ul>
+  </nav>
+</header>
+<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-8 sm:mt-16">
+<article class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-invert">
+  <h1>🎮 Lekcia IV.</h1>
+  <figure class="float-right ml-16 max-w-xs"><img src="https://Spawn.codes/vyvoj-hier/lekcia4/galaxyrush.gif"/>
+</figure>
+
+<p><strong>Hey ✌</strong></p>
+<p>Na dnešnej lekcii budeme pokračovať v hre <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Galaxy Rush 🌌</span>. Vďaka tvojmu tréningu programovania na predošlej lekcii si ukážeme komplexnejšie techniky zábavnej platformovej hry.</p>
+<h2 id="úprava-tabuľky-player">Úprava tabuľky PLAYER</h2>
+<p>Ako prvé si potrebujeme pridať do tabuľky &ldquo;player&rdquo; zopár nových premenných.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span>gravity <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0.2</span>
+</span></span><span style="display:flex;"><span>player <span style="color:#ff79c6">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">--rychlost pohybu sprava dolava</span>
+</span></span><span style="display:flex;"><span>    ➡️spd<span style="color:#ff79c6">=</span><span style="color:#bd93f9">0</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">--rychlost pohybu zhora dole</span>
+</span></span><span style="display:flex;"><span>    ⬇️spd<span style="color:#ff79c6">=</span><span style="color:#bd93f9">0</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">--rychlost skoku</span>
+</span></span><span style="display:flex;"><span>    jmpspd<span style="color:#ff79c6">=</span><span style="color:#bd93f9">3.4</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">--kontrola skoku</span>
+</span></span><span style="display:flex;"><span>    jmp<span style="color:#ff79c6">=</span><span style="color:#ff79c6">false</span>,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><figure class="float-right ml-16 max-w-xs"><img src="https://Spawn.codes/vyvoj-hier/lekcia4/gravity.gif"/>
+</figure>
+
+<h2 id="gravitácia">Gravitácia</h2>
+<p>Gravitácia v hrách funguje na jednoduchom princípe. Tak ako aj na Zemi, potrebujeme hráča pritiahnuť silou ku spodku mapy. Táto sila bude naša premenná <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">gravity</span>. Zvýšime ňou y-ovú rýchlosť, ktorá bude pravidelne meniť hráčovu y-ovú pozíciu. Takto dokonca docielime efekt <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">gravitačného zrýchlenia ⚡</span>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#6272a4">--gravity</span>
+</span></span><span style="display:flex;"><span>player.⬇️spd <span style="color:#ff79c6">+=</span> gravity
+</span></span><span style="display:flex;"><span>player.y <span style="color:#ff79c6">+=</span> player.⬇️spd
+</span></span><span style="display:flex;"><span>player.jmp <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">false</span>
+</span></span></code></pre></div><h2 id="kolízia-s-platformou">Kolízia s platformou</h2>
+<p>Vytvor kolíziu s <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">platformou 👾</span> na spodku mapy. Takto tvoj hráč nespadne mimo mapu.</p>
+<ol>
+<li>Nastav na všetky steny 0-tú červenú vlajku</li>
+<li>Príkazmi <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">fget()</span> a <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">mget()</span> skontroluj, či došlo ku kolízii hráča so stenou</li>
+<li>Ak dôjde ku kolízii, polož hráča na platformu - <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">flr((player.y)/8)*8</span></li>
+<li>Zruš jeho padanie - y-ová rýchlosť - <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">player.⬇️spd = 0</span></li>
+<li>Opäť mu dovoľ skákanie mu skákanie - <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">player.jmp=true</span></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#6272a4">--ak padame</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> player.⬇️spd <span style="color:#ff79c6">&gt;=</span> <span style="color:#bd93f9">0</span> <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">--najdi solidnu bunku</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">if</span> fget(mget((player.x<span style="color:#ff79c6">+</span><span style="color:#bd93f9">4</span>)<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>,(player.y<span style="color:#ff79c6">+</span><span style="color:#bd93f9">8</span>)<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>),<span style="color:#bd93f9">0</span>) <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4">--poloz hraca na platfomu</span>
+</span></span><span style="display:flex;"><span>        player.y <span style="color:#ff79c6">=</span> flr((player.y)<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>)<span style="color:#ff79c6">*</span><span style="color:#bd93f9">8</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4">--zrus padanie</span>
+</span></span><span style="display:flex;"><span>        player.⬇️spd <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4">--dovol skakanie</span>
+</span></span><span style="display:flex;"><span>        player.jmp<span style="color:#ff79c6">=</span><span style="color:#ff79c6">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">end</span>
+</span></span></code></pre></div><h2 id="kolízia-so-stenami">Kolízia so stenami</h2>
+<figure class="float-right ml-16 max-w-xs"><img src="https://Spawn.codes/vyvoj-hier/lekcia4/walls.gif"/>
+</figure>
+
+<p>Je nutné ošetriť aj <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">kolízie 💥</span> so stenami. Pri nich stačí skontrolovať, či sa hráčova pravá alebo ľavá strana dotýka steny. Ak áno, hráča dáme na začiatok.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#6272a4">--hracova zaciatocna pozicia na vrchu _update()</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">local</span> startx <span style="color:#ff79c6">=</span> player.x
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">--ak sa dotkneme pravou alebo (or) lavou stranou steny, vratime sa</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> fget(mget(player.x<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>,(player.y<span style="color:#ff79c6">+</span><span style="color:#bd93f9">7</span>)<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>),<span style="color:#bd93f9">0</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">or</span> fget(mget((player.x<span style="color:#ff79c6">+</span><span style="color:#bd93f9">7</span>)<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>,(player.y<span style="color:#ff79c6">+</span><span style="color:#bd93f9">7</span>)<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>),<span style="color:#bd93f9">0</span>) <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>    player.x<span style="color:#ff79c6">=</span>startx
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">end</span>
+</span></span></code></pre></div><h2 id="skok">Skok</h2>
+<p>Na skok stačí jednoduchá podmienka. Ak stlačíš šípku hore, tak vyskoč. Do podmienky sa však ešte vkladá aj kontrola skoku, pretože skákať hráč môže iba, ak je na zemi.</p>
+<p>V podmienke znížime hráčovu y-ovú rýchlosť o hodnotu <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">player.jmpspd</span>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#6272a4">--jump</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> btn(⬆️) <span style="color:#ff79c6">and</span> player.jmp <span style="color:#ff79c6">==</span> <span style="color:#ff79c6">true</span> <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>    player.⬇️spd <span style="color:#ff79c6">-=</span> player.jmpspd
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">end</span>
+</span></span></code></pre></div><blockquote>
+<p><strong>🔰 Úloha:</strong> Pridaj skákaniu zvukový efekt príkazom sfx().</p>
+</blockquote>
+<h2 id="kolízia-so-stropom">Kolízia so stropom</h2>
+<figure class="float-right ml-16 max-w-xs"><img src="https://Spawn.codes/vyvoj-hier/lekcia4/ceil.gif"/>
+</figure>
+
+<p>Takmer rovnako ako kolíziu s platformou naprogramujeme aj kolíziu so stropom.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#6272a4">--ak stupame</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> player.⬇️spd <span style="color:#ff79c6">&lt;=</span> <span style="color:#bd93f9">0</span> <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">--najdi solidnu bunku</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">if</span> fget(mget((player.x<span style="color:#ff79c6">+</span><span style="color:#bd93f9">4</span>)<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>, player.y<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>),<span style="color:#bd93f9">0</span>) <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4">--poloz hraca pod platformu</span>
+</span></span><span style="display:flex;"><span>        player.y <span style="color:#ff79c6">=</span> flr((player.y<span style="color:#ff79c6">+</span><span style="color:#bd93f9">8</span>)<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>)<span style="color:#ff79c6">*</span><span style="color:#bd93f9">8</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#6272a4">--zrus stupanie</span>
+</span></span><span style="display:flex;"><span>        player.⬇️spd <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">end</span>
+</span></span></code></pre></div><blockquote>
+<p><strong>🔰 Úloha:</strong> Vyskladaj si detailnú mapu na skákanie. Rozmiestni do nej aj prekážky, coins alebo iné zbierateľné predmety. Inšpiruj sa našim príkladom na vrchu stránky.</p>
+</blockquote>
+
+
+  
+</article>
+
+    </main><footer class="w-full text-center p-4 text-xs text-gray-400">
+  <p>
+    Copyright © 2022 - Spawn.codes · All rights reserved
+  </p>
+</footer>
+
+</body>
+</html>

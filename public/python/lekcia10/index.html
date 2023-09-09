@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    🐍 Lekcia X. - Spawn.codes
+  </title>
+
+  
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'] 
+          },
+          gridTemplateColumns: {
+            'fluid': 'repeat(auto-fit, minmax(8rem, 1fr))',
+          }
+        }
+      }
+    }
+  </script>
+
+  
+  <script src="https://kit.fontawesome.com/29b25fbda6.js" crossorigin="anonymous"></script>
+
+  <script defer language="javascript" type="text/javascript"  src="https://Spawn.codes/js/lock.js"></script>
+
+  
+  <meta name="description" content="Programovanie hier pre deti - Spawn.codes" />
+  
+  <meta name="author" content="Spawn.codes" />
+  <meta name="generator" content="Hugo 0.102.3" />
+
+</head>
+
+  <body class="flex flex-col min-h-screen bg-slate-900 text-slate-100 transition-colors duration-500 body-font font-poppins"><header class="w-full px-4 pt-4 max-w-5xl mx-auto">
+  <nav class="flex items-center justify-between flex-wrap">
+    <div class="flex gap-2 items-center">
+      
+      <a href="mailto:spawn.code@proton.me" aria-label="EMail">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="4" />
+          <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
+        </svg>
+      </a>
+      
+      <a href="https://Spawn.codes/" class="flex items-center font-bold">
+        Spawn.codes
+      </a>
+    </div>
+
+    <ul id="nav-menu" class="flex w-auto mt-0 space-x-5">
+      
+      <li>
+        <a href="https://Spawn.codes/o-nas/" class="hover:text-blue-300">O nás</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/ucebnice/" class="hover:text-blue-300">Učebnice</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/kontakt/" class="hover:text-blue-300">Kontakt</a>
+      </li>
+      
+    </ul>
+  </nav>
+</header>
+<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-8 sm:mt-16">
+<article class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-invert">
+  <h1>🐍 Lekcia X.</h1>
+  <p><strong>Zdravím! 🤙</strong></p>
+<p>Toto je tvoja posledná lekcia. Preto som pripravil niečo iné ako zvyčajne, aby som ukázal aj iné stránky jazyka Python.</p>
+<h2 id="pygame-zero">Pygame Zero</h2>
+<p>Pygame je populárna knižnica na tvorbu počítačových hier. Pygame Zero je zjednodušená verzia originálu. Je to teda jednoduchý <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">game-engine 🎮</span>. Na jeho použitie ti stačia doterajšie znalosti a trochu vysvetliviek.</p>
+<h2 id="inštalácia-pygame-zero">Inštalácia Pygame Zero</h2>
+<p>Pygame sa inštaluje cez nástroj <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">pip</span>. Pip je inštalátor cudzích knižníc na Python. Dokáže nainštalovať akúkoľvek potrebnú knižnicu jedným príkazom:</p>
+<pre tabindex="0"><code>pip install pgzero
+</code></pre><p>⚠️ Ty si však pip musíš najprv nainštalovať. To urobíš týmito príkazmi v termináli:</p>
+<pre tabindex="0"><code>curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+python3 get-pip.py
+</code></pre><h2 id="hra-v-pygame-zero">Hra v Pygame Zero</h2>
+<p>Aby sme si overili, že inštalácia prebehla úspešne, vyskúšame si spustiť prázdny súbor.</p>
+<p>Príkazom:</p>
+<pre tabindex="0"><code>pgzrun game.py
+</code></pre><h3 id="vykreslenie">Vykreslenie</h3>
+<p>Ako prvý krok si vykreslíme pozadie hry. Použijeme špeciálnu funkciu <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">draw()</span>, ktorá na to slúži.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>WIDTH <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">300</span>
+</span></span><span style="display:flex;"><span>HEIGHT <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">300</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">def</span> <span style="color:#50fa7b">draw</span>():
+</span></span><span style="display:flex;"><span>    screen<span style="color:#ff79c6">.</span>fill((<span style="color:#bd93f9">128</span>, <span style="color:#bd93f9">0</span>, <span style="color:#bd93f9">0</span>))
+</span></span></code></pre></div><figure class="float-left mr-16 max-w-xl"><img src="https://Spawn.codes/python/lekcia10/alien.png"/>
+</figure>
+
+<p>Ako ďalší krok si vytvoríme actora &lsquo;Alien&rsquo;. Dáme mu tento obrázok.</p>
+<figure class="float-right ml-16 max-w-xl"><img src="https://Spawn.codes/python/lekcia10/path.png"/>
+</figure>
+
+<p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🎈 Pomôcka:</strong> Obrázok si môžeš stiahnuť pravým kliknutím a uložením.</span></p>
+<p>Obrázok si ulož do priečinku &ldquo;images&rdquo;.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>alien <span style="color:#ff79c6">=</span> Actor(<span style="color:#f1fa8c">&#39;alien&#39;</span>)
+</span></span><span style="display:flex;"><span>alien<span style="color:#ff79c6">.</span>pos <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">100</span>, <span style="color:#bd93f9">56</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>WIDTH <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">500</span>
+</span></span><span style="display:flex;"><span>HEIGHT <span style="color:#ff79c6">=</span> alien<span style="color:#ff79c6">.</span>height <span style="color:#ff79c6">+</span> <span style="color:#bd93f9">20</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">def</span> <span style="color:#50fa7b">draw</span>():
+</span></span><span style="display:flex;"><span>    screen<span style="color:#ff79c6">.</span>clear()
+</span></span><span style="display:flex;"><span>    alien<span style="color:#ff79c6">.</span>draw()
+</span></span></code></pre></div><h3 id="pohyb">Pohyb</h3>
+<p>Na rozpohybovanie aliena môžeš vyskúšať príkaz:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>alien<span style="color:#ff79c6">.</span>topright <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">10</span>, <span style="color:#bd93f9">10</span>
+</span></span></code></pre></div><p>Určite si si všimol, že sa niekde pohol. Ten pohyb bol ale instantný a pre nás neviditeľný.
+Preto pridáme špeciálnu funkciu <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">update()</span>, aby sa pohyboval pomaly smerom doprava.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">def</span> <span style="color:#50fa7b">update</span>():
+</span></span><span style="display:flex;"><span>    alien<span style="color:#ff79c6">.</span>left <span style="color:#ff79c6">+=</span> <span style="color:#bd93f9">2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4"># ked vyjde z obrazovku, vrátime ho na zaciatok</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">if</span> alien<span style="color:#ff79c6">.</span>left <span style="color:#ff79c6">&gt;</span> WIDTH:
+</span></span><span style="display:flex;"><span>        alien<span style="color:#ff79c6">.</span>right <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">0</span>
+</span></span></code></pre></div><h3 id="klikanie">Klikanie</h3>
+<p>Opäť použijeme špeciálnu funkciu <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">on_mouse_down()</span>, ktorá kontroluje klikanie.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">def</span> <span style="color:#50fa7b">on_mouse_down</span>(pos):
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">if</span> alien<span style="color:#ff79c6">.</span>collidepoint(pos):
+</span></span><span style="display:flex;"><span>        <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;Eek!&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">else</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;You missed me!&#34;</span>)
+</span></span></code></pre></div><p>Teraz si stiahni ďalší obrázok aj zvukovú nahrávku, ktorú použijeme v hre:</p>
+<p><a href="https://Spawn.codes/python/lekcia10/alien_hurt.png" download>alien_hurt.png</a><br>
+<a href="https://Spawn.codes/python/lekcia10/eep.wav" download>eep.wav</a></p>
+<p>Súbory si porozdeľuj do priečinkov nasledovne:</p>
+<pre tabindex="0"><code>.
+├── images/
+│   └── alien.png
+│   └── alien_hurt.png
+├── sounds/
+│   └── eep.wav
+└── game.py
+</code></pre><p>Uprav si hru a použi nové súbory.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">def</span> <span style="color:#50fa7b">on_mouse_down</span>(pos):
+</span></span><span style="display:flex;"><span>   <span style="color:#ff79c6">if</span> alien<span style="color:#ff79c6">.</span>collidepoint(pos):
+</span></span><span style="display:flex;"><span>       sounds<span style="color:#ff79c6">.</span>eep<span style="color:#ff79c6">.</span>play()
+</span></span><span style="display:flex;"><span>       alien<span style="color:#ff79c6">.</span>image <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;alien_hurt&#39;</span>
+</span></span></code></pre></div><p>Ako si si asi všimol, alien sa po kliknutí zmení na nový obrázok, ale nikdy sa nevráti do pôvodného stavu.
+Hru si trochu poupravíme.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">def</span> <span style="color:#50fa7b">on_mouse_down</span>(pos):
+</span></span><span style="display:flex;"><span>   <span style="color:#ff79c6">if</span> alien<span style="color:#ff79c6">.</span>collidepoint(pos):
+</span></span><span style="display:flex;"><span>       set_alien_hurt()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">def</span> <span style="color:#50fa7b">set_alien_hurt</span>():
+</span></span><span style="display:flex;"><span>   alien<span style="color:#ff79c6">.</span>image <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;alien_hurt&#39;</span>
+</span></span><span style="display:flex;"><span>   sounds<span style="color:#ff79c6">.</span>eep<span style="color:#ff79c6">.</span>play()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">def</span> <span style="color:#50fa7b">set_alien_normal</span>():
+</span></span><span style="display:flex;"><span>   alien<span style="color:#ff79c6">.</span>image <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;alien&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">def</span> <span style="color:#50fa7b">set_alien_hurt</span>():
+</span></span><span style="display:flex;"><span>   alien<span style="color:#ff79c6">.</span>image <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;alien_hurt&#39;</span>
+</span></span><span style="display:flex;"><span>   sounds<span style="color:#ff79c6">.</span>eep<span style="color:#ff79c6">.</span>play()
+</span></span><span style="display:flex;"><span>   clock<span style="color:#ff79c6">.</span>schedule_unique(set_alien_normal, <span style="color:#bd93f9">1.0</span>)
+</span></span></code></pre></div><p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🔰 Úloha:</strong> Vyskúšaj urobiť hru ťažšiu a aliena zrýchliť.</span></p>
+<p><strong>Pygame Zero SNAKE</strong><br>
+<a href="https://simplegametutorials.github.io/pygamezero/snake/">https://simplegametutorials.github.io/pygamezero/snake/</a></p>
+
+  
+</article>
+
+    </main><footer class="w-full text-center p-4 text-xs text-gray-400">
+  <p>
+    Copyright © 2022 - Spawn.codes · All rights reserved
+  </p>
+</footer>
+
+</body>
+</html>

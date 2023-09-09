@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    🐍 Lekcia III. - Spawn.codes
+  </title>
+
+  
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'] 
+          },
+          gridTemplateColumns: {
+            'fluid': 'repeat(auto-fit, minmax(8rem, 1fr))',
+          }
+        }
+      }
+    }
+  </script>
+
+  
+  <script src="https://kit.fontawesome.com/29b25fbda6.js" crossorigin="anonymous"></script>
+
+  <script defer language="javascript" type="text/javascript"  src="https://Spawn.codes/js/lock.js"></script>
+
+  
+  <meta name="description" content="Programovanie hier pre deti - Spawn.codes" />
+  
+  <meta name="author" content="Spawn.codes" />
+  <meta name="generator" content="Hugo 0.102.3" />
+
+</head>
+
+  <body class="flex flex-col min-h-screen bg-slate-900 text-slate-100 transition-colors duration-500 body-font font-poppins"><header class="w-full px-4 pt-4 max-w-5xl mx-auto">
+  <nav class="flex items-center justify-between flex-wrap">
+    <div class="flex gap-2 items-center">
+      
+      <a href="mailto:spawn.code@proton.me" aria-label="EMail">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="4" />
+          <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
+        </svg>
+      </a>
+      
+      <a href="https://Spawn.codes/" class="flex items-center font-bold">
+        Spawn.codes
+      </a>
+    </div>
+
+    <ul id="nav-menu" class="flex w-auto mt-0 space-x-5">
+      
+      <li>
+        <a href="https://Spawn.codes/o-nas/" class="hover:text-blue-300">O nás</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/ucebnice/" class="hover:text-blue-300">Učebnice</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/kontakt/" class="hover:text-blue-300">Kontakt</a>
+      </li>
+      
+    </ul>
+  </nav>
+</header>
+<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-8 sm:mt-16">
+<article class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-invert">
+  <h1>🐍 Lekcia III.</h1>
+  <p><strong>Zdravím! 👋</strong></p>
+<p>Na dnešnej lekcii sa naučíš používať <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">podmienky</span>. Táta kľúčová súčasť programovania ti dovolí doplniť si ku hre <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Hero Progression 🧙‍♂️</span> nové možnosti.</p>
+<h2 id="opakovanie">Opakovanie</h2>
+<p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🔰 Úloha:</strong> Vytvorte herný obchod. Do obchodu vypíšte, koľko má hráč peňazí. Vytvorte aspoň jednu položku a vymyslite jej cenu.</span></p>
+<p><strong>Príklad obchodu</strong></p>
+<pre tabindex="0"><code>Welcome to the Shop 👋
+You have 90 💸
+----------------------
+🎁 Gift - 10 💸
+</code></pre><h2 id="odsadenie-kódu">Odsadenie kódu</h2>
+<p>Odsadenie kódu alebo <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">indentácia</span> je odsek v kóde. V Pythone sú tieto odseky veľmi dôležité, lebo určujú, čo všetko patrí do podmienky alebo funkcie.</p>
+<h2 id="podmienky">Podmienky</h2>
+<p>Na skontrolovanie stavu nejakej situácie používame v programovaní podmienky. Kľúčovým slovíčkom je <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">if</span> (ak) a za ním nasleduje situácia/podmienka, ktorú chceme skontrolovať. Tento riadok ukončíme dvojbodkou. Do nového riadku po odsadení píšeme potom všetko, čo sa má stať, ak platí podmienka.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#6272a4"># ak premenna pet sa rovna &#34;unicorn&#34;, vypis &#34;🦄&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> pet <span style="color:#ff79c6">==</span> <span style="color:#f1fa8c">&#34;unicorn&#34;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4"># indentacia kodu</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;🦄&#34;</span>)
+</span></span></code></pre></div><p><strong>⚠️ Nesprávne použitie</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">if</span> online <span style="color:#ff79c6">==</span> <span style="color:#ff79c6">True</span>:
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># chyba indentacia, teda print nepatri ku podmienke :(</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;Player is Online 🟢&#34;</span>)
+</span></span></code></pre></div><h2 id="zložené-podmienky">Zložené podmienky</h2>
+<p>Niekedy je užitočné použiť aj opak podmienky - <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">else</span> (inak). Ak podmienka if neplatí, vykoná sa else zátvorka.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>online <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># vsimni si indentaciu</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> online <span style="color:#ff79c6">==</span> <span style="color:#ff79c6">True</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;Player is online ✅&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;Player is offline ❌&#34;</span>)
+</span></span></code></pre></div><p>Vytvoriť vieme aj <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">viacnásobnú podmienku</span>, pomocou ktorej vieme zahrnúť viacero prípadov. Po jednoduchej <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">if</span> podmienke nasleduje <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">elif</span>, potom znenie podmienky a nakoniec po dvojbodke obsah (čo sa má odohrať po splnení). Na koniec viacnásobnej podmienky vieme rovnako pripojiť aj <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">else</span> podmienku.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ff79c6">if</span> pet <span style="color:#ff79c6">==</span> <span style="color:#f1fa8c">&#34;unicorn&#34;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;🦄&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">elif</span> pet <span style="color:#ff79c6">==</span> <span style="color:#f1fa8c">&#34;dragon&#34;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;🐲&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">elif</span> pet <span style="color:#ff79c6">==</span> <span style="color:#f1fa8c">&#34;python&#34;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;🐍&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;no pet ❌&#34;</span>)
+</span></span></code></pre></div><h2 id="porovnávacie-znamienka">Porovnávacie znamienka</h2>
+<p>Porovnávacie znamienka používame pri porovnávaní javov. Využívajú sa v podmienkach a
+cykloch.</p>
+<p><strong>1. == rovná sa</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>level <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> level <span style="color:#ff79c6">==</span> <span style="color:#bd93f9">10</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;😎 PRO&#34;</span>)
+</span></span></code></pre></div><p><strong>2. != nerovná sa</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>level <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">6</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> level <span style="color:#ff79c6">!=</span> <span style="color:#bd93f9">10</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;🤓 Noob&#34;</span>)
+</span></span></code></pre></div><p><strong>3. &gt; väčši ako</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>exp <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># 11+, nemáme dostatok exp</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> exp <span style="color:#ff79c6">&gt;</span> <span style="color:#bd93f9">10</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;Level Up! 🎉&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;Potrebuješ aspoň 11 exp!&#34;</span>)
+</span></span></code></pre></div><p><strong>4. &gt;= väčšie rovné</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>exp <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">//</span> <span style="color:#bd93f9">10</span><span style="color:#ff79c6">+</span>, získame nový level
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> exp <span style="color:#ff79c6">&gt;=</span> <span style="color:#bd93f9">10</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;Level Up! 🎉&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;Potrebuješ aspoň 10 exp!&#34;</span>)
+</span></span></code></pre></div><p><strong>5. &lt; menšie ako</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>hp <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> hp <span style="color:#ff79c6">&lt;</span> <span style="color:#bd93f9">10</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;Your hero is weak! Health Potion 🍯&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;Healthy hero 💪&#34;</span>)
+</span></span></code></pre></div><p><strong>6. &lt;= menšie rovné</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>hp <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> hp <span style="color:#ff79c6">&lt;=</span> <span style="color:#bd93f9">10</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;Your hero is weak! Health Potion 🍯&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;Healthy hero 💪&#34;</span>)
+</span></span></code></pre></div><p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🔰 Úloha:</strong> Vytvorte mechanizmus, ktorý zistí, či je hrdina nažive. Použite podmienku na skontrolovanie životov. Vypíšte, či je hrdina nažive alebo nie.</span></p>
+<p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🔰 Úloha:</strong> Využite herný obchod z minulej hodiny a vytvorte pre neho podmienku, ktorá zistí, či máme dostatok peňazí na nákup z obchodu. Výsledok vypíšte.</span></p>
+<p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🔰 Úloha:</strong> Naprogramujte podmienku tak, aby nahradila číslicu za zodpovedajúce emoji. Využite pri tom else if. Príklad: 7 =&gt; 7️⃣</span></p>
+<h2 id="logické-operátory">Logické operátory</h2>
+<p><strong>and - A zároveň</strong>
+Podmienka platí, keď všetky výrazy sú pravdivé.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>online <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">True</span>
+</span></span><span style="display:flex;"><span>playing <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># ak je hráč online A ZÁROVEŇ nie je v hre</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> online <span style="color:#ff79c6">==</span> true <span style="color:#ff79c6">and</span> playing <span style="color:#ff79c6">==</span> false:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;Ready to play 🎮&#34;</span>)
+</span></span></code></pre></div><p><strong>or - Alebo</strong>
+Podmienka platí, keď aspoň jeden výraz je pravdivý.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pet <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;🦊&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># ak máme peta 🐲 ALEBO 🦊</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">if</span> pet <span style="color:#ff79c6">==</span> <span style="color:#f1fa8c">&#34;🐲&#34;</span> <span style="color:#ff79c6">or</span> pet <span style="color:#ff79c6">==</span> <span style="color:#f1fa8c">&#34;🦊&#34;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">print</span>(<span style="color:#f1fa8c">&#34;Pet used 🔥&#34;</span>)
+</span></span></code></pre></div>
+
+  
+</article>
+
+    </main><footer class="w-full text-center p-4 text-xs text-gray-400">
+  <p>
+    Copyright © 2022 - Spawn.codes · All rights reserved
+  </p>
+</footer>
+
+</body>
+</html>

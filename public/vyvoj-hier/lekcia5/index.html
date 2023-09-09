@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    🎮 Lekcia V. - Spawn.codes
+  </title>
+
+  
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'] 
+          },
+          gridTemplateColumns: {
+            'fluid': 'repeat(auto-fit, minmax(8rem, 1fr))',
+          }
+        }
+      }
+    }
+  </script>
+
+  
+  <script src="https://kit.fontawesome.com/29b25fbda6.js" crossorigin="anonymous"></script>
+
+  <script defer language="javascript" type="text/javascript"  src="https://Spawn.codes/js/lock.js"></script>
+
+  
+  <meta name="description" content="Programovanie hier pre deti - Spawn.codes" />
+  
+  <meta name="author" content="Spawn.codes" />
+  <meta name="generator" content="Hugo 0.102.3" />
+
+</head>
+
+  <body class="flex flex-col min-h-screen bg-slate-900 text-slate-100 transition-colors duration-500 body-font font-poppins"><header class="w-full px-4 pt-4 max-w-5xl mx-auto">
+  <nav class="flex items-center justify-between flex-wrap">
+    <div class="flex gap-2 items-center">
+      
+      <a href="mailto:spawn.code@proton.me" aria-label="EMail">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="4" />
+          <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
+        </svg>
+      </a>
+      
+      <a href="https://Spawn.codes/" class="flex items-center font-bold">
+        Spawn.codes
+      </a>
+    </div>
+
+    <ul id="nav-menu" class="flex w-auto mt-0 space-x-5">
+      
+      <li>
+        <a href="https://Spawn.codes/o-nas/" class="hover:text-blue-300">O nás</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/ucebnice/" class="hover:text-blue-300">Učebnice</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/kontakt/" class="hover:text-blue-300">Kontakt</a>
+      </li>
+      
+    </ul>
+  </nav>
+</header>
+<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-8 sm:mt-16">
+<article class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-invert">
+  <h1>🎮 Lekcia V.</h1>
+  <figure class="float-right ml-16 max-w-xs"><img src="https://Spawn.codes/vyvoj-hier/lekcia5/intro.gif"/>
+</figure>
+
+<p><strong>Ahoj 👋</strong></p>
+<p>Blížime sa ku dokončeniu <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">Galaxy Rush 🌌</span>. Na dnešnej lekcii pridáme do našej hry nové levely, prekážky a zbieranie mincí. Precvičíš si map-design a naučíš sa aj pracovať s hernou kamerou.</p>
+<h2 id="nová-mapa">Nová mapa</h2>
+<p>Správna platformová hra by mala mať veľkú mapu a/alebo množstvo levelov. Levely by mali byť <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">unikátne 🎈</span> nielen po grafickej, ale aj po gameplay-ovej stránke. Mali by hráča zoznámiť s rôznymi úrovňami a hernými mechanikami.</p>
+<p>V Pico-sa nové levely tvoria v mapovom editore. V ňom sa využíva voľný priestor pri pôvodnej mape na budovanie novej mapy/levelu.</p>
+<blockquote>
+<p><strong>🔰 Úloha:</strong> Vymysli aspoň jeden nový level a pridaj ho vedľa pôvodného</p>
+</blockquote>
+<figure class="float-right ml-16 max-w-xs"><img src="https://Spawn.codes/vyvoj-hier/lekcia5/camera.gif"/>
+</figure>
+
+<h2 id="kamera">Kamera</h2>
+<p>Na presun fo novej mapy môžeš použiť príkaz <span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800">camera()</span>. Tento príkaz posunie kameru hry na špecifikovanú pozíciu.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#6272a4">--posunie kameru o 128px po x-ovej osi (doprava)</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">--0px po y-ovej osi</span>
+</span></span><span style="display:flex;"><span>camera(<span style="color:#bd93f9">128</span>, <span style="color:#bd93f9">0</span>)
+</span></span></code></pre></div><p>Posun mapy môžeš ľahko automatizovať nasledujúcou funkciou:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#ff79c6">function</span> <span style="color:#50fa7b">SetCamera</span>()
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">--počet 128px máp, ktoré hráč prešiel</span>
+</span></span><span style="display:flex;"><span>    map_x <span style="color:#ff79c6">=</span> flr(player.x <span style="color:#ff79c6">/</span> <span style="color:#bd93f9">128</span>)
+</span></span><span style="display:flex;"><span>    map_y <span style="color:#ff79c6">=</span> flr(player.y <span style="color:#ff79c6">/</span> <span style="color:#bd93f9">128</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    camera(map_x<span style="color:#ff79c6">*</span><span style="color:#bd93f9">128</span>, map_y<span style="color:#ff79c6">*</span><span style="color:#bd93f9">128</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">end</span>
+</span></span></code></pre></div><figure class="float-right ml-16 max-w-xs"><img src="https://Spawn.codes/vyvoj-hier/lekcia5/reset.gif"/>
+</figure>
+
+<h2 id="prekážky">Prekážky</h2>
+<p>Ak sa hráč dotkne pichľavej prekážky, mal by sa vrátiť na <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">začiatok 🏁</span> mapy. Zabezpeč, aby sa jeho pozícia zmenila na tú, na ktorej sa pôvodne spawn-e. Nastav vlajku prekážok na 1 (oranžová).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#ff79c6">if</span> collision(<span style="color:#bd93f9">1</span>) <span style="color:#ff79c6">==</span> <span style="color:#ff79c6">true</span> <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>    player.x <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">8</span>
+</span></span><span style="display:flex;"><span>    player.y <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">96</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">end</span>
+</span></span></code></pre></div><p>Na kolízie použi známu funkciu z predošlých lekcií:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#ff79c6">function</span> <span style="color:#50fa7b">collision</span>(flag)
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">if</span> fget(mget(player.x<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>, player.y<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>), flag)
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">or</span> fget(mget((player.x<span style="color:#ff79c6">+</span><span style="color:#bd93f9">6</span>)<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>, player.y<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>), flag)
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">or</span> fget(mget(player.x<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>, (player.y<span style="color:#ff79c6">+</span><span style="color:#bd93f9">6</span>)<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>), flag)
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">or</span> fget(mget((player.x<span style="color:#ff79c6">+</span><span style="color:#bd93f9">6</span>)<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>, (player.y<span style="color:#ff79c6">+</span><span style="color:#bd93f9">6</span>)<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>), flag)
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#ff79c6">return</span> <span style="color:#ff79c6">true</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">end</span>
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#ff79c6">return</span> <span style="color:#ff79c6">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">end</span>
+</span></span></code></pre></div><figure class="float-right ml-16 max-w-xs"><img src="https://Spawn.codes/vyvoj-hier/lekcia5/collect.gif"/>
+</figure>
+
+<h2 id="zbieranie-mincí">Zbieranie mincí</h2>
+<p>Zbieranie opäť funguje na princípe kolízie hráča s mincou. Keď sa hráč dotkne <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">mince 💰</span>, minca sa stratí a hráčovi sa pripíše minca na konto. Nastav vlajku mincí na 2 (žltá).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Lua" data-lang="Lua"><span style="display:flex;"><span><span style="color:#ff79c6">if</span> collision(<span style="color:#bd93f9">2</span>) <span style="color:#ff79c6">==</span> <span style="color:#ff79c6">true</span> <span style="color:#ff79c6">then</span>
+</span></span><span style="display:flex;"><span>    mset(player.x<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>, player.y<span style="color:#ff79c6">/</span><span style="color:#bd93f9">8</span>, <span style="color:#bd93f9">0</span>)
+</span></span><span style="display:flex;"><span>    coins <span style="color:#ff79c6">+=</span> <span style="color:#bd93f9">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">end</span>
+</span></span></code></pre></div>
+
+  
+</article>
+
+    </main><footer class="w-full text-center p-4 text-xs text-gray-400">
+  <p>
+    Copyright © 2022 - Spawn.codes · All rights reserved
+  </p>
+</footer>
+
+</body>
+</html>

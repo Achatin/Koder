@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    🐍 Lekcia IX. - Spawn.codes
+  </title>
+
+  
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'] 
+          },
+          gridTemplateColumns: {
+            'fluid': 'repeat(auto-fit, minmax(8rem, 1fr))',
+          }
+        }
+      }
+    }
+  </script>
+
+  
+  <script src="https://kit.fontawesome.com/29b25fbda6.js" crossorigin="anonymous"></script>
+
+  <script defer language="javascript" type="text/javascript"  src="https://Spawn.codes/js/lock.js"></script>
+
+  
+  <meta name="description" content="Programovanie hier pre deti - Spawn.codes" />
+  
+  <meta name="author" content="Spawn.codes" />
+  <meta name="generator" content="Hugo 0.102.3" />
+
+</head>
+
+  <body class="flex flex-col min-h-screen bg-slate-900 text-slate-100 transition-colors duration-500 body-font font-poppins"><header class="w-full px-4 pt-4 max-w-5xl mx-auto">
+  <nav class="flex items-center justify-between flex-wrap">
+    <div class="flex gap-2 items-center">
+      
+      <a href="mailto:spawn.code@proton.me" aria-label="EMail">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="4" />
+          <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
+        </svg>
+      </a>
+      
+      <a href="https://Spawn.codes/" class="flex items-center font-bold">
+        Spawn.codes
+      </a>
+    </div>
+
+    <ul id="nav-menu" class="flex w-auto mt-0 space-x-5">
+      
+      <li>
+        <a href="https://Spawn.codes/o-nas/" class="hover:text-blue-300">O nás</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/ucebnice/" class="hover:text-blue-300">Učebnice</a>
+      </li>
+      
+      
+      <li>
+        <a href="https://Spawn.codes/kontakt/" class="hover:text-blue-300">Kontakt</a>
+      </li>
+      
+    </ul>
+  </nav>
+</header>
+<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-8 sm:mt-16">
+<article class="mb-16 max-w-5xl mx-auto px-4 prose lg:prose-lg prose-invert">
+  <h1>🐍 Lekcia IX.</h1>
+  <p><strong>Zdravím! 👋</strong></p>
+<p>Na dnešnej lekcii ťa čaká ďalší <span class="font-semibold text-lg text-slate-800 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 shadow-md shadow-indigo-600">zaujímavý projekt</span>, na ktorom si zopakuješ znalosti z predošlých hodín.</p>
+<h2 id="minecraft">Minecraft</h2>
+<p>Minecraft je hra s unikátnym konceptom - nekonečne veľký náhodne generovaný svet. V
+tomto projekte si vytvoríme jednoduchšiu simuláciu generovania takéhoto sveta. Vytvoríme
+výrez od vrchnej vrstvy (trávy) až po najspodnejšiu vrstvu (bedrock). Do podzemia pridáme
+aj typické diamanty, lávu, jaskyne a mobov.</p>
+<p>Tento projekt slúži na zopakovanie znalostí z predošlých hodín. Využijete náhodné čísla,
+rôzne cykly, funkcie, podmienky a výpisy.</p>
+<ol>
+<li>Vytvorte nový súbor minecraft.py .</li>
+<li>Importujte knižnicu &ldquo;random&rdquo;.</li>
+<li>Vyskúšajte vytvoriť 10 x 10 svet najprv čisto z jedného emoji, napr. kameň ⬜. Využite
+pri tom vnorený cyklus.</li>
+</ol>
+<p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🎈 Pomôcka:</strong> Vytvorte najprv cyklus, ktorý vypíše do riadku 10 emoji. Potom ho zaobalte ďalším cyklom, ktorý nás bude posúvať na nový riadok.</span></p>
+<ol start="4">
+<li>Vytvorte vrchnú vrstvu (hĺbka 0) trávy 🌾.</li>
+<li>Pod trávu pridajte 2 vrstvy hliny 🟫.</li>
+<li>Vytvorte najspodnejšiu vrstvu (hĺbka 9) bedrocku 🌑.</li>
+<li>V hĺbke 6 a 7 naprogramujte generovanie diamantov. Diamant 💎 má šancu na vygenerovanie 1 z 5 (20%). Nezabudnite, že ak sa diamant nevygeneruje, nehraďte ho kameňom ⬜.</li>
+</ol>
+<p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>🎈 Pomôcka:</strong> Vygenerujte náhodné číslo z rozsahu 0-4. Určte si, že ak sa vygeneruje číslo
+0, potom zapíšeme diamant 💎. Vo všetkých ostatných prípadoch zapíšeme kameň ⬜.</span></p>
+<ol start="8">
+<li>Na vrchnej vrstve trávy pridajte šancu 1 zo 6 na vygenerovanie zvieratka 🐄 namiesto trávy.</li>
+<li>Vygenerované zvieratko bude vždy náhodne jedno následovných: 🐄 krava, 🐏 ovca alebo 🐖 prasa.</li>
+<li>Do podzemia nad diamantami vygenerujte jaskyňu s nejakým mobom - napr. 💀 skeleton. Tvar jaskyne aj hĺbku si môžete zvoliť sami.</li>
+</ol>
+<p><strong>Príklad vygenerovaného sveta</strong></p>
+<pre tabindex="0"><code>🌾🌾🐄🌾🌾🌾🌾🐑🌾🌾
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
+⬜⬜⬜⬜⬜⬛⬛⬛⬜⬜
+⬜⬜⬜⬜⬛⬛💀⬛⬛⬜
+⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
+⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
+⬜⬜⬜⬜💎⬜⬜⬜💎⬜
+⬜⬜💎⬜⬜⬜⬜💎💎⬜
+⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
+🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑
+</code></pre><p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>✨ Bonus:</strong> Pridajte na tretiu vrstvu hliny zopár blokov hliny.</span></p>
+<p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>✨ Bonus:</strong> Ku diamantovej vrstve vygenerujte aj potok/jazierko lávy.</span></p>
+<p><span class="font-mono text-slate-400 text-center max-w-sm mx-1 rounded-md px-2 py-1 bg-slate-800"><strong>✨ Bonus:</strong> Na vrchnú vrstvu niekedy namiesto hliny a trávy vygenerujte rieku.</span></p>
+<p><strong>Príklad vygenerovaného sveta</strong></p>
+<pre tabindex="0"><code>      🐖🌾🌾🌾🌾🌾🌾
+🟦🟦🟦🟫🟫🟫🟫🟫🟫🟫
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+🟫⬜⬜⬜🟫🟫🟫⬜⬜🟫
+⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
+⬜⬜⬜⬜⬜⬛⬛⬛⬜⬜
+⬜⬜⬜⬜⬛⬛💀⬛⬛⬜
+⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
+⬜💎⬜⬜⬜💎⬜🟧🟧🟧
+⬜⬜💎⬜⬜💎💎⬜🟧🟧
+⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜
+🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑
+</code></pre>
+
+  
+</article>
+
+    </main><footer class="w-full text-center p-4 text-xs text-gray-400">
+  <p>
+    Copyright © 2022 - Spawn.codes · All rights reserved
+  </p>
+</footer>
+
+</body>
+</html>
