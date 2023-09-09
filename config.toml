@@ -1,6 +1,6 @@
 theme = "KoderCourse"
 languageCode = "en-us"
-baseurl = "https://achatin.github.io"
+baseurl = "https://achatin.github.io/Koder"
 title = "Spawn.codes"
 canonifyURLs = true
 
